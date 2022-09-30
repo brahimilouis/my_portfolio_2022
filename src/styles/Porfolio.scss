@@ -1,24 +1,14 @@
+$primaryColor: #141C38;
+$secondaryColor: #F46036;
+$complementaryColor: #EEECE1;
+
 .App {
   text-align: center;
-  --couleur-principale: #141C38;
-  --couleur-secondaire: #F46036;
-  --couleur-gris-clair: #EEECE1;
   font-family: Arial;
   font-size: 16px;
   background: #FDFDFD;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+html {
+  scroll-behavior: smooth;
 }
