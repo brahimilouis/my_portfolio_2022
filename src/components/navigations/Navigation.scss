@@ -1,0 +1,34 @@
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: var(--couleur-principale);
+}
+ul {
+   display: flex;
+   flex-direction: row;
+    float: right;
+    align-items: center;
+    height: inherit;
+}
+
+li {
+    font-size: medium;
+    color: var(--couleur-gris-clair);
+    margin-right: 20px;
+}
+
+li:first-child {
+    margin-right: 300px;
+}
+
+
+li:hover {
+    cursor: pointer;
+    color: var(--couleur-secondaire);
+    font-weight: bold;
+}
+
+li.selected {
+    color: var(--couleur-secondaire);
+    font-weight: bold;
+}
