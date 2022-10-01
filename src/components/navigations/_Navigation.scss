@@ -1,10 +1,20 @@
 @import "src/styles/Porfolio";
 
-
 nav {
+  position: fixed;
+  z-index: 100;
   width: 100%;
   height: 40px;
   background-color: $primaryColor;
+  &.light {
+    background-color: #E2E1DF;
+    li {
+      color: $primaryColor;
+      &:hover,.active {
+        color: $primaryColor;
+      }
+    }
+  }
   ul {
     display: flex;
     flex-direction: row;
@@ -29,8 +39,6 @@ nav {
     }
   }
 }
-
-
 
 
 

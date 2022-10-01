@@ -15,13 +15,13 @@ export default function Main({}: MainProps) {
         <header>
             <Navigation/>
         </header>
-        <main>
+        <div className="content">
             <Home key="component-0"/>
             <Profil key="component-1"/>
             <Portfolio key="component-2"/>
             <Timeline key="component-3"/>
             <Resume key="component-4"/>
             <Contact key="component-5"/>
-        </main>
+        </div>
     </div>);
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './_profil.scss'
 export type ProfilProps = {}
 
 export default function Profil({}: ProfilProps) {

@@ -1,3 +1,37 @@
 .home {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #E2E1DF;
+  .conteneurTitre {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    text-align: end;
+    h1 {
+      font-weight: bold;
+      font-size: 4vw;
+    }
+    h2 {
+      font-size: 2.8vw;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1vw;
+    }
+  }
 
+  img.moi {
+    height: 90%;
+    width: auto;
+    bottom: 0;
+    position: absolute;
+    left: 10%;
+  }
+  img.background {
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+  }
 }

@@ -1,18 +1,8 @@
-.main {
-  background-color: #FFFFFF;
-  header {
-    width: 100%;
-    position: fixed;
-    height: max-content;
-  }
-  main {
-    padding-top: 40px;
-    width: max-content;
-    height: max-content;
-    text-align: left;
-    *{
-      height: 1500px;
-      width: 1500px;
-    }
-  }
+header {
+  width: 100%;
+}
+.content {
+  padding-top: 40px;
+  height: 100vh;
+  text-align: center;
 }

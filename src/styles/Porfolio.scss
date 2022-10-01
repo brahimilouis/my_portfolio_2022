@@ -7,6 +7,9 @@ $complementaryColor: #EEECE1;
   font-family: Arial;
   font-size: 16px;
   background: #FDFDFD;
+  .hidden {
+    display: none;
+  }
 }
 
 html {

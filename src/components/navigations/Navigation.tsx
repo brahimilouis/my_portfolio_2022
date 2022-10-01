@@ -1,4 +1,4 @@
-import React, {} from "react";
+import React, {useState} from "react";
 import { Link } from 'react-scroll';
 import './_Navigation.scss';
 import './../../styles/Porfolio.scss'
@@ -32,8 +32,18 @@ function Navigation() {
             name: "CONTACT"
         },
     ]
+    const [color, setColor] = useState(true);
+    const changeColor = () => {
+        console.log('TEST')
+        if (window.scrollY <= 40) {
+            setColor(true);
+        } else {
+            setColor(false);
+        }
+    }
+    window.addEventListener('scroll', changeColor)
     return (
-        <nav>
+        <nav className={color ? "light" : ""}>
             <ul>
                 {items.map((item, index) => (
                     <li key={"nav-" + index}>

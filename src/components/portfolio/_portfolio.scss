@@ -1,3 +1,44 @@
-.portfolio {
+@import "src/styles/Porfolio";
 
+.portfolio {
+  .dropDownList {
+    margin-top: 3vh;
+
+    details {
+      color: $primaryColor;
+      &[open] ::marker {
+        color: $secondaryColor;
+      }
+      summary {
+        cursor: pointer;
+        font-size: 2em;
+        font-weight: bold;
+        align-self: start;
+      }
+      .content {
+        margin: 0 auto;
+        max-width: 1400px;
+        align-self: start;
+      }
+    }
+  }
+
+  .listCategory {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5vw;
+    .li {
+      img {
+        border-radius: 6%;
+        height: auto;
+        &:hover {
+          opacity: 70%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
