@@ -34,7 +34,6 @@ function Navigation() {
     ]
     const [color, setColor] = useState(true);
     const changeColor = () => {
-        console.log('TEST')
         if (window.scrollY <= 40) {
             setColor(true);
         } else {

@@ -2,6 +2,7 @@
   height: 100%;
   width: 100%;
   position: relative;
+  text-align: center;
   background-color: #E2E1DF;
   .conteneurTitre {
     position: absolute;
@@ -27,11 +28,17 @@
     bottom: 0;
     position: absolute;
     left: 10%;
+
   }
   img.background {
+    max-height: 80vh;
+    max-width: 100vw;
     height: auto;
-    width: 100%;
+    width: auto;
     bottom: 0;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
