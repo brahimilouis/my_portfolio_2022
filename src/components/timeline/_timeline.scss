@@ -1,3 +1,53 @@
-.timeline {
+@import "src/styles/Porfolio";
 
+.timeline {
+  height: fit-content;
+  .filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    div {
+      display: flex;
+      align-items: center;
+      span.title {
+        font-size: 1.5rem;
+        color: $primaryColor;
+        padding-right: 15px;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    border-left: 5px solid #141C38;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+
+    .event {
+      margin-top: 100px;
+      position: relative;
+      span {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: chartreuse;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: -18px;
+        margin: auto 0;
+      }
+      body {
+        align-self: center;
+      }
+      left: 0;
+      height: 200px;
+      width: 200px;
+      background-color: #F46036;
+    }
+  }
 }
