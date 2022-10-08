@@ -4,9 +4,12 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  height: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: $primaryColor;
+  transition: all 0.5s ease-in-out;
   &.light {
+    transition: all 0.5s ease-in;
     background-color: #E2E1DF;
     li {
       color: $primaryColor;
@@ -23,7 +26,7 @@ nav {
     height: inherit;
 
     li {
-      font-size: medium;
+      font-size: 1.2rem;
       color: $complementaryColor;
       margin-right: 20px;
 

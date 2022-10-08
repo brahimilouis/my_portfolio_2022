@@ -3,7 +3,7 @@ import './_profil.scss'
 export type ProfilProps = {}
 
 export default function Profil({}: ProfilProps) {
-    return (<div className="profil" id="profil">
-        <h1>Profil</h1>
-    </div>);
+    return (<section className="profil" id="profil">
+        <h1 className={"titre-section"}>Profil</h1>
+    </section>);
 }

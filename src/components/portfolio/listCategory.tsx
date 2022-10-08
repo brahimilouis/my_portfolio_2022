@@ -24,6 +24,5 @@ export default function Listcategory(props: ListcategoryProps) {
                     )
                 )
             }
-            <img/>
         </div>);
 }

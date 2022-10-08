@@ -1,6 +1,5 @@
 import React, {Dispatch, SetStateAction} from 'react';
 import Switchbutton from "./switchButton/switchButton";
-import {Link} from "react-scroll";
 
 export type FilterProps = {
     listFilter:Array<{

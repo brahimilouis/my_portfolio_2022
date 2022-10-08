@@ -34,7 +34,7 @@ function Navigation() {
     ]
     const [color, setColor] = useState(true);
     const changeColor = () => {
-        if (window.scrollY <= 40) {
+        if (window.scrollY <= 50) {
             setColor(true);
         } else {
             setColor(false);
@@ -51,8 +51,8 @@ function Navigation() {
                                 activeClass='active'
                                 spy={true}
                                 smooth={true}
-                                duration={500}
-                                offset={-70}
+                                duration={300}
+                                offset={-20}
                                 className='transition-all duration-300'>{item.name}
                             </Link>
                         {/*<Link>*/}
