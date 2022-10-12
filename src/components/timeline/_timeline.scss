@@ -47,15 +47,15 @@
     }
     .event {
       margin-bottom: 50px;
-      left: 0;
       transition: all 0.5s ease-out;
       position: relative;
       opacity: 100;
+      width: 100%;
       &.hidde {
-        width: 100%;
+        overflow-x: hidden;
         position: absolute;
         opacity: 0;
-        left: 100%;
+        transform: translateX(300px);
         transition: all 0.5s ease-out;
       }
 

@@ -2,6 +2,13 @@
 
 .portfolio {
   .dropDownList {
+    @keyframes details-show {
+      from {
+        opacity:0;
+      }
+    }
+
+
     details {
       position: relative;
       text-align: left;
@@ -10,6 +17,7 @@
       margin: auto;
       padding: 1vw;
       &[open] {
+        animation: details-show 250ms ease-in-out;
         ::marker {
           color: $secondaryColor;
         }
@@ -22,7 +30,7 @@
       }
       .content {
         height: fit-content;
-        transition: height,max-height 1s cubic-bezier(0, 1, 0, 1);
+        transition: all 1s ease-in;
       }
     }
   }
