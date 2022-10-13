@@ -1,0 +1,91 @@
+@import "../../../styles/variable";
+
+.timeline-card {
+  transition: all 0.5s ease-out;
+  position: relative;
+  opacity: 100;
+  width: 100%;
+
+  &.unseen {
+    overflow-x: hidden;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.5s ease-out;
+  }
+
+  span.round-time {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--color-);
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: -18px;
+    margin: auto 0;
+  }
+
+  div.content-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    margin-left: 50px;
+    align-self: center;
+    height: 200px;
+    border: 1px solid var(--color-);
+    background-color: $complementaryColor;
+    align-items: start;
+
+    .event-info {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: var(--color-);
+      font-weight: bold;
+      font-size: 1.3rem;
+
+      h1 {
+        color: #141C38;
+      }
+    }
+
+    .body {
+      padding-top: 20px;
+      text-align: start;
+      width: 100%;
+      border-top: 1px dashed var(--color-);
+      margin-top: 20px;
+    }
+
+    span.arrow-left {
+      position: absolute;
+      left: -50px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 0;
+      height: 0;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent;
+      border-right: 30px solid var(--color-);
+      border-left: 20px solid transparent;
+    }
+    span.arrow-left-in {
+      position: absolute;
+      left: -48px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 0;
+      height: 0;
+      border-bottom: 20px solid transparent;
+      border-top: 20px solid transparent;
+      border-right: 30px solid $complementaryColor;
+      border-left: 20px solid transparent;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "src/styles/variable";
+
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $primaryColor;
+  transition: all 0.5s ease-in-out;
+  &.light {
+    transition: all 0.5s ease-in;
+    background-color: #E2E1DF;
+    li {
+      color: $primaryColor;
+      &:hover,.active {
+        color: $primaryColor;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    align-items: center;
+    height: inherit;
+
+    li {
+      font-size: 1.2rem;
+      color: $complementaryColor;
+      margin-right: 20px;
+
+      &:first-child {
+        margin-right: 300px;
+      }
+
+      &:hover,.active {
+        cursor: pointer;
+        color: $secondaryColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+

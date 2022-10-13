@@ -1,0 +1,55 @@
+@import "../../../styles/variable";
+
+.switchButton {
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 30px;
+  border: var(--color-) solid 2px;
+  margin: auto;
+  border-radius: 40px;
+  cursor: pointer;
+  &:hover {
+    span {
+      opacity: 80%;
+      transition: 0s;
+    }
+  }
+  &:has(input:not(:checked)) {
+    box-shadow: inset 0 3px 6px 0 darkgray;
+    transition: all 0.5s linear;
+  }
+  &:has(input:checked) {
+    box-shadow: none;
+    transition: all 0.5s ease;
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  span {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+    margin: auto 0;
+    transition: right 0.5s ease;
+  }
+
+  input:checked+span {
+    background-color: var(--color-);
+    transform: translateX(30px);
+    transition: all 0.5s ease;
+  }
+  input:not(:checked)+span {
+    background-color: $complementaryColor;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+}

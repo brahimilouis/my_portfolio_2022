@@ -1,12 +1,15 @@
-$primaryColor: #141C38;
-$secondaryColor: #F46036;
-$complementaryColor: #EEECE1;
+@import "variable";
 
 .App {
   text-align: center;
-  font-family: Arial;
+  font-family: sans-serif;
   font-size: 16px;
-  background: #FDFDFD;
+  section {
+    background: #FDFDFD;
+    .titre-section {
+      font-size: 3rem;
+    }
+  }
   .hidden {
     display: none;
   }
@@ -16,8 +19,23 @@ $complementaryColor: #EEECE1;
     color: $primaryColor;
     padding: 50px;
   }
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $primaryColor;
+  }
+
+  header {
+    width: 100%;
+  }
+  .content {
+    padding-top: 40px;
+    height: 100vh;
+    text-align: center;
+  }
 }
 
 html {
+  background: #E2E1DF;
   scroll-behavior: smooth;
 }

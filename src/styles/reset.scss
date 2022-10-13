@@ -50,6 +50,7 @@ input[type='submit']:hover,
 button:hover {
     cursor: pointer;
 }
+
 input::-ms-clear {
     display: none; /*─ IE11 → remove cross to close ─*/
 }

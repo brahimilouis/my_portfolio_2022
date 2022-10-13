@@ -1,0 +1,34 @@
+@import "../../../styles/variable";
+.dropDownList {
+  @keyframes details-show {
+    from {
+      opacity:0;
+    }
+  }
+
+
+  details {
+    position: relative;
+    text-align: left;
+    max-width: 1200px;
+    color: $primaryColor;
+    margin: auto;
+    padding: 1vw;
+    &[open] {
+      animation: details-show 250ms ease-in-out;
+      ::marker {
+        color: $secondaryColor;
+      }
+    }
+    summary {
+      cursor: pointer;
+      font-size: 2em;
+      font-weight: bold;
+      width: fit-content;
+    }
+    .content {
+      height: fit-content;
+      transition: all 1s ease-in;
+    }
+  }
+}
