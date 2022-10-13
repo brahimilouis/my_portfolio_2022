@@ -23,8 +23,9 @@ export default function OpenPopupOnClick(props: OpenPopupOnClickProps) {
         {
             isOpen ?
                 <Containerpopup child={
-                    props.type == TypePopup.listProjet ?
-                        <Project close={changeStateOpen}/> : null
+                    props.type == TypePopup.projet ?
+                        <Project close={changeStateOpen}/> :
+                        <Project close={changeStateOpen}/>
                 }/> : null
         }
         <div onClick={changeStateOpen}>

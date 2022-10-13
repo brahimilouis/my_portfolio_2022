@@ -53,7 +53,7 @@ export default function Project(props: ProjectProps) {
             images.push(
                 <img
                     key={i + "-image"}
-                    src={require(`./../../../assets/projets/${project.pathImage}${i.toString()}.png`)}
+                    src={require(`./../../../assets/projects/${project.pathImage}${i.toString()}.png`)}
                     alt="image"
                 />)
         }

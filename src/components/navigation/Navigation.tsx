@@ -19,7 +19,7 @@ function Navigation() {
             name: "PORTFOLIO"
         },
         {
-            href: "timeline",
+            href: "timeline-section",
             name: "PARCOURS"
         },
         {

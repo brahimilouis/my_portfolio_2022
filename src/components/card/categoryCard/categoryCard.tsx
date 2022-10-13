@@ -1,5 +1,4 @@
 import React from 'react';
-import './_categoryCard.scss'
 import OpenPopupOnClick, {TypePopup} from "../../popup/openPopupOnClick/openPopupOnClick";
 import ImageClickable from "../../image/imageClickable/imageClickable";
 import * as path from "path";

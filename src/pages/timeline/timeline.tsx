@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './_timeline.scss'
 import ListFilterSwitch from "../../components/list/filterSwitchList/filterSwitch";
 import TimelineCard from "../../components/card/timelineCard/timelineCard";
+import TimelineIcon from "../../assets/icons/timelineIcon";
 
 export type TimelineProps = {}
 
@@ -62,7 +63,11 @@ export default function Timeline({}: TimelineProps) {
     })
     return (<section className="timeline-section">
         <div>
-            <h1 className="titre-section">Mon parcours</h1>
+            <div className={"titre-section"}>
+                <TimelineIcon/>
+                <span/>
+                <h1>Mon parcours</h1>
+            </div>
             <ListFilterSwitch listFilter={listFilter}/>
             <div className={"content-timeline"}>
                 <div className="timeline">
