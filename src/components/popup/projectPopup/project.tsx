@@ -12,7 +12,6 @@ export type ProjectProps = {
 }
 
 export default function Project(props: ProjectProps) {
-    // console.log(Projects);
     const project = {
         name: "My RPG",
         date: "Janvier 2022",

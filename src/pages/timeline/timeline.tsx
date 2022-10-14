@@ -10,7 +10,7 @@ export default function Timeline({}: TimelineProps) {
     const listFilter = [
         {
             color: '#31A07B',
-            libelle: 'Expérience',
+            libelle: 'Expériences',
             name: 'experience',
             stateChecked: useState(true)
         },
@@ -22,7 +22,7 @@ export default function Timeline({}: TimelineProps) {
         },
         {
             color: '#D17A22',
-            libelle: 'A coté',
+            libelle: 'Perso',
             name: 'out',
             stateChecked: useState(true)
         },

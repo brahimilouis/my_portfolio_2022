@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Containerpopup from "../containerPopup/containerPopup";
-import Project from "../project/project";
+import Project from "../projectPopup/project";
+import ListProjectPopup, {ListProjectPopupProps} from "../listProjectPopup/listProjectPopup";
 
 export enum TypePopup {
     projet,
@@ -10,6 +11,7 @@ export enum TypePopup {
 export type OpenPopupOnClickProps = {
     type: TypePopup
     children:React.ReactNode
+    childrenProps: any
 }
 
 export default function OpenPopupOnClick(props: OpenPopupOnClickProps) {
@@ -25,7 +27,9 @@ export default function OpenPopupOnClick(props: OpenPopupOnClickProps) {
                 <Containerpopup child={
                     props.type == TypePopup.projet ?
                         <Project close={changeStateOpen}/> :
-                        <Project close={changeStateOpen}/>
+                        <ListProjectPopup
+                            close={changeStateOpen}
+                            listProjectsProps={props.childrenProps}/>
                 }/> : null
         }
         <div onClick={changeStateOpen}>
