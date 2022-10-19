@@ -7,7 +7,7 @@ export type TimelineCardProps = {
 }
 
 export default function TimelineCard(props: TimelineCardProps) {
-    return (<div className={"timeline-card" + (props.hidden ? " unseen": "")} style={{ "--color-": props.color} as React.CSSProperties}>
+    return (<div key={"timeline-card"} className={"timeline-card" + (props.hidden ? " unseen": "")} style={{ "--color-": props.color} as React.CSSProperties}>
         <span className="round-time"/>
         <div className="content-body">
             <span className="arrow-left"/>

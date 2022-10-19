@@ -1,66 +1,71 @@
-import React, {useState} from 'react';
+import React, {Dispatch, SetStateAction, useEffect, useState} from 'react';
 import './_timeline.scss'
-import ListFilterSwitch from "../../components/list/filterSwitchList/filterSwitch";
+import ListFilterSwitch, {ListFilter, ListFilterSwitchProps} from "../../components/list/filterSwitchList/filterSwitch";
 import TimelineCard from "../../components/card/timelineCard/timelineCard";
 import TimelineIcon from "../../assets/icons/timelineIcon";
+import FetchData from "../../class/fetchData";
 
 export type TimelineProps = {}
 
+export type FilterModel = {
+    experience: string,
+    formation: string,
+    other: string,
+    project: string
+}
+
+type EventModel = {
+    title: string
+    body: string,
+    type: string
+}
+
+type TimelineModel = {
+    filters: FilterModel
+    events: Array<EventModel>
+}
 export default function Timeline({}: TimelineProps) {
+    const [datas, setDatas] = useState<null | TimelineModel>(null);
+    if (datas == null) {
+        new FetchData("timeline.json").fetchData().then((json) => {
+            setDatas(json)
+        })
+    }
     const listFilter = [
         {
             color: '#31A07B',
-            libelle: 'Expériences',
             name: 'experience',
-            stateChecked: useState(true)
+            stateChecked: useState(true),
+            libelle: datas == null ? "": datas.filters.experience
         },
         {
             color: '#7879F1',
-            libelle: 'Formation',
             name: 'formation',
-            stateChecked: useState(true)
+            stateChecked: useState(true),
+            libelle: datas == null ? "": datas.filters.formation
+
         },
         {
             color: '#D17A22',
-            libelle: 'Perso',
-            name: 'out',
-            stateChecked: useState(true)
+            name: 'other',
+            stateChecked: useState(true),
+            libelle: datas == null ? "": datas.filters.other
+
         },
         {
             color: '#4C061D',
-            libelle: 'Projets',
-            name: 'projet',
-            stateChecked: useState(false)
+            name: 'project',
+            stateChecked: useState(false),
+            libelle: datas == null ? "": datas.filters.project
         },
     ];
-    const listEvent = [
-        {
-            body: 'Je suis en entreprise',
-            name: 'experience',
-            indexFilter: -1,
-        },
-        {
-            body: 'Mon experience',
-            name: 'formation',
-            indexFilter: -1,
-        },
-        {
-            body: 'Ce qui ce passe à coté',
-            name: 'out',
-            indexFilter: -1,
-        },
-        {
-            body: 'Mes projets perso',
-            name: 'projet',
-            indexFilter: -1,
-        },
-    ];
-    // set index of filter
-    listEvent.map((event) => {
-        event.indexFilter = listFilter.findIndex(filter => {
-            return filter.name == event.name
-        });
-    })
+
+    function getFilterEvent(name:string) {
+        return listFilter.find((item) => (
+            item.name == name
+        ))
+    }
+
     return (<section className="timeline-section">
         <div>
             <div className={"titre-section"}>
@@ -68,27 +73,32 @@ export default function Timeline({}: TimelineProps) {
                 <span/>
                 <h1>Mon parcours</h1>
             </div>
-            <ListFilterSwitch listFilter={listFilter}/>
-            <div className={"content-timeline"}>
-                <div className="timeline">
-                    <span className="arrow-top"/>
-                    {
-                        listEvent
-                            // get only available event
-                            .filter((eventFilter) => {
-                                return eventFilter.indexFilter != -1
-                            })
-                            // display each available event
-                            .map((event, index) => (
-                                <TimelineCard
-                                    key={"event-" + index}
-                                    color={listFilter[event.indexFilter].color}
-                                    body={event.body}
-                                    hidden={!listFilter[event.indexFilter].stateChecked[0]}
-                                />
-                            ))}
-                </div>
-            </div>
+            {
+                (datas == null) ? <span>lalalal</span> :
+                   [
+                    <ListFilterSwitch listFilter={listFilter}/>,
+                    <div className={"content-timeline"} key={"ok"}>
+                        <div className="timeline">
+                            <span className="arrow-top"/>
+                            {
+                                datas.events
+                                    .map((event, index) => {
+                                        let itemFilter = getFilterEvent(event.type)
+                                        return (typeof itemFilter === "undefined")
+                                            ? null
+                                            : <TimelineCard
+                                            key={"event-card-" + index}
+                                            color={itemFilter.color}
+                                            body={event.body}
+                                            hidden={!itemFilter.stateChecked[0]}
+                                        />
+                                    })
+                            }
+                        </div>
+                    </div>
+                ]
+            }
+
         </div>
     </section>);
 }

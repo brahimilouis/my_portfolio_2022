@@ -12,7 +12,7 @@ export default function GridCardList({children}: GridCardListProps) {
             return elem;
         }
         for (let i = 0; i < 3 - (children.length % 3); i++) {
-            elem.push(<span/>)
+            elem.push(<span key={"space-"+i}/>)
         }
         return elem;
     }

@@ -1,0 +1,31 @@
+{
+  "name": "My RPG",
+  "date": "Janvier 2022",
+  "time": 3,
+  "nbrPeople": 2,
+  "pathImage": "rpg/",
+  "nbrImage":7,
+  "language":"C",
+  "body": [
+    {
+      "title" : "Goal of the project",
+      "text" : "We are in 2048, 10 years after<i> the terrible</i> chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York 'Manhattan'. Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood."
+    },
+    {
+      "title" : "Other title",
+      "text" : "We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York 'Manhattan'. Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood."
+    },
+    {
+      "title" : "Other title",
+      "text" : "We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York 'Manhattan'. Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood."
+    },
+    {
+      "title" : "Other title",
+      "text" : "We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York 'Manhattan'. Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood."
+    },
+    {
+      "title" : "Other title",
+      "text" : "We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York 'Manhattan'. Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood."
+    }
+  ]
+}

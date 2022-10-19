@@ -1,0 +1,30 @@
+{
+  "filters" : {
+    "experience": "Expériences",
+    "formation": "Formation",
+    "other": "Perso",
+    "project": "Projects"
+  },
+  "events" : [
+    {
+      "title": "C'est le titre ça",
+      "body": "Je suis en entreprise",
+      "type": "experience"
+    },
+    {
+      "title": "C'est le titre ça",
+      "body": "Mon experience",
+      "type": "formation"
+    },
+    {
+      "title": "C'est le titre ça",
+      "body": "Ce qui ce passe à coté",
+      "type": "other"
+    },
+    {
+      "title": "C'est le titre ça",
+      "body": "Mes projets perso",
+      "type": "projet"
+    }
+  ]
+}

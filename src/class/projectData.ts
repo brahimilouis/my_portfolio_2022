@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../components/card/projectCard/projectCard";
+import {CategoryData} from "./categoryData";
 
 export default class ProjectData {
     title:string
@@ -33,12 +34,12 @@ export default class ProjectData {
     }
 }
 
-export class ListProjectData {
-    title: string
-    list: Array<ProjectData>
-
-    constructor(title:string, projectList:Array<ProjectData>) {
-        this.title = title;
-        this.list = projectList
-    }
-}
+// export class ListProjectData {
+//     title: string
+//     list: Array<ProjectData>
+//
+//     constructor(title:string, projectList:Array<ProjectData>) {
+//         this.title = title;
+//         this.list = projectList
+//     }
+// }
