@@ -1,8 +1,32 @@
+@import "src/styles/variable";
 .listProjectPopup {
   display: flex;
   flex-direction: column;
   align-self: center;
+  background-color: $complementaryColor;
+  height: 100%;
+  width: 100%;
   .conteneur-close {
     align-self: start;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #FDFDFD;
+    padding: 1rem;
+    border-radius: 20px;
+    border: $primaryColor solid;
+    .conteneur-close {
+      justify-self: start;
+      float: left;
+    }
+  }
+
+  .list-project {
+    margin: auto;
+    max-width: 78rem;
+    overflow-y: auto;
   }
 }

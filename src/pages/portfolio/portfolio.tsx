@@ -24,6 +24,22 @@ export default function Portfolio({}: PortfolioProps) {
         new ProjectData("My sokoban", "c", "algo", "ecole", "sokoban/sokoban.png"),
     ]
 
+    function getTitleCategory(type:string) : string {
+        let title = "";
+        switch (type) {
+            case 'language':
+                title = "Mes projets réalisés en "
+                break;
+            case 'origine':
+                title = "Mes projets ";
+                break;
+            case 'type':
+                title = "Mes projets ";
+                break;
+        }
+        return title
+    }
+
     function buildListProjectCategory(category: string, val:string) : Array<ProjectData> {
         var listProjetCategory : Array<ProjectData> = [];
         allProjects.map((projectData) => {
@@ -33,13 +49,14 @@ export default function Portfolio({}: PortfolioProps) {
         })
         return listProjetCategory;
     }
+
     function buildListCategory(type: string) : Array<React.ReactNode> {
         var list : Array<React.ReactNode> = [];
         categories.map((category) => {
             if (category.type == type) {
                 list.push(<CategoryCard
                     path={type+"/"+category.path}
-                    title={category.title}
+                    title={getTitleCategory(type) + category.title}
                     projectList={buildListProjectCategory(category.type, category.name)}
                 />)
             }
@@ -56,9 +73,9 @@ export default function Portfolio({}: PortfolioProps) {
         new CategoryData("PHP web", "language", "phpweb", "phpweb.jpg"),
         new CategoryData("Kotlin", "language", "kotlin", "kotlin.jpg"),
         new CategoryData("Haskell", "language", "haskell", "haskell.jpg"),
-        new CategoryData("Ecole", "origine", "ecole", "ecole.jpg"),
-        new CategoryData("Entreprise", "origine", "origine", "entreprise.jpg"),
-        new CategoryData("Perso", "origine", "perso", "perso.jpg"),
+        new CategoryData("d'école", "origine", "ecole", "ecole.jpg"),
+        new CategoryData("d'entreprise", "origine", "origine", "entreprise.jpg"),
+        new CategoryData("perso", "origine", "perso", "perso.jpg"),
         new CategoryData("Mobile", "type", "mobile", "mobile.jpg"),
         new CategoryData("Web", "type", "web", "web.jpg"),
         new CategoryData("Jeux", "type", "jeux", "jeux.jpg"),
@@ -66,10 +83,10 @@ export default function Portfolio({}: PortfolioProps) {
     ]
 
     const listCategory = [
-        new ListCategoryData("Tous les projets", listProjets, false),
-        new ListCategoryData("Mes projets développés par language", buildListCategory("language")),
-        new ListCategoryData("Mes projets développés par type", buildListCategory("type")),
-        new ListCategoryData("Mes projets développés par origine", buildListCategory("origine")),
+        new ListCategoryData("Voir tous les projets", listProjets, false),
+        new ListCategoryData("Découvrir selon les langages utilisés", buildListCategory("language")),
+        new ListCategoryData("Voir par type de projet", buildListCategory("type")),
+        new ListCategoryData("Selectionner l'origine du projet", buildListCategory("origine")),
     ];
     return (<section className="portfolio">
         <div className={"titre-section"}>

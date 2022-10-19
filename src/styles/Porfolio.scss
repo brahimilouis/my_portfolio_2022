@@ -35,7 +35,7 @@
     font-weight: bold;
     font-size: 2rem;
     color: $primaryColor;
-    padding: 50px;
+    padding: 5rem;
   }
   .icon {
     width: 2rem;
@@ -46,7 +46,7 @@
   header {
     width: 100%;
   }
-  .content {
+  .main > .content {
     padding-top: 40px;
     height: 100vh;
     text-align: center;

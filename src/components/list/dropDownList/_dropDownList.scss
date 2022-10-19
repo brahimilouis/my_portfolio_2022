@@ -1,5 +1,6 @@
 @import "../../../styles/variable";
 .dropDownList {
+  padding-bottom: 3rem;
   @keyframes details-show {
     from {
       opacity:0;
@@ -10,10 +11,11 @@
   details {
     position: relative;
     text-align: left;
-    max-width: 1200px;
+    max-width: 78rem;
     color: $primaryColor;
     margin: auto;
-    padding: 1vw;
+    padding-right: 3rem;
+    padding-left: 3rem;
     &[open] {
       animation: details-show 250ms ease-in-out;
       ::marker {
@@ -22,13 +24,14 @@
     }
     summary {
       cursor: pointer;
-      font-size: 2em;
-      font-weight: bold;
+      font-size: 1.5rem;
+      font-weight: normal;
       width: fit-content;
     }
     .content {
       height: fit-content;
       transition: all 1s ease-in;
+      padding-top: 3rem;
     }
   }
 }

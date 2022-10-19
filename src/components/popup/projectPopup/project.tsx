@@ -62,7 +62,7 @@ export default function Project(props: ProjectProps) {
 
     return (<div className="project">
         <div className={"left"}>
-            <div className={"content"}>
+            <div className={"content-popup"}>
                 <div className={"header"}>
                     <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
                     {/*<Close className{"ok"}/>*/}

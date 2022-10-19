@@ -1,4 +1,4 @@
-
+@import "src/styles/variable";
 @keyframes on-open {
   from {
     opacity: 0;
@@ -11,8 +11,42 @@
   animation: on-open 0.3s ease-in-out;
   width: 100vw;
   height: 100vh;
-  top : 0;
+  top: 0;
   left: 0;
   z-index: 110;
   opacity: 100;
+
+  .content-popup {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem;
+    gap: 2rem;
+    .header {
+      justify-content: space-between;
+      span {
+        font-weight: bold!important;
+        font-size: 1.7rem!important;
+      }
+      svg.github {
+        fill: $secondaryColor;
+      }
+    }
+  }
+
+  .conteneur-close {
+    fill: $primaryColor;
+
+    .close-popup {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    :hover {
+      cursor: pointer;
+      fill: $secondaryColor !important;
+    }
+
+  }
 }

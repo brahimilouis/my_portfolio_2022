@@ -11,13 +11,18 @@ export type ListProjectPopupProps = {
 }
 
 export default function ListProjectPopup(props: ListProjectPopupProps) {
-    return (<div className="listProjectPopup">
-        <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
-        <h3>{props.listProjectsProps.title}</h3>
-        <GridCardList>{
-            props.listProjectsProps.list.map((projectData) => (
-                <ProjectCard data={projectData}/>
-            ))
-        }</GridCardList>
+    return (<div className="listProjectPopup content-popup">
+        <div className={"header"}>
+            <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
+            <span>{props.listProjectsProps.title}</span>
+            <span/>
+        </div>
+        <div className={"list-project"}>
+            <GridCardList>{
+                props.listProjectsProps.list.map((projectData) => (
+                    <ProjectCard data={projectData}/>
+                ))
+            }</GridCardList>
+        </div>
     </div>);
 }

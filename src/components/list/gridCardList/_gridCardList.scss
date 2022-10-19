@@ -5,4 +5,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 3rem;
+  width: 100%;
+
+  >span {
+    width: 341px;
+  }
 }

@@ -1,5 +1,7 @@
 .image-clickable {
   border-radius: 6%;
+  width: auto;
+  height: auto;
   &:hover {
     opacity: 70%;
     cursor: pointer;
