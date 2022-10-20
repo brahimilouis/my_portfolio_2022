@@ -17,7 +17,8 @@
     "web-vitals": "^2.1.4",
     "@emailjs/browser": "^3.7.0",
     "react-hook-form": "^7.38.0",
-    "@hookform/error-message": "^2.0.0"
+    "@hookform/error-message": "^2.0.0",
+    "react-toastify": "^9.0.8"
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.4",

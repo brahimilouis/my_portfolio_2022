@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useForm} from 'react-hook-form';
 import {ErrorMessage} from "@hookform/error-message";
 import './_contact.scss'
@@ -10,6 +10,8 @@ import MailIcon from "../../assets/icons/contact/mailIcon";
 import LinkedinIcon from "../../assets/icons/contact/linkedinIcon";
 import PhoneIcon from "../../assets/icons/contact/phoneIcon";
 import FetchData from "../../class/fetchData";
+import {toast, ToastContainer} from "react-toastify";
+import {wait} from "@testing-library/user-event/dist/utils";
 
 export type ContactProps = {}
 
@@ -20,6 +22,9 @@ type FormTextModel = {
     button: string
     errorRequired:string,
     errorInvalidEmail:string
+    succesMessage:string,
+    errorMessage:string
+
 }
 type ContactModel = {
     title: string,
@@ -35,39 +40,38 @@ interface FormInputs {
 }
 
 export default function Contact({}: ContactProps) {
+    const {register, handleSubmit, formState : {errors, isValid, submitCount, isSubmitting, isSubmitSuccessful}, reset} = useForm<FormInputs>();
     const [datas, setDatas] = useState<null | ContactModel>(null);
     if (datas == null) {
         new FetchData("contact.json").fetchData().then((json) => {
             setDatas(json)
         })
     }
-    const {register, handleSubmit, formState : {errors}} = useForm<FormInputs>();
 
+    useEffect(() => {
+        reset({message:"", email:"", name:""}, {keepSubmitCount:false, keepIsValid: false})
+    }, [isSubmitSuccessful]);
 
-    const onSubmit = (data: any) => {
-
-        console.log(data)
-
+    const onSubmit = async (data: any) => {
         const templateId = 'template_af0q47q';
         const serviceId = 'service_5aj7a0j';
-
-        // sendFeedback(serviceId, templateId, {
-        //     name: data.name,
-        //     email: data.email,
-        //     message: data.message,
-        // });
+        await sendFeedback(serviceId, templateId, {
+            name: data.name,
+            email: data.email,
+            message: data.message,
+        });
     };
 
-    const sendFeedback = (serviceId: string, templateId: string, variables: Record<string, unknown>) => {
-        emailjs
+    async function sendFeedback(serviceId: string, templateId: string, variables: Record<string, unknown>) {
+        await emailjs
             .send(serviceId, templateId, variables, 'hHTy6ekTh7GRQSmRb')
             .then((res) => {
-                console.log('succes feedback');
+                reset({message:"", email:"", name:""}, {keepSubmitCount:false, keepIsValid: false});
+                toast.success(datas == null ? "Error" : datas.form.succesMessage);
                 // reset form
             })
-            .catch((err) => console.error('Il y a une erreur'));
-    };
-
+            .catch((err) => toast.error(datas == null ? "Error" : datas.form.errorMessage));
+    }
     return (<section className="contact"> {datas == null ? null : [
         <div className={"titre-section"} key={"title-section"}>
             <ContactIcon/>
@@ -101,7 +105,6 @@ export default function Contact({}: ContactProps) {
                         <span><a target={"_blank"}
                                  href={"https://github.com/brahimilouis"}>https://github.com/brahimilouis</a></span>
                     </div>
-
                 </div>
             </div>
             <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
@@ -161,9 +164,10 @@ export default function Contact({}: ContactProps) {
                         )}
                     />
                 </div>
-                <button className="button-contact" type="submit">
+                <button disabled={isSubmitting || (!isValid && submitCount > 0)} className="button-contact" type="submit">
                     {datas.form.button}
                 </button>
+                <ToastContainer position={"bottom-right"} autoClose={3000}/>
             </form>
         </div>
     ]

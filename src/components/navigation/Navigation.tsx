@@ -49,7 +49,7 @@ function Navigation() {
                                 to={item.href}
                                 activeClass='active'
                                 spy={true}
-                                offset={-40}
+                                offset={-48}
                                 className='transition-all duration-300'>{item.name}
                             </Link>
                         {/*<Link>*/}
