@@ -1,6 +1,6 @@
-import React, {Dispatch, SetStateAction, useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './_timeline.scss'
-import ListFilterSwitch, {ListFilter, ListFilterSwitchProps} from "../../components/list/filterSwitchList/filterSwitch";
+import ListFilterSwitch from "../../components/list/filterSwitchList/filterSwitch";
 import TimelineCard from "../../components/card/timelineCard/timelineCard";
 import TimelineIcon from "../../assets/icons/timelineIcon";
 import FetchData from "../../class/fetchData";
@@ -21,6 +21,7 @@ type EventModel = {
 }
 
 type TimelineModel = {
+    title: string
     filters: FilterModel
     events: Array<EventModel>
 }
@@ -36,69 +37,59 @@ export default function Timeline({}: TimelineProps) {
             color: '#31A07B',
             name: 'experience',
             stateChecked: useState(true),
-            libelle: datas == null ? "": datas.filters.experience
+            libelle: datas == null ? "" : datas.filters.experience
         },
         {
             color: '#7879F1',
             name: 'formation',
             stateChecked: useState(true),
-            libelle: datas == null ? "": datas.filters.formation
+            libelle: datas == null ? "" : datas.filters.formation
 
         },
         {
             color: '#D17A22',
             name: 'other',
             stateChecked: useState(true),
-            libelle: datas == null ? "": datas.filters.other
+            libelle: datas == null ? "" : datas.filters.other
 
         },
         {
             color: '#4C061D',
             name: 'project',
             stateChecked: useState(false),
-            libelle: datas == null ? "": datas.filters.project
+            libelle: datas == null ? "" : datas.filters.project
         },
     ];
-
-    function getFilterEvent(name:string) {
-        return listFilter.find((item) => (
-            item.name == name
-        ))
-    }
-
-    return (<section className="timeline-section">
-        <div>
-            <div className={"titre-section"}>
-                <TimelineIcon/>
-                <span/>
-                <h1>Mon parcours</h1>
-            </div>
-            {
-                (datas == null) ? <span>lalalal</span> :
-                   [
-                    <ListFilterSwitch listFilter={listFilter}/>,
-                    <div className={"content-timeline"} key={"ok"}>
-                        <div className="timeline">
-                            <span className="arrow-top"/>
-                            {
-                                datas.events
-                                    .map((event, index) => {
-                                        let itemFilter = getFilterEvent(event.type)
-                                        return (typeof itemFilter === "undefined")
-                                            ? null
-                                            : <TimelineCard
+    return (<section className="timeline-section"> {
+        datas == null ? null :
+            <div>
+                <div className={"titre-section"}>
+                    <TimelineIcon/>
+                    <span/>
+                    <h1>{datas.title}</h1>
+                </div>
+                <ListFilterSwitch listFilter={listFilter}/>
+                <div className={"content-timeline"} key={"ok"}>
+                    <div className="timeline">
+                        <span className="arrow-top"/>
+                        {
+                            datas.events
+                                .map((event, index) => {
+                                    let itemFilter = listFilter.find((item) => (item.name == event.type))
+                                    return (typeof itemFilter === "undefined")
+                                        ? null
+                                        : <TimelineCard
                                             key={"event-card-" + index}
                                             color={itemFilter.color}
                                             body={event.body}
                                             hidden={!itemFilter.stateChecked[0]}
                                         />
-                                    })
-                            }
-                        </div>
+                                })
+                        }
                     </div>
-                ]
-            }
+                </div>
 
-        </div>
+            </div>
+    }
     </section>);
 }

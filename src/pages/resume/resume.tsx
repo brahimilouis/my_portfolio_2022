@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './_resume.scss'
 import resume from "../../assets/cv.pdf";
 import ResumeIcon from "../../assets/icons/resumeIcon";
+
 export type ResumeProps = {}
 
 export default function Resume({}: ResumeProps) {

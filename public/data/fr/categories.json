@@ -1,196 +1,198 @@
-[
-  {
-    "title": "Voir tous les projets",
-    "isOpenDefault": false,
-    "type": "project",
-    "data": [
-      {
-        "title": "My BSQ",
-        "name": "bsq.json",
-        "path": "bsq/bsq.png",
-        "projectCategory": {
-          "language": "c",
-          "type": "algo",
-          "origine": "ecole"
+{
+  "title": "Mes projets",
+  "datas": [
+    {
+      "title": "Voir tous les projets",
+      "isOpenDefault": false,
+      "type": "project",
+      "data": [
+        {
+          "title": "My BSQ",
+          "name": "bsq.json",
+          "path": "bsq/bsq.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "algo",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My cook",
+          "name": "cook.json",
+          "path": "cook/cook.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "algo",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My dashboard",
+          "name": "dashboard.json",
+          "path": "dashboard/dashboard.jpg",
+          "projectCategory": {
+            "language": "c",
+            "type": "web",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "Eval expr",
+          "name": "evalExpr.json",
+          "path": "evalExpr/evalExpr.jpg",
+          "projectCategory": {
+            "language": "haskell",
+            "type": "algo",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "Image compressor",
+          "name": "imageCompressor.json",
+          "path": "imageCompressor/imageCompressor.png",
+          "projectCategory": {
+            "language": "haskell",
+            "type": "algo",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My navy",
+          "name": "navy.json",
+          "path": "navy/navy.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "algo",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My need 4 stek",
+          "name": "need4Stek.json",
+          "path": "need4Stek/need4Stek.jpg",
+          "projectCategory": {
+            "language": "c",
+            "type": "algo",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My RPG",
+          "name": "rpg.json",
+          "path": "rpg/3.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "jeux",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My runner",
+          "name": "runner.json",
+          "path": "runner/runner.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "jeux",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My sokoban",
+          "name": "sokoban.json",
+          "path": "sokoban/sokoban.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "jeux",
+            "origine": "ecole"
+          }
         }
-      },
-      {
-        "title": "My cook",
-        "name": "cook.json",
-        "path": "cook/cook.png",
-        "projectCategory": {
-          "language": "c",
-          "type": "algo",
-          "origine": "ecole"
+      ]
+    },
+    {
+      "title": "Découvrir selon les langages utilisés",
+      "isOpenDefault": true,
+      "type": "language",
+      "data": [
+        {
+          "title": "C",
+          "name": "c",
+          "path": "c.jpg"
+        },
+        {
+          "title": "Flutter",
+          "name": "flutter",
+          "path": "flutter.jpg"
+        },
+        {
+          "title": "Vue js",
+          "name": "vuejs",
+          "path": "vuejs.jpg"
+        },
+        {
+          "title": "PHP web",
+          "name": "phpweb",
+          "path": "phpweb.jpg"
+        },
+        {
+          "title": "Kotlin",
+          "name": "kotlin",
+          "path": "kotlin.jpg"
+        },
+        {
+          "title": "Haskell",
+          "name": "haskell",
+          "path": "haskell.jpg"
         }
-      },
-      {
-        "title": "My dashboard",
-        "name": "dashboard.json",
-        "path": "dashboard/dashboard.jpg",
-        "projectCategory": {
-          "language": "c",
-          "type": "web",
-          "origine": "ecole"
+      ]
+    },
+    {
+      "title": "Voir par type de projet",
+      "isOpenDefault": true,
+      "type": "type",
+      "data": [
+        {
+          "title": "Mobile",
+          "name": "mobile",
+          "path": "mobile.jpg"
+        },
+        {
+          "title": "Web",
+          "name": "web",
+          "path": "web.jpg"
+        },
+        {
+          "title": "Jeux",
+          "name": "jeux",
+          "path": "jeux.jpg"
+        },
+        {
+          "title": "Algorithmie",
+          "name": "algo",
+          "path": "algo.jpg"
         }
-      },
-      {
-        "title": "Eval expr",
-        "name": "evalExpr.json",
-        "path": "evalExpr/evalExpr.jpg",
-        "projectCategory": {
-          "language": "haskell",
-          "type": "algo",
-          "origine": "ecole"
+      ]
+    },
+    {
+      "title": "Selectionner l'origine du projet",
+      "isOpenDefault": false,
+      "type": "origine",
+      "data": [
+        {
+          "title": "École",
+          "name": "ecole",
+          "path": "ecole.jpg"
+        },
+        {
+          "title": "Entreprise",
+          "name": "entreprise",
+          "path": "entreprise.jpg"
+        },
+        {
+          "title": "Perso",
+          "name": "perso",
+          "path": "perso.jpg"
         }
-      },
-      {
-        "title": "Image compressor",
-        "name": "imageCompressor.json",
-        "path": "imageCompressor/imageCompressor.png",
-        "projectCategory": {
-          "language": "haskell",
-          "type": "algo",
-          "origine": "ecole"
-        }
-      },
-      {
-        "title": "My navy",
-        "name": "navy.json",
-        "path": "navy/navy.png",
-        "projectCategory": {
-          "language": "c",
-          "type": "algo",
-          "origine": "ecole"
-        }
-      },
-      {
-        "title": "My need 4 stek",
-        "name": "need4Stek.json",
-        "path": "need4Stek/need4Stek.jpg",
-        "projectCategory": {
-          "language": "c",
-          "type": "algo",
-          "origine": "ecole"
-        }
-      },
-      {
-        "title": "My RPG",
-        "name": "rpg.json",
-        "path": "rpg/3.png",
-        "projectCategory": {
-          "language": "c",
-          "type": "jeux",
-          "origine": "ecole"
-        }
-      },
-      {
-        "title": "My runner",
-        "name": "runner.json",
-        "path": "runner/runner.png",
-        "projectCategory": {
-          "language": "c",
-          "type": "jeux",
-          "origine": "ecole"
-        }
-      },
-      {
-        "title": "My sokoban",
-        "name": "sokoban.json",
-        "path": "sokoban/sokoban.png",
-        "projectCategory": {
-          "language": "c",
-          "type": "jeux",
-          "origine": "ecole"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Découvrir selon les langages utilisés",
-    "isOpenDefault": true,
-    "type": "language",
-    "data": [
-      {
-        "title": "C",
-        "name": "c",
-        "path": "c.jpg"
-      },
-      {
-        "title": "Flutter",
-        "name": "flutter",
-        "path": "flutter.jpg"
-      },
-      {
-        "title": "Vue js",
-        "name": "vuejs",
-        "path": "vuejs.jpg"
-      },
-      {
-        "title": "PHP web",
-        "name": "phpweb",
-        "path": "phpweb.jpg"
-      },
-      {
-        "title": "Kotlin",
-        "name": "kotlin",
-        "path": "kotlin.jpg"
-      },
-      {
-        "title": "Haskell",
-        "name": "haskell",
-        "path": "haskell.jpg"
-      }
-    ]
-  },
-  {
-    "title": "Voir par type de projet",
-    "isOpenDefault": true,
-    "type": "type",
-    "data": [
-      {
-        "title": "Mobile",
-        "name": "mobile",
-        "path": "mobile.jpg"
-      },
-      {
-        "title": "Web",
-        "name": "web",
-        "path": "web.jpg"
-      },
-      {
-        "title": "Jeux",
-        "name": "jeux",
-        "path": "jeux.jpg"
-      },
-      {
-        "title": "Algorithmie",
-        "name": "algo",
-        "path": "algo.jpg"
-      }
-    ]
-  },
-  {
-    "title": "Selectionner l'origine du projet",
-    "isOpenDefault": false,
-    "type": "origine",
-    "data": [
-      {
-        "title": "École",
-        "name": "ecole",
-        "path": "ecole.jpg"
-      },
-      {
-        "title": "Entreprise",
-        "name": "entreprise",
-        "path": "entreprise.jpg"
-      },
-      {
-        "title": "Perso",
-        "name": "perso",
-        "path": "perso.jpg"
-      }
-    ]
-  }
-]
-
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Me contacter",
+  "titleForm": "Formulaire de contact",
+  "titleCoordinate": "Mes coordonées",
+  "buttonSend": "Envoyer",
+  "form" : {
+    "name": "Votre nom et prenom",
+    "email": "Votre E-mail",
+    "message": "Votre message",
+    "button": "Envoyer",
+    "errorRequired": "* Ceci est obligatoire",
+    "errorInvalidEmail": "* Adresse e-mail non valide"
+  }
+}

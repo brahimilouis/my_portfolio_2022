@@ -1,3 +1,93 @@
-.contact {
-  height: 500px;
+@import "src/styles/variable";
+section.contact {
+  background-color: $complementaryColor;
+  min-height: 95vh;
+
+  .content-contact {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 78rem;
+    margin: auto;
+    justify-content: center;
+
+    .titre-contact {
+      align-self: start;
+      color: $primaryColor;
+      font-size: 1.5rem;
+    }
+    .container-coordinate,form {
+      min-width: 34rem;
+      width: 50%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .container-coordinate {
+      svg {
+        fill: $primaryColor;
+        color: $primaryColor;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      a {
+        color: #F46036;
+      }
+      .content-coordinate {
+        margin: 1rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .coordinate-group {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2rem;
+        }
+      }
+    }
+
+    form {
+      border: none;
+      .form-group {
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid ;
+        padding: 1rem;
+        width: 100%;
+      }
+      textarea,input {
+        width: inherit;
+      }
+      textarea {
+        resize: none;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      button {
+        background-color: $primaryColor;
+        color: $complementaryColor;
+        padding: 16px;
+        border-radius: 5px;
+        &:hover {
+          background-color: $secondaryColor;
+        }
+        &:disabled {
+          background-color: gray;
+        }
+      }
+      .message-error {
+        color: $secondaryColor;
+        width: fit-content;
+        float: right;
+        padding-top: 5px;
+      }
+    }
+  }
 }
+

@@ -34,15 +34,21 @@ export class ListCategoryData {
     }
 }
 
-export default class Categories extends FetchData {
+type PortfolioModelType = {
+    datas:Array<ListCategoryData>,
+    title:string
+}
+export default class PortfolioModel extends FetchData {
     datas : Array<ListCategoryData> = []
+    title : string = ""
     constructor () {
         super("categories.json");
     }
     public async get() {
         await this.fetchData().then((json) => {
             try {
-                this.datas = (<Array<ListCategoryData>>json)
+                this.datas = (<PortfolioModelType>json).datas;
+                this.title = (<PortfolioModelType>json).title;
             } catch (e) {
                 console.log(e);
             }
