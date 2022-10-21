@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './_project.scss';
 import CloseIcon from "../../../assets/icons/closeIcon";
 import LanguageIcon from "../../../assets/icons/languageIcon";
@@ -6,57 +6,50 @@ import DateIcon from "../../../assets/icons/dateIcon";
 import TimeIcon from "../../../assets/icons/timeIcon";
 import PeopleIcon from "../../../assets/icons/peopleIcon";
 import GithubIcon from "../../../assets/icons/githubIcon";
+import FetchData from "../../../class/fetchData";
 
 export type ProjectProps = {
     close: () => void,
 }
 
+type ProjectBodyItemModel = {
+    "title": string,
+    "text": string
+}
+type ProjectModel = {
+    "name": string,
+    "date": string,
+    "time": number,
+    "nbrPeople": number,
+    "pathImage": string,
+    "nbrImage": number,
+    "language": string,
+    linkGithub: string | undefined
+    "body": Array<ProjectBodyItemModel>
+}
+
 export default function Project(props: ProjectProps) {
-    const project = {
-        name: "My RPG",
-        date: "Janvier 2022",
-        time: 3,
-        nbrPeople: 2,
-        pathImage: "rpg/",
-        nbrImage: 7,
-        language: "C",
-        body: [
-            {
-                title: 'Goal of the project',
-                text: 'We are in 2048, 10 years after<i> the terrible</i> chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York "Manhattan". Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood.'
-            },
-            {
-                title: 'Other title',
-                text: 'We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York "Manhattan". Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood.'
-            },
-            {
-                title: 'Other title',
-                text: 'We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York "Manhattan". Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood.'
-            },
-            {
-                title: 'Other title',
-                text: 'We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York "Manhattan". Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood.'
-            },
-            {
-                title: 'Other title',
-                text: 'We are in 2048, 10 years after the terrible chemical attack on Manhattan. Let me give you a short summary of this tragedy. The United States had been in conflict with Russia for several years. As calm gradually returned, Russia ordered a chemical attack against their enemies and more precisely in the famous district of New York "Manhattan". Caught short, thousands of Americans were turned into zombies, it was then that the President decided to evacuate this area to stop this virus. To date, the district is only ruined, invaded by zombies but yet there are still two fugitives who have survived for more than 10 years old, Percy and Sora. They learned to protect themselves from these monsters, they know their behavior perfectly: the zombies burned as soon as they are exposed to the sun and they are hungry as soon as they smell the blood.'
-            },
-        ]
+    const [datas, setDatas] = useState<null | ProjectModel>(null);
+    if (datas == null) {
+        new FetchData("project/rpg.json").fetchData().then((json) => {
+            setDatas(json)
+        })
     }
 
     function buildImage() {
         let images = [];
-        console.log(project.nbrImage)
-        for (let i = 1; i <= project.nbrImage; i++) {
-            console.log(i);
-            images.push(
-                <img
-                    key={i + "-image"}
-                    src={require(`./../../../assets/projects/${project.pathImage}${i.toString()}.png`)}
-                    alt="image"
-                />)
+        if (datas != null) {
+            for (let i = 1; i <= datas.nbrImage; i++) {
+                images.push(
+                    <img
+                        key={i + "-image"}
+                        src={require(`./../../../assets/projects/${datas.pathImage}${i.toString()}.png`)}
+                        alt="image"
+                    />)
+            }
+        } else {
+            return [];
         }
-
         return images
     }
 
@@ -65,30 +58,39 @@ export default function Project(props: ProjectProps) {
             <div className={"content-popup"}>
                 <div className={"header"}>
                     <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
-                    {/*<Close className{"ok"}/>*/}
-                    {/*<img src={close} className={"close-popup"} onClick={props.close}/>*/}
-                    <a href={"https://github.com/brahimilouis/my_rpg_2017"} target={"_blank"}>
-                        <span className={"title hover"}>
-                            <GithubIcon/>{project.name}
-                        </span>
-                    </a>
-                    <span className={"language"}><LanguageIcon/>{project.language}</span>
-                </div>
-                <div className={"info"}>
-                    <span className={"date"}><DateIcon/>{project.date}</span>
-                    <span className={"time"}><TimeIcon/>{project.time + " semaines"}</span>
-                    <span className={"people"}><PeopleIcon/>{project.nbrPeople + " personnes"}</span>
-                </div>
-                <div className={"body"}>
                     {
-                        project.body.map((body) =>
-                            <div className={"body-item"}>
-                                <h3>{body.title}</h3>
-                                <p dangerouslySetInnerHTML={{__html: body.text}}></p>
-                            </div>
-                        )
+                        datas != null && typeof datas.linkGithub != "undefined" ?
+                            <a href={datas.linkGithub} target={"_blank"}>
+                                <span className={"title hover"}>
+                                    <GithubIcon/>{datas.name}
+                                </span>
+                            </a> :
+                            <span className={"title"}>
+                                {datas == null ? "" : datas.name}
+                            </span>
                     }
+                    <span className={"language"}><LanguageIcon/>{datas == null ? "" : datas.language}</span>
                 </div>
+                {
+                    datas == null ? null : [
+                        <div className={"info"} key={"info-project"}>
+                            <span className={"date"}><DateIcon/>{datas.date}</span>
+                            <span className={"time"}><TimeIcon/>{datas.time + " semaines"}</span>
+                            <span className={"people"}><PeopleIcon/>{datas.nbrPeople + " personnes"}</span>
+                        </div>,
+                        <div className={"body"} key={"body-project"}>
+                            {
+                                datas.body.map((body) =>
+                                    <div className={"body-item"}>
+                                        <h3>{body.title}</h3>
+                                        <p dangerouslySetInnerHTML={{__html: body.text}}></p>
+                                    </div>
+                                )
+                            }
+                        </div>
+                    ]
+                }
+
             </div>
         </div>
         <div className={"right"}>

@@ -1,7 +1,7 @@
 {
   "title": "Me contacter",
   "titleForm": "Formulaire de contact",
-  "titleCoordinate": "Mes coordonées",
+  "titleCoordinate": "Mes coordonnées",
   "buttonSend": "Envoyer",
   "form" : {
     "name": "Votre nom et prenom",

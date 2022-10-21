@@ -4,14 +4,13 @@ import {ErrorMessage} from "@hookform/error-message";
 import './_contact.scss'
 import ContactIcon from "../../assets/icons/contactIcon";
 import emailjs from '@emailjs/browser';
-import GithubIcon from "../../assets/icons/githubIcon";
 import MapMarkerIcon from "../../assets/icons/contact/mapMarkerIcon";
 import MailIcon from "../../assets/icons/contact/mailIcon";
 import LinkedinIcon from "../../assets/icons/contact/linkedinIcon";
 import PhoneIcon from "../../assets/icons/contact/phoneIcon";
 import FetchData from "../../class/fetchData";
 import {toast, ToastContainer} from "react-toastify";
-import {wait} from "@testing-library/user-event/dist/utils";
+import GithubContactIcon from "../../assets/icons/contact/githutContactIcon";
 
 export type ContactProps = {}
 
@@ -101,7 +100,7 @@ export default function Contact({}: ContactProps) {
                                  href={"https://www.linkedin.com/in/louis-brahimi-629ab2187/"}>https://www.linkedin.com/in/louis-brahimi-629ab2187/</a></span>
                     </div>
                     <div className={"coordinate-group"} key={"coordinate-github"}>
-                        <GithubIcon/>
+                        <GithubContactIcon/>
                         <span><a target={"_blank"}
                                  href={"https://github.com/brahimilouis"}>https://github.com/brahimilouis</a></span>
                     </div>

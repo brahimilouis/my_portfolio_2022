@@ -6,6 +6,7 @@
   "pathImage": "rpg/",
   "nbrImage":7,
   "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
   "body": [
     {
       "title" : "Goal of the project",
