@@ -26,7 +26,7 @@ export default function OpenPopupOnClick(props: OpenPopupOnClickProps) {
             isOpen ?
                 <Containerpopup child={
                     props.type == TypePopup.projet ?
-                        <Project close={changeStateOpen}/> :
+                        <Project close={changeStateOpen} jsonPath={props.childrenProps}/> :
                         <ListProjectPopup
                             close={changeStateOpen}
                             listProjectsProps={props.childrenProps}/>

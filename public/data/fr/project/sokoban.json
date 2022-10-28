@@ -1,0 +1,20 @@
+{
+  "name": "My Sokoban",
+  "date": "Mai 2017",
+  "time": "1",
+  "nbrPeople": 1,
+  "pathImage": "sokoban/",
+  "nbrImage":1,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "But du projet",
+      "text" : "Ce projet a été réalisé en 1ère année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a>.<br><br>Sokoban est un type de puzzle de transport, dans lequel un joueur pousse des <strong>caisses</strong> dans un <strong>entrepôt</strong> pour essayer de les amener aux <strong>emplacements</strong> de stockage.<br><br>Le jeu se joue sur un plateau de cases, où chaque case est un <strong>sol</strong> ou un <strong>mur</strong>. Certaines cases du sol contiennent des boîtes et d'autres sont marquées comme étant des emplacements de stockage.<br><br>Le joueur est confiné sur le plateau et peut se déplacer <strong>horizontalement</strong> ou <strong>verticalement</strong> sur des cases vides (jamais à travers des murs ou des boîtes). <br><br>Le joueur peut également entrer dans une boîte, ce qui la pousse dans la case suivante. <br><br>Les boîtes ne peuvent pas être poussées dans d'autres boîtes ou dans des murs et elles ne peuvent pas être tirées.<br><br>Le puzzle est <strong>résolu</strong> lorsque toutes les boîtes sont à leur emplacement de rangement."
+    },
+    {
+      "title" : "Fonctionnement",
+      "text" : "Il fallait réaliser le <i>sokoban</i> version <strong>terminal</strong> avec le joueur qui se déplace grâce aux <strong>flèches du clavier</strong>. Le programme se lance avec comme argument une <strong>map</strong> (le puzzle) qui contient :<br><br><ul><li><strong>#</strong> Les murs de la map</li><li><strong>P</strong> Le personnage</li><li><strong>O</strong> les emplacements de stockage</li><li><strong>X</strong> Les caisses à déplacer</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "My Dashboard",
+  "date": "Novembre 2019",
+  "time": "1 semaine",
+  "nbrPeople": 2,
+  "pathImage": "dashboard/",
+  "nbrImage":3,
+  "language":"VueJs Npm express",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "But du projet",
+      "text" : "Le but de ce projet était de créer une <strong>application web</strong> de dashboard.<br><br>Nous avons réalisé ce projet pendant la 3ème année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a>. Il nous a permis de nous <strong>initier</strong> à créer une application web de A à Z ainsi qu'au langage <i>vuejs nodejs</i> pour le <strong>front</strong> et <i>npm</i> avec <i>express</i> du côté <strong>back</strong>.<br><br>Notre dashboard est fait pour vous donner un accès simple à <strong>certaines API</strong> implémentées comme : Youtube, Cinéma pour les informations sur les films et les séries, la météo, la finance comme les échanges d'argent."
+    },
+    {
+      "title" : "Les services et widgets misent en place",
+      "text" : "Chaque utilisateur de notre dashboard pourra se <strong>connecter</strong>, <strong>ajouter</strong> des widgets, en <strong>supprimer</strong> et <strong>sauvegarder</strong> la présentation de son dashboard pour sa prochaine connexion. Il pourra aussi <strong>nommer</strong> chaque widget que l'utilisateur ajoute à son dashboard.<br><br>Voilà la liste des services et widgets disponibles :<br><br><ul><li><strong>Youtube</strong> : Avoir des informations depuis une recherche sur Youtube afin d'avoir une vidéo</li><li><strong>Météo</strong> : Connaître la météo actuelle sur une ville</li><li><strong>Cinéma</strong> : Avoir des informations sur un film ou une série</li><li><strong>Finance</strong> : Suivre le cours d'une action / comparer différente monnaie entre elles</li></ul>"
+    }
+  ]
+}

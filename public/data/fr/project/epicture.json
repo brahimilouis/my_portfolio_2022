@@ -1,0 +1,20 @@
+{
+  "name": "My Epicture",
+  "date": "Octobre 2019",
+  "time": "1 semaine",
+  "nbrPeople": 2,
+  "pathImage": "epicture/",
+  "nbrImage":3,
+  "language":"Kotlin",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "But du projet",
+      "text" : "L'objectif de ce projet est d'utiliser et de mettre en œuvre des plateformes <strong>API</strong> de partage de photos en ligne. Nous avons créé une application de recherche et de navigation de photos sur la plateforme suivante : <a href='https://imgur.com/' target=_blanc>Imgur</a>.<br><br>Ce projet a été réalisé en troisième année d'<a href='https://www.epitech.eu/' target=_blanc>Eptech</a> et nous a initié au développement mobile avec Kotlin."
+    },
+    {
+      "title" : "Fonctionnalités de notre application",
+      "text" : "<ul><li><strong>Page de connexion</strong> - Afin de se connecter à son compte <i>Imgur</i></li><li><strong>Page du flux</strong> - Pour faire défiler des images et descriptions aléatoire de <i>Imgur</i></li><li><strong>Page favoris</strong> - Pour faire défiler les images et descriptions mises en favoris</li><li><strong>Page compte</strong> - Pour voir des informations de son compte <i>Imgur</i> ainsi que de se déconnecter</li><li><strong>Bouton importation</strong> - Pour importer des images de son téléphone</li></ul>"
+    }
+  ]
+}

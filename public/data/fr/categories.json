@@ -3,17 +3,97 @@
   "datas": [
     {
       "title": "Voir tous les projets",
-      "isOpenDefault": false,
+      "isOpenDefault": true,
       "type": "project",
       "data": [
         {
-          "title": "My BSQ",
-          "name": "bsq.json",
-          "path": "bsq/bsq.png",
+          "title": "Mon portfolio",
+          "name": "portfolio.json",
+          "path": "portfolio/portfolio.jpeg",
+          "projectCategory": {
+            "language": "react",
+            "type": "web",
+            "origine": "perso"
+          }
+        },
+        {
+          "title": "Nysos - (projet fin d'étude)",
+          "name": "nysos.json",
+          "path": "nysos/nysos.png",
+          "projectCategory": {
+            "language": "flutter",
+            "type": "mobile",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "Agenda Neolink",
+          "name": "agenda.json",
+          "path": "agenda/agenda.png",
+          "projectCategory": {
+            "language": "phpweb",
+            "type": "web",
+            "origine": "entreprise"
+          }
+        },
+        {
+          "title": "My RPG",
+          "name": "rpg.json",
+          "path": "rpg/rpg.png",
           "projectCategory": {
             "language": "c",
-            "type": "algo",
+            "type": "jeux",
             "origine": "ecole"
+          }
+        },
+        {
+          "title": "NeoGestion",
+          "name": "neogestion.json",
+          "path": "neogestion/neogestion.png",
+          "projectCategory": {
+            "language": "phpweb",
+            "type": "web",
+            "origine": "entreprise"
+          }
+        },
+        {
+          "title": "My dashboard",
+          "name": "dashboard.json",
+          "path": "dashboard/dashboard.jpg",
+          "projectCategory": {
+            "language": "vuejs",
+            "type": "web",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "Maintenance évolutive",
+          "name": "maintenance.json",
+          "path": "maintenance/maintenance.png",
+          "projectCategory": {
+            "language": "phpweb",
+            "type": "web",
+            "origine": "entreprise"
+          }
+        },
+        {
+          "title": "My Epicture",
+          "name": "epicture.json",
+          "path": "epicture/epicture.png",
+          "projectCategory": {
+            "language": "kotlin",
+            "type": "mobile",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "Talend studio",
+          "name": "talend.json",
+          "path": "talend/talend.png",
+          "projectCategory": {
+            "language": "",
+            "type": "",
+            "origine": "entreprise"
           }
         },
         {
@@ -22,26 +102,26 @@
           "path": "cook/cook.png",
           "projectCategory": {
             "language": "c",
-            "type": "algo",
+            "type": "jeux",
             "origine": "ecole"
           }
         },
         {
-          "title": "My dashboard",
-          "name": "dashboard.json",
-          "path": "dashboard/dashboard.jpg",
+          "title": "My navy",
+          "name": "navy.json",
+          "path": "navy/navy.png",
           "projectCategory": {
             "language": "c",
-            "type": "web",
+            "type": "jeux",
             "origine": "ecole"
           }
         },
         {
-          "title": "Eval expr",
-          "name": "evalExpr.json",
-          "path": "evalExpr/evalExpr.jpg",
+          "title": "My need4Stek",
+          "name": "need4Stek.json",
+          "path": "need4Stek/need4Stek.jpg",
           "projectCategory": {
-            "language": "haskell",
+            "language": "c",
             "type": "algo",
             "origine": "ecole"
           }
@@ -57,42 +137,12 @@
           }
         },
         {
-          "title": "My navy",
-          "name": "navy.json",
-          "path": "navy/navy.png",
+          "title": "Eval expr",
+          "name": "evalExpr.json",
+          "path": "evalExpr/evalExpr.jpg",
           "projectCategory": {
-            "language": "c",
+            "language": "haskell",
             "type": "algo",
-            "origine": "ecole"
-          }
-        },
-        {
-          "title": "My need 4 stek",
-          "name": "need4Stek.json",
-          "path": "need4Stek/need4Stek.jpg",
-          "projectCategory": {
-            "language": "c",
-            "type": "algo",
-            "origine": "ecole"
-          }
-        },
-        {
-          "title": "My RPG",
-          "name": "rpg.json",
-          "path": "rpg/3.png",
-          "projectCategory": {
-            "language": "c",
-            "type": "jeux",
-            "origine": "ecole"
-          }
-        },
-        {
-          "title": "My runner",
-          "name": "runner.json",
-          "path": "runner/runner.png",
-          "projectCategory": {
-            "language": "c",
-            "type": "jeux",
             "origine": "ecole"
           }
         },
@@ -103,6 +153,16 @@
           "projectCategory": {
             "language": "c",
             "type": "jeux",
+            "origine": "ecole"
+          }
+        },
+        {
+          "title": "My BSQ",
+          "name": "bsq.json",
+          "path": "bsq/bsq.png",
+          "projectCategory": {
+            "language": "c",
+            "type": "algo",
             "origine": "ecole"
           }
         }
@@ -134,9 +194,9 @@
           "path": "phpweb.jpg"
         },
         {
-          "title": "Kotlin",
-          "name": "kotlin",
-          "path": "kotlin.jpg"
+          "title": "React Js",
+          "name": "react",
+          "path": "react.jpg"
         },
         {
           "title": "Haskell",
@@ -174,7 +234,7 @@
     },
     {
       "title": "Selectionner l'origine du projet",
-      "isOpenDefault": false,
+      "isOpenDefault": true,
       "type": "origine",
       "data": [
         {

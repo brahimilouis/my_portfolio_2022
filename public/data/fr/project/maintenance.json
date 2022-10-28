@@ -1,0 +1,20 @@
+{
+  "name": "Maintenance évolutive",
+  "date": "Janvier 2022",
+  "time": "1 an",
+  "nbrPeople": 1,
+  "pathImage": "maintenance/",
+  "nbrImage":4,
+  "language":"PHP,HTML,JQUERY,SQL,CSS",
+  "linkGithub": "",
+  "body": [
+    {
+      "title" : "Description du projet",
+      "text" : "Durant mon expérience chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> j'ai fait de la maintenance évolutive de leur outil de création de plateforme.<br>En effet, <i>Neolink</i> travaille avec les collectivités et leurs permettent d'avoir des plateformes avec les différents <strong>services web social</strong> de Neolink entièrement personnalisable pour leur besoin et à leur image.<br><br>Avec l'outil de planification agile <a href='https://azure.microsoft.com/fr-fr/products/devops/' target=_blanc>Azure Devops</a>​​​​​​​ de Microsoft ainsi qu'avec l'outil <a href='https://freshdesk.com/' target=_blanc>Freshdesk</a> qui permet un support client efficace. J'ai participé à la maintenance évolutive des services de <i>Neolink</i> : L'ajout et l'évolution de fonctionnalités, la recherche et la résolution de bug."
+    },
+    {
+      "title" : "Quelques missions que j’ai réalisées",
+      "text" : "<ul><li>La possibilité d'enregistrer des <strong>CV vidéo</strong> ainsi que passer des <strong>appels vidéo</strong>.</li><li>Un service de <strong>générateur de courrier PDF</strong> avec leurs créations, selon des modèles et des données</li><li>Création d'un <strong>mini moteur de recherche</strong> de personne morale</li><li>Participation à la création de <strong>dashboard</strong> d'allocataire et de structure avec la création de plusieurs ‘tuile' d'actions et d'informations. </li><li>Amélioration des <strong>performances</strong> de plusieurs fonctionnalités et pages</li></ul>"
+    }
+  ]
+}

@@ -2,7 +2,9 @@ import React from 'react';
 import './_timelineCard.scss'
 export type TimelineCardProps = {
     color: string,
+    title: string,
     body: string,
+    date: string
     hidden: boolean
 }
 
@@ -13,11 +15,11 @@ export default function TimelineCard(props: TimelineCardProps) {
             <span className="arrow-left"/>
             <span className="arrow-left-in"/>
             <div className="event-info">
-                <h1>C'est le titre ça</h1>
-                <span>25/03/1999</span>
+                <h1>{props.title}</h1>
+                <span className={"date"}>{props.date}</span>
             </div>
             <div className="body">
-                {props.body}
+                <p dangerouslySetInnerHTML={{__html: props.body}}></p>
             </div>
         </div>
     </div>);

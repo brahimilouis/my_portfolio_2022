@@ -1,0 +1,20 @@
+{
+  "name": "My Cook",
+  "date": "Février 2018",
+  "time": "3 semaines",
+  "nbrPeople": 2,
+  "pathImage": "cook/",
+  "nbrImage":3,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "Description du projet",
+      "text" : "Pour ce projet, nous devions créer un jeu inspiré de <a href='https://fr.wikipedia.org/wiki/Cook,_Serve,_Delicious!' target=_blanc>Cook Serve Delicious</a>. Ce projet a été réalisé en 1ère année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> avec la librairie <a href='https://www.sfml-dev.org/index-fr.php' target=_blanc>CSFML</a>.<br><br>Notre <strong>principal défi</strong> pour ce jeu sera de créer une interface utilisateur et des menus agréables et fluides Et le jeu devra respécter les règles suivantes :<br><br><ul><li>Le joueur est un cuisinier dans un restaurant</li><li>Les commandes apparaîtront au hasard au joueur</li><li>Les commandes auront un temps limité pour être effectuées</li><li>Les commandes seront de différents types</li><li>Le joueur devra choisir les bons ingrédients dans le bon ordre</li><li>Avoir une interface utilisateur agréable est l'un des détails qui font un jeu de bonne qualité</li></ul>"
+    },
+    {
+      "title" : "Notre my cook",
+      "text" : "Notre jeu appelé <i>The Cosmic Burger</i> est un restaurant de hamburger dans l'espace. Le joueur va <strong>créer un hamburger</strong> en <strong>ajoutant des ingrédients</strong> dans le bon ordre avec les touches du clavier. Le but est de réaliser le meilleur <strong>score</strong> possible (taux de satisfaction * argent). <br>Chaque hamburger bien réalisé augmente la satisfaction et la recette, mais chaque ajout d'ingrédient diminue l'argent de la partie.<br><br>Notre interface est composé de :<br><br><ul><li><strong>En bas à gauche</strong> nous pouvons voir le menu avec 4 hamburgers possibles : Le suprême, le classique, le végétarien et le Cosmic Burger</li><li><strong>En bas à droite</strong> les commandes afin de servir le hamburger ou de le mettre à la poubelle</li><li><strong>En haut à droite</strong> le score et l'argent de partie ainsi que les différents ingrédients possibles</li><li><strong>En haut à gauche</strong> les commandes des clients avec un minuteur pour les servir</li></ul><br><br>Le jeu a un menu dynamique avec un tutoriel et des paramètres."
+    }
+  ]
+}

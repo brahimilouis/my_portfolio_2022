@@ -8,24 +8,106 @@
   },
   "events" : [
     {
-      "title": "C'est le titre ça",
-      "body": "Je suis en entreprise",
+      "title": "Free-lance",
+      "date": "Septembre 2022 - Mars 2022",
+      "body": "Je continue mon expérience chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a> en Free-Lance avec un part-time à <a href='https://www.epitech.eu/' target=_blanc>Epitech</a> de 2 jours par semaines.",
       "type": "experience"
     },
     {
-      "title": "C'est le titre ça",
-      "body": "Mon experience",
+      "title": "5ème année Epitech",
+      "date": "Septembre 2022 - Mars 2022",
+      "body": "",
       "type": "formation"
     },
     {
-      "title": "C'est le titre ça",
-      "body": "Ce qui ce passe à coté",
+      "title": "Free-lance",
+      "date": "Aout 2021 - Aout 2022",
+      "body": "",
+      "type": "experience"
+    },
+    {
+      "title": "4ème année à Technological University Dublin",
+      "date": "Septembre 2021 - Juin 2022",
+      "body": "",
+      "type": "formation"
+    },
+    {
+      "title": "CDD chez Neolink Berger-Levrault",
+      "date": "Juillet 2020 - Juillet 2021",
+      "body": "",
+      "type": "experience"
+    },
+    {
+      "title": "Stage fin de bachelor Epitech",
+      "date": "Mars - Juillet 2019",
+      "body": "",
+      "type": "formation"
+    },
+    {
+      "title": "Bénévole au DevFest",
+      "date": "Octobre 2019",
+      "body": "",
       "type": "other"
     },
     {
-      "title": "C'est le titre ça",
-      "body": "Mes projets perso",
-      "type": "project"
+      "title": "Part-time Neolink Start-up",
+      "date": "Septembre 2018 - Avril 2019",
+      "body": "",
+      "type": "experience"
+    },
+    {
+      "title": "3ème année d’Epitech",
+      "date": "Septembre 2018 - Avril 2019",
+      "body": "",
+      "type": "formation"
+    },
+    {
+      "title": "Contrat d’été avec Neolink Startup",
+      "date": "Été 2018",
+      "body": "",
+      "type": "experience"
+    },
+    {
+      "title": "Bénévole au Web2day",
+      "date": "Juin 2018",
+      "body": "",
+      "type": "other"
+    },
+    {
+      "title": "2ème année d’Epitech",
+      "date": "Janvier - Juillet 2018",
+      "body": "",
+      "type": "formation"
+    },
+    {
+      "title": "Stage d'anglais à Londres",
+      "date": "Septembre à Decembre 2018",
+      "body": "",
+      "type": "formation"
+    },
+    {
+      "title": "Participation à la communication d’Epitech",
+      "date": "Octobre 2017 - Juillet 2018",
+      "body": "",
+      "type": "other"
+    },
+    {
+      "title": "1ère année d’Epitech",
+      "date": "Octobre 2017 - Juillet 2018",
+      "body": "",
+      "type": "formation"
+    },
+    {
+      "title": "Mission d'intérim",
+      "date": "Été 2017",
+      "body": "",
+      "type": "experience"
+    },
+    {
+      "title": "Baccalauréat S Mention bien",
+      "date": "Juin 2017",
+      "body": "",
+      "type": "formation"
     }
   ]
 }

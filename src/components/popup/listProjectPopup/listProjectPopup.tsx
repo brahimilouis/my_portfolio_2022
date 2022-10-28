@@ -6,7 +6,7 @@ import ProjectCard from "../../card/projectCard/projectCard";
 import {CategoryData} from "../../../class/categoryData";
 
 export type ListProjectPopupProps = {
-    close: () => void
+    close: () => void,
     listProjectsProps : ListItemData
 }
 

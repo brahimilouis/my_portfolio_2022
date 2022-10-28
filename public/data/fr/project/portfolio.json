@@ -1,0 +1,24 @@
+{
+  "name": "Mon portfolio",
+  "date": "Octobre 2022",
+  "time": "1 mois",
+  "nbrPeople": 1,
+  "pathImage": "portfolio/",
+  "nbrImage":1,
+  "language":"React Js",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "But du projet",
+      "text" : "Le but de ce projet était bien entendu d'avoir une présentation un peu plus détaillée de mon <strong>parcours</strong> et mes <strong>projets</strong> que simplement mon <i>CV</i> et mon <i>Github</i>.<br><br>J'ai choisi de réaliser mon portfolio en React Typescript pour m'initier à cette technologie."
+    },
+    {
+      "title" : "Production du projet",
+      "text" : "J'ai commencé par faire la <strong>liste des projets</strong> que je voulais présenter dans mon portfolio. Puis je me suis replongé dans chacun d'entre eux afin de pouvoir mieux les décrire et avoir des visuels de présentations.<br><br>J'ai ensuite fait le <strong>design</strong> de mon portfolio avec Figma en choisissant ses thèmes, ses couleurs et son fonctionnement.<br><br>Par la suite je me suis mis dans son <strong>développement</strong>, tout en faisant pas mal de recherche sur les bonnes pratiques de React Typescript.<br><br>J'ai fait en sorte d'avoir toutes les données de mon portfolio dans des JSON afin de pouvoir facilement le faire <strong>évoluer avec le temps</strong>."
+    },
+    {
+      "title" : "Fonctionnalités du portfolio :",
+      "text" : "<ul><li>Pouvoir choisir les projets en fonction de catégorie pour cibler ce que l'on cherche</li><li>Pouvoir voir mon parcours en filtrant les événements par thème</li><li>Pouvoir visualiser et télécharger mon CV</li><li>Pouvoir m'envoyer un message depuis la section “contact”</li><li>Pouvoir choisir la langue : français ou anglais (en cours de production)</li><li>Pouvoir facilement naviguer d'une section à une autre via la navbar</li>"
+    }
+  ]
+}

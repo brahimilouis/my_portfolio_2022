@@ -1,6 +1,6 @@
 import React from 'react';
 import "./_home.scss"
-import background from '../../assets/image-home.png'
+import background from '../../assets/image-home2.png'
 import moi from '../../assets/louis.png'
 
 export type HomeProps = {}

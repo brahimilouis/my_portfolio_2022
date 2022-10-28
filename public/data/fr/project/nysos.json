@@ -1,0 +1,24 @@
+{
+  "name": "Nysos",
+  "date": "2021-2023",
+  "time": "2 ans",
+  "nbrPeople": 6,
+  "pathImage": "nysos/",
+  "nbrImage":7,
+  "language":"Flutter",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "Nysos c'est quoi ?",
+      "text" : "Nysos est une <strong>application mobile</strong> et un <strong>site web</strong> fonctionnant sur un système de <strong>billetterie</strong>. Notre projet permet la création et la mise en avant de d'événement.</br>Sur notre site web et application mobile, un utilisateur peut <strong>trouver un événement</strong> a son goût puis <strong>acheter un ticket</strong> représenté par un QR code unique. Le créateur de l'événement pourra <strong>vérifier</strong> que les participants détiennent bien un ticket valide en scannant les différents <strong>QR codes</strong>.</br>Nysos vise de <strong>petites structures d'événementiel</strong> comme les BDE. C'est pour cela que nous avons aussi mis en place de la <strong>proximité</strong> entre le créateur et les participants. Grâce un système de <strong>chat</strong>, chaque événement est associé à une conversation, cela permet de <strong>communiquer</strong> des informations en temps réel pour bien préparer un évènement.</br></br><strong>Nysos</strong> permet de rassembler, faciliter les travaux de recherche, de créations et de communication."
+    },
+    {
+      "title" : "Production du projet",
+      "text" : "Dans le cadre de notre projet de fin d'étude nous avons réalisé Nysos avec cinq autres membres.<br>Comme le gros du développment s'est fait pendant que nous étions dans notre quatrième année celle où nous étions tous dans des pays diffèrent tel que la <i>Corée du sud</i>, les <i>États-Unis</i> ou bien moi en <i>Irlande</i>.<br><br>Il a alors fallu une bonne <strong>organisation</strong> et <strong>communication</strong> pour développer ce projet."
+    },
+    {
+      "title" : "Mon job",
+      "text" : "Chez Nysos, j'étais développeur mobile, voilà la liste des <strong>principales fonctionnalités</strong> que j'ai mises en place:<br><br><ul><li>Un chat en temps réel et personnalisable</li><li>Le système de billetterie avec le paiement en utilisant le service <i>Stripe</i></li><li>La partie profil ainsi que les réglages de l'utilisateur</li><li>La partie communauté avec la possibilité de rechercher via un système d'auto-complétion, de voir le profil et de suivre un utilisateur</li><li>L'adaptation de l'application sur IOS</li><ul>"
+    }
+  ]
+}

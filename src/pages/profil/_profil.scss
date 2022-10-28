@@ -15,6 +15,7 @@
     max-width: 78rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1.5rem;
     .top {
       > h2 {
@@ -50,7 +51,7 @@
       }
 
       .right {
-          border-radius: 2rem;
+          border-radius: 1rem;
           background-color: $complementaryColor;
           padding: 2.5rem;
           display: flex;

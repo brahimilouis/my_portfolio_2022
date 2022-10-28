@@ -1,0 +1,24 @@
+{
+  "name": "Intégration de data avec Talend",
+  "date": "Juin 2021",
+  "time": "1 mois",
+  "nbrPeople": 1,
+  "pathImage": "talend/",
+  "nbrImage": 3,
+  "language":"Talend studio",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "But du projet",
+      "text" : "Pendant ma 3eme année à <a href='https://www.epitech.eu/' target=_blanc>Epitech</a> j'ai réalisé un part-time à 2 jours par semaine chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a>.<br>Une de mes missions a été d'automatiser l'import de données de certain flux avec <a href='https://www.talend.com/fr/products/talend-open-studio/' target=_blanc>Talend Open Studio</a>. Cette mission m'a permis d'apprendre à utiliser le logiciel et la logique d'intégration de données ainsi que de progresser en <i>SQL</i>."
+    },
+    {
+      "title" : "Talend Open Studio c'est quoi ?",
+      "text" : "<i>Talend Open Studio</i> est un logiciel <strong>d'intégration de données</strong> à partir de plusieurs sources à l'aide de “job”. Un <i>job</i> peut avoir plusieurs points entrés avec différentes sources de données, puis les données sont <strong>confrontées</strong>, <strong>modifiées</strong> et <strong>triées</strong> et enfin elles sont <strong>envoyées</strong> vers les tables de données sélectionnées."
+    },
+    {
+      "title" : "Intégrations de plusieurs flux",
+      "text" : "<i>Talend Open Studio</i> m'a alors permis de créer un <i>job</i> afin de récupérer des données de plusieurs flux.<br>Par exemple j'ai travaillé sur le flux <a href='http://lheo.gouv.fr/' target=_blanc>LHEO</a> regroupant des milliers d'offre de formations avec leurs contenu, leurs objectifs et pleins d'autres data."
+    }
+  ]
+}

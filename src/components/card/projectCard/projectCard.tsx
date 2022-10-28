@@ -13,7 +13,7 @@ export type ProjectCardProps = {
 }
 
 export default function ProjectCard(props: ProjectCardProps) {
-    return (<OpenPopupOnClick type={TypePopup.projet} childrenProps={null}>
+    return (<OpenPopupOnClick type={TypePopup.projet} childrenProps={"project/"+props.jsonPath}>
         <div className={"project-card"}>
             <ImageCardProject path={"projects/"+props.path}/>
             <div className={"title"}>

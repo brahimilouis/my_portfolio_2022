@@ -16,6 +16,7 @@ export type FilterModel = {
 
 type EventModel = {
     title: string
+    date:string
     body: string,
     type: string
 }
@@ -82,6 +83,8 @@ export default function Timeline({}: TimelineProps) {
                                             key={"event-card-" + index}
                                             color={itemFilter.color}
                                             body={event.body}
+                                            title={event.title}
+                                            date={event.date}
                                             hidden={!itemFilter.stateChecked[0]}
                                         />
                                 })

@@ -10,6 +10,7 @@ import FetchData from "../../../class/fetchData";
 
 export type ProjectProps = {
     close: () => void,
+    jsonPath: string
 }
 
 type ProjectBodyItemModel = {
@@ -19,7 +20,7 @@ type ProjectBodyItemModel = {
 type ProjectModel = {
     "name": string,
     "date": string,
-    "time": number,
+    "time": string,
     "nbrPeople": number,
     "pathImage": string,
     "nbrImage": number,
@@ -31,7 +32,7 @@ type ProjectModel = {
 export default function Project(props: ProjectProps) {
     const [datas, setDatas] = useState<null | ProjectModel>(null);
     if (datas == null) {
-        new FetchData("project/rpg.json").fetchData().then((json) => {
+        new FetchData(props.jsonPath).fetchData().then((json) => {
             setDatas(json)
         })
     }
@@ -75,7 +76,7 @@ export default function Project(props: ProjectProps) {
                     datas == null ? null : [
                         <div className={"info"} key={"info-project"}>
                             <span className={"date"}><DateIcon/>{datas.date}</span>
-                            <span className={"time"}><TimeIcon/>{datas.time + " semaines"}</span>
+                            <span className={"time"}><TimeIcon/>{datas.time}</span>
                             <span className={"people"}><PeopleIcon/>{datas.nbrPeople + " personnes"}</span>
                         </div>,
                         <div className={"body"} key={"body-project"}>

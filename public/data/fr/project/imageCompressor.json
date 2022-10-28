@@ -1,0 +1,20 @@
+{
+  "name": "My Image Compressor",
+  "date": "Mai 2019",
+  "time": "1 semaine",
+  "nbrPeople": 2,
+  "pathImage": "imageCompressor/",
+  "nbrImage":4,
+  "language":"Haskell",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "Description du projet",
+      "text" : "<i>My Image Compressor</i> a été réalisé en 2ème année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a>. Son but était de créer un compresseur d'images utilisant l'algorithme de <a href='https://en.wikipedia.org/wiki/K-means_clustering' target=_blanc>k-means clustering</a>.<br><br>Dans notre cas, le programme reçoit une liste de <strong>pixel</strong> et un nombre <strong>K</strong> qui équivaut au nombre de couleur à la fin.<br>Moins le <strong>K</strong> est élevé plus l'image sera compressée.<br><br>En regroupant chaque pixels dans le <i>cluster</i> le plus approprié en fonction de la <strong>couleur</strong> et de la <strong>position</strong>, l'image allait être modifié tout en gardant la meilleure qualité possible."
+    },
+    {
+      "title": "Resultat du programme",
+      "text": "Le <strong>format</strong> de résultat attendu de notre projet que vous pouvez retrouver sur l'image du bas était :<br><br>--<br><strong>Couleur</strong> (R,G,B) d'un <i>cluster</i><br>-<br><strong>Liste de positions</strong> (x,y) et <strong>couleurs</strong> (R,G,B) d'un <strong>pixel</strong> du <i>cluster</i><br>--<br>Répétition du format en fonction du nombre de couleur <strong>K</strong> demandé"
+    }
+  ]
+}
