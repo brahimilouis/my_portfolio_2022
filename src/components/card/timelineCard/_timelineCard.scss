@@ -51,11 +51,30 @@
     }
 
     .body {
-      padding-top: 20px;
+      margin-top: 1rem;
       text-align: start;
       width: 100%;
       border-top: 1px dashed var(--color-);
-      margin: 20px;
+      padding: 1rem;
+      padding-bottom: 0.2rem;
+      a {
+        color: $secondaryColor;
+        &:hover {
+          text-decoration: underline $secondaryColor;
+        }
+      }
+      ul {
+        ::marker {
+          color: $secondaryColor;
+        }
+        li {
+          list-style: disc;
+          margin-bottom: 0.5rem;
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     span.arrow-left {
