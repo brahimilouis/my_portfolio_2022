@@ -1,5 +1,31 @@
 @import "variable";
 
+
+html {
+  background: $complementaryColor;
+  scroll-behavior: smooth;
+
+  @media all and (max-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media all and (max-width: 640px) {
+    font-size: 10px;
+  }
+
+  @media all and (max-width: 481px) {
+    font-size: 8px;
+  }
+
+  @media all and (max-width: 320px) {
+    font-size: 6px;
+  }
+}
+
 .App {
   text-align: center;
   font-family: sans-serif;
@@ -10,7 +36,7 @@
     .titre-section {
       display: flex;
       flex-direction: column;
-      font-size: 2rem;
+      font-size: 32px;
       font-weight: normal;
       align-items: center;
       gap: 1rem;
@@ -28,6 +54,9 @@
       }
     }
   }
+  //p {
+  //  font-size: 1rem;
+  //}
   .hidden {
     display: none;
   }
@@ -51,9 +80,4 @@
     height: 100vh;
     text-align: center;
   }
-}
-
-html {
-  background: $complementaryColor;
-  scroll-behavior: smooth;
 }

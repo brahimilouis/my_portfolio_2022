@@ -12,10 +12,16 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
     .item-nav {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      font-size: 1.2rem;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 18px;
       color: $complementaryColor;
       &:hover,.active {
         cursor: pointer;
@@ -29,7 +35,7 @@ nav {
       width: 2rem;
       height: 2rem;
     }
-    &.light {
+    &.light:not(.open) {
       transition: all 0.5s ease-in;
       background-color: $complementaryColor;
       .item-nav {
@@ -39,13 +45,53 @@ nav {
           font-weight: bold;
         }
       }
+      svg {
+        color: $primaryColor!important;
+        fill: $primaryColor!important;
+      }
     }
-    ul {
+    .menu-big {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 2rem;
     }
+  }
+
+  .menu-small {
+    margin: auto 0;
+    display: none;
+    svg {
+      color: $complementaryColor!important;
+      fill: $complementaryColor!important;
+      width: 30px!important;
+      height: 30px!important;
+      &:hover {
+        color: $secondaryColor!important;
+        fill: $secondaryColor!important;
+      }
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .content-nav.open {
+      flex-direction: column;
+      height: 100vh;
+      justify-content: stretch;
+      .menu-big {
+        display:flex!important;
+        flex-direction: column;
+        margin: auto;
+        padding-bottom: 30px;
+      }
+    }
+    .menu-big {
+      display:none!important;
+    }
+    .menu-small {
+      display:block;
+    }
+
   }
 }
 

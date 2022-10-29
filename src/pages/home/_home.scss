@@ -1,46 +1,78 @@
 @import "src/styles/variable";
 .home {
+  padding-bottom: 0!important;
+  margin-bottom: 0!important;
   background-color: $complementaryColor!important;
   height: 100%;
   width: 100%;
   position: relative;
-  text-align: center;
-  .conteneurTitre {
-    color: $primaryColor;
-    position: absolute;
-    right: 5rem;
-    top: 15%;
-    text-align: end;
-    h1 {
-      font-weight: bold;
-      font-size: 4vw;
-    }
-    h2 {
-      font-size: 2.8vw;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1vw;
-    }
-  }
-
-  img.moi {
-    height: 80%;
-    width: auto;
-    bottom: 3rem;
-    position: absolute;
-    left: 10%;
-
-  }
-  img.background {
-    max-height: 80vh;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    bottom: 0;
-    position: absolute;
-    right: 0;
-    left: 0;
+  .container-home {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1248px;
     margin: auto;
+    .conteneurTitre {
+      color: $primaryColor;
+      position: absolute;
+      right: 20%;
+      top: 15%;
+      text-align: end;
+      h1 {
+        font-weight: bold;
+        font-size: 32px;
+      }
+      h2 {
+        font-size:  26px;
+        font-weight: bold;
+      }
+    }
+
+    img.moi {
+      height: 80vh;
+      width: auto;
+      bottom: 3rem;
+      position: absolute;
+      left: 10%;
+    }
+    img.background {
+      max-height: 60vh;
+      max-width: 100%;
+      height: auto;
+      width: auto;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .moi {
+      height: 75vh!important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .moi {
+      height: 65vh!important;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .moi {
+      height: 60vh!important;
+    }
+  }
+  @media all and (max-width: 481px) {
+    .moi {
+      height: 50vh!important;
+    }
+  }
+
+  @media all and (max-width: 320px) {
+    .moi {
+      height: 40vh!important;
+    }
   }
 }
