@@ -14,7 +14,7 @@
     },
     {
       "title" : "Fonctionnement",
-      "text" : "Il fallait réaliser le <i>sokoban</i> version <strong>terminal</strong> avec le joueur qui se déplace grâce aux <strong>flèches du clavier</strong>. Le programme se lance avec comme argument une <strong>map</strong> (le puzzle) qui contient :<br><br><ul><li><strong>#</strong> Les murs de la map</li><li><strong>P</strong> Le personnage</li><li><strong>O</strong> les emplacements de stockage</li><li><strong>X</strong> Les caisses à déplacer</li></ul>"
+      "text" : "Il fallait réaliser le <i>sokoban</i> version <strong>terminal</strong> avec le joueur qui se déplace grâce aux <strong>flèches du clavier</strong>. Le programme se lance avec une <strong>map</strong> (le puzzle) qui contient :<br><br><ul><li><strong>#</strong> Les murs de la map</li><li><strong>P</strong> Le personnage</li><li><strong>O</strong> les emplacements de stockage</li><li><strong>X</strong> Les caisses à déplacer</li></ul>"
     }
   ]
 }

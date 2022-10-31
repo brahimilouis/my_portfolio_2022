@@ -10,11 +10,11 @@
   "body": [
     {
       "title" : "But du projet",
-      "text" : "Le but de ce projet était bien entendu d'avoir une présentation un peu plus détaillée de mon <strong>parcours</strong> et mes <strong>projets</strong> que simplement mon <i>CV</i> et mon <i>Github</i>.<br><br>J'ai choisi de réaliser mon portfolio en React Typescript pour m'initier à cette technologie."
+      "text" : "Le but de ce projet était d'avoir une présentation un peu plus détaillée de mon <strong>CV</strong> et mon <strong>Github</strong>.<br><br>J'ai choisi de réaliser mon portfolio en React Typescript pour m'initier à cette technologie."
     },
     {
       "title" : "Production du projet",
-      "text" : "J'ai commencé par faire la <strong>liste des projets</strong> que je voulais présenter dans mon portfolio. Puis je me suis replongé dans chacun d'entre eux afin de pouvoir mieux les décrire et avoir des visuels de présentations.<br><br>J'ai ensuite fait le <strong>design</strong> de mon portfolio avec Figma en choisissant ses thèmes, ses couleurs et son fonctionnement.<br><br>Par la suite je me suis mis dans son <strong>développement</strong>, tout en faisant pas mal de recherche sur les bonnes pratiques de React Typescript.<br><br>J'ai fait en sorte d'avoir toutes les données de mon portfolio dans des JSON afin de pouvoir facilement le faire <strong>évoluer avec le temps</strong>."
+      "text" : "J'ai commencé par faire la <strong>liste des projets</strong> que je voulais présenter dans mon portfolio.<br><br>J'ai réalisé le <strong>design</strong> de mon portfolio avec Figma en choisissant les thèmes, les couleurs et le fonctionnement. J'ai développé tout en faisant pas mal de recherche sur les bonnes pratiques de React Typescript.<br><br>J'ai fait en sorte d'avoir toutes les données de mon portfolio dans des JSON afin de pouvoir facilement le faire <strong>évoluer avec le temps</strong>."
     },
     {
       "title" : "Fonctionnalités du portfolio :",

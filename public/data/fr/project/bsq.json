@@ -10,10 +10,11 @@
   "body": [
     {
       "title" : "Objectif du projet",
-      "text" : "Ce projet a été réalisé en 1ère année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a>.<br><br>Depuis une carte et sa légende (dans la première ligne du fichier de la carte), il fallait trouver le plus <strong>grand carré</strong> que nous pouvions faire sans rencontrer d'obstacle. En cas de plusieurs carrés de même taille, il choisit celui qui est le plus haut et ensuite celui qui est le plus à gauche."    },
+      "text" : "Ce projet a été réalisé en 1ère année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a>.<br><br>Depuis une carte et sa légende, il faut trouver le plus <strong>grand carré</strong> sans rencontrer d'obstacle. En cas de plusieurs carrés de même taille, l'algorithme sélectionne celui qui est le plus haut et ensuite celui qui est le plus à gauche."
+    },
     {
       "title" : "Contrainte du projet",
-      "text" : "Il fallait réaliser un <strong>algorithme</strong> performant, car le programme avait un <strong>temps limité</strong> pour trouver le plus grand carré. Beaucoup de petites <strong>optimisations</strong> étaient alors nécessaires pour repérer efficacement le carré sur de grande map avec beaucoup d'obstacles"
+      "text" : "Un <strong>algorithme</strong> performant était nécessaire, car le programme avait un <strong>temps limité</strong> pour trouver le plus grand carré. Des <strong>optimisations</strong> ont permis de repérer efficacement le carré sur de grande map avec beaucoup d'obstacles."
     }
   ]
 }

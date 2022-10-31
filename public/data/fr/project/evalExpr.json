@@ -1,5 +1,5 @@
 {
-  "name": "My RPG",
+  "name": "My EvalExpr",
   "date": "Novembre 2019",
   "time": "1 semaine",
   "nbrPeople": 1,
@@ -10,7 +10,7 @@
   "body": [
     {
       "title" : "Decription du projet",
-      "text" : "Il s'agit d'un projet de 3ème année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> qui consiste à <strong>calculer</strong> le résultat d'une <strong>expression</strong> mathématique en <i>Haskell</i>.<br><br>L'expression doit être calculée avec les <strong>règles de priorité</strong> des parenthèse et des opérateurs. Ainsi que gérer les expressions <strong>non conforme</strong>.<br><br><br>Il fallait que le programme prenne en compte dans l'expression les <strong>opérateurs</strong> :<br><br><ul><li><strong>+</strong> Signe plus</li><li><strong>-</strong> Signe moin</li><li><strong>*</strong> Multpilicateur</li><li><strong>/</strong> Division</li><li><strong>^</strong>Signe exposant</li></ul>"
+      "text" : "Il s'agit d'un projet de 3ème année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> qui consiste à <strong>calculer</strong> le résultat d'une <strong>expression</strong> mathématique en <i>Haskell</i>.<br><br>L'expression doit être calculée avec les <strong>règles de priorité</strong> des parenthèse et des opérateurs.<br><br><br>Le programme prend en compte dans l'expression les <strong>opérateurs</strong> :<br><br><ul><li><strong>+</strong> Signe plus</li><li><strong>-</strong> Signe moin</li><li><strong>*</strong> Multiplicateur</li><li><strong>/</strong> Division</li><li><strong>^</strong>Signe exposant</li></ul>"
     }
   ]
 }

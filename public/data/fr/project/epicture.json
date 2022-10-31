@@ -14,7 +14,7 @@
     },
     {
       "title" : "Fonctionnalités de notre application",
-      "text" : "<ul><li><strong>Page de connexion</strong> - Afin de se connecter à son compte <i>Imgur</i></li><li><strong>Page du flux</strong> - Pour faire défiler des images et descriptions aléatoire de <i>Imgur</i></li><li><strong>Page favoris</strong> - Pour faire défiler les images et descriptions mises en favoris</li><li><strong>Page compte</strong> - Pour voir des informations de son compte <i>Imgur</i> ainsi que de se déconnecter</li><li><strong>Bouton importation</strong> - Pour importer des images de son téléphone</li></ul>"
+      "text" : "<ul><li><strong>Page de connexion</strong> - Afin de se connecter à son compte <i>Imgur</i></li><li><strong>Page du flux</strong> - Pour faire défiler des images et descriptions aléatoires de <i>Imgur</i></li><li><strong>Page favoris</strong> - Pour faire défiler les images et descriptions mises en favoris</li><li><strong>Page compte</strong> - Pour voir des informations de son compte <i>Imgur</i> ainsi que de se déconnecter</li><li><strong>Bouton importation</strong> - Pour importer des images de son téléphone</li></ul>"
     }
   ]
 }

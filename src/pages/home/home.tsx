@@ -1,11 +1,13 @@
 import React from 'react';
 import "./_home.scss"
 import background from '../../assets/image-home2.png'
+import fond from '../../assets/fond8.jpg'
 import moi from '../../assets/louis.png'
 
 export type HomeProps = {}
 export default function Home({}: HomeProps) {
     return (<section className="home">
+        <img className="fond" src={fond} alt="image"/>
         <div className={"container-home"}>
             <div className="conteneurTitre">
                 <h1>Louis BRAHIMI</h1>

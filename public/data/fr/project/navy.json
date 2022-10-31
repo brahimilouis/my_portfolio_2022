@@ -10,11 +10,11 @@
   "body": [
     {
       "title" : "But du projet",
-      "text" : "<i>My Navy</i> a été réalisé en 1ere année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> fallait développer le jeu la <i>bataille navale</i> version <strong>terminal</strong>. <br><br>Appelée aussi <i>touché-coulé</i>, est un jeu dans lequel deux joueurs doivent placer des « navires » sur une grille tenue secrète et tenter de « toucher » les navires adverses.<br><br><strong>Le gagnant</strong> est celui qui parvient à couler tous les navires de l'adversaire avant que tous les siens ne le soient."
+      "text" : "<i>My Navy</i> a été réalisé en 1ere année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a>. L'objectif était de développer le jeu la <i>bataille navale</i> version <strong>terminal</strong>. <br><br>Appelée aussi <i>touché-coulé</i>, My Navy est un jeu dans lequel deux joueurs doivent placer des « navires » sur une grille tenue secrète et tenter de « toucher » les navires adverses.<br><br><strong>Le gagnant</strong> est celui qui parvient à couler tous les navires de l'adversaire avant que tous les siens ne le soient."
     },
     {
       "title" : "Son fonctionnement",
-      "text" : "Il fallait que <strong>2 terminaux</strong> puissent <strong>communiquer</strong> avec des <strong>signaux</strong> afin d'envoyer les positions sélectionnées par les joueurs et recevoir en retour s'il y avait un navire sur la case sélectionnée."
+      "text" : "Il fallait que <strong>2 terminaux</strong> puissent <strong>communiquer</strong> avec des <strong>signaux</strong> pour partager les positions sélectionnées par les joueurs."
     }
   ]
 }
