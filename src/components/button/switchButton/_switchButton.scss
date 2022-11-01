@@ -1,13 +1,24 @@
 @import "../../../styles/variable";
 
 .switchButton {
+  @media screen and (max-width: 640px) {
+    width: 52px;
+    height: 26px;
+    span {
+      width: 23px!important;
+      height: 23px!important;
+    }
+    input:checked+span {
+      transform: translateX(23px)!important;
+    }
+  }
   position: relative;
   display: inline-block;
-  width: 3.75rem;
-  height: 1.875rem;
-  border: var(--color-) solid 0.125rem;
+  width: 62px;
+  height: 30px;
+  border: var(--color-) solid 2px;
   margin: auto;
-  border-radius: 2.5rem;
+  border-radius: 40px;
   cursor: pointer;
   &:hover {
     span {
@@ -16,7 +27,7 @@
     }
   }
   &:has(input:not(:checked)) {
-    box-shadow: inset 0 0.2rem 0.4rem 0 darkgray;
+    box-shadow: inset 0 3px 6px 0 darkgray;
     transition: all 0.5s linear;
   }
   &:has(input:checked) {
@@ -32,19 +43,19 @@
 
   span {
     position: absolute;
-    height: 1.625rem;
-    width: 1.625rem;
+    height: 26px;
+    width: 26px;
     border-radius: 100%;
     top: 0;
     bottom: 0;
-    left: 0.125rem;
+    left: 2px;
     margin: auto 0;
     transition: right 0.5s ease;
   }
 
   input:checked+span {
     background-color: var(--color-);
-    transform: translateX(1.875rem);
+    transform: translateX(30px);
     transition: all 0.5s ease;
   }
   input:not(:checked)+span {

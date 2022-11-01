@@ -1,10 +1,33 @@
 @import "src/styles/variable";
 
 .profil {
+  @media screen and (max-width: 820px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr)!important;
+    }
+    .middle {
+      flex-direction: column!important;
+      .left, .right {
+        width: 100%!important;
+      }
+      //.skill {
+      //  width: 33%;
+      //}
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr)!important;
+    }
+  }
+
+
+
   h3.title-profil {
     font-weight: normal;
     font-style: oblique;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: $secondaryColor;
   }
   .content-profil {
@@ -15,23 +38,20 @@
     max-width: 78rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 1.5rem;
     .top {
       > h2 {
-        font-size: 1.5rem;
+        font-size: 24px;
         text-align: start;
       }
     }
 
     .middle {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
       gap: 3rem;
       .left, .right {
-        min-width: 25rem;
         color: $primaryColor;
-        flex: 20%;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -53,18 +73,23 @@
       .right {
           border-radius: 1rem;
           background-color: $complementaryColor;
-          padding: 2.5rem;
+          padding-bottom: 2.5rem;
           display: flex;
           flex-direction: column;
           align-items: start;
           gap: 2rem;
+          h3.title-profil {
+            padding-top: 2.5rem;
+            padding-left: 2.5rem;
 
+          }
           .grid {
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            row-gap: 2rem;
             margin: auto;
-
+            justify-content: space-around;
             .skill {
               text-align:center;
               display: flex;
@@ -87,8 +112,8 @@
                 }
               }
               svg {
-                width: 3rem;
-                height: 3rem;
+                width: 48px;
+                height: 48px;
               }
             }
           }
@@ -106,8 +131,8 @@
         gap: 0.5rem;
 
         svg {
-          width: 2rem;
-          height: 2rem;
+          width: 32px;
+          height: 32px;
         }
       }
     }

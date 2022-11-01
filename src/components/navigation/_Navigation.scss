@@ -4,8 +4,8 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: $primaryColor;
   .content-nav {
+    background-color: $primaryColor;
     transition: all 0.5s ease-in-out;
     padding-left: 4rem;
     padding-right: 2rem;
@@ -37,7 +37,7 @@ nav {
     }
     &.light:not(.open) {
       transition: all 0.5s ease-in;
-      background-color: $complementaryColor;
+      background-color: transparent;
       .item-nav {
         color: $primaryColor;
         &:hover,.active {
@@ -73,7 +73,7 @@ nav {
     }
   }
 
-  @media all and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .content-nav.open {
       flex-direction: column;
       height: 100vh;

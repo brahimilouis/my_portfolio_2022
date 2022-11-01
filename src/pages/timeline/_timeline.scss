@@ -9,6 +9,9 @@
     div.content-timeline {
       overflow: hidden;
       .timeline {
+        @media screen and (max-width: 640px) {
+          border-left: 4px solid #141C38!important;
+        }
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 70px;

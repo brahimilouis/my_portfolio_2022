@@ -5,24 +5,24 @@ html {
   background: $complementaryColor;
   scroll-behavior: smooth;
 
-  @media all and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     font-size: 14px;
   }
 
-  @media all and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 640px) {
     font-size: 12px;
   }
 
-  @media all and (max-width: 640px) {
+  @media screen and (max-width: 481px) {
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 320px) {
     font-size: 10px;
-  }
-
-  @media all and (max-width: 481px) {
-    font-size: 8px;
-  }
-
-  @media all and (max-width: 320px) {
-    font-size: 6px;
   }
 }
 

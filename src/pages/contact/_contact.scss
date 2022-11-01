@@ -4,19 +4,49 @@ section.contact {
   min-height: 95vh;
 
   .content-contact {
+    @media screen and (max-width: 1024px) {
+      .container-coordinate,form {
+        width: 100%!important;
+      }
+    }
     display: flex;
     flex-wrap: wrap;
     max-width: 1248px;
     margin: auto;
     justify-content: center;
 
+    @media screen and (max-width: 481px) {
+      button {
+        padding: 10px!important;
+        font-size: 15px!important;
+      }
+      .titre-contact {
+        font-size: 20px!important;
+      }
+      span,p,input {
+        font-size: 14px!important;
+      }
+    }
+
+    @media screen and (max-width: 340px) {
+      .titre-contact {
+        font-size: 17px!important;
+      }
+      span,p,input {
+        font-size: 12px!important;
+      }
+      button {
+        font-size: 13px!important;
+      }
+    }
+
     .titre-contact {
       align-self: start;
       color: $primaryColor;
-      font-size: 1.5rem;
+      font-size: 24px;
     }
     .container-coordinate,form {
-      min-width: 39rem;
+      max-width: 800px;
       width: 50%;
       padding: 2rem;
       display: flex;
@@ -25,6 +55,7 @@ section.contact {
     }
 
     .container-coordinate {
+      text-align: start;
       svg {
         fill: $primaryColor;
         color: $primaryColor;

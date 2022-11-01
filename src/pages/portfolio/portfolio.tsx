@@ -33,7 +33,7 @@ export default function Portfolio({}: PortfolioProps) {
                     title={listCategory.title}
                     isOpenDefault={listCategory.isOpenDefault}>
                     {
-                        <GridCardList key={listCategory.type + index}>{
+                        <GridCardList key={listCategory.type + index} className={listCategory.type}>{
                             listCategory.data.map((category, index) => {
                                     return listCategory.type == "project" ?
                                         <ProjectCard key={"project-" + index}

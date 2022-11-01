@@ -3,7 +3,7 @@
   "datas": [
     {
       "title": "Voir tous les projets",
-      "isOpenDefault": true,
+      "isOpenDefault": false,
       "type": "project",
       "data": [
         {

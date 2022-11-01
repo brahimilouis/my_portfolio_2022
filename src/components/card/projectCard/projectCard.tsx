@@ -17,7 +17,6 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className={"project-card"}>
             <ImageCardProject path={"projects/"+props.path}/>
             <div className={"title"}>
-                <GithubIcon/>
                 <h3>{props.title}</h3>
             </div>
         </div>

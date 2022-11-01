@@ -2,26 +2,18 @@
 
 .project-card {
   background-color: #FDFDFD;
-  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  border-radius: 6%;
+  border-radius: 10px;
+  width: fit-content;
   &:hover {
     border: solid 2px $secondaryColor;
   }
   .title {
     display: flex;
     align-items: center;
-    gap: 1rem;
     font-weight: bold;
-    &:hover {
-
-      svg {
-        fill: $secondaryColor;
-      }
-      color: $secondaryColor;
-    }
+    padding: 16px;
   }
 }
