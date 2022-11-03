@@ -22,8 +22,10 @@ html {
   }
 
   @media screen and (max-width: 320px) {
-    font-size: 10px;
+    overflow-x: auto!important;
+    min-width: 320px;
   }
+
 }
 
 .App {
@@ -54,9 +56,6 @@ html {
       }
     }
   }
-  //p {
-  //  font-size: 1rem;
-  //}
   .hidden {
     display: none;
   }

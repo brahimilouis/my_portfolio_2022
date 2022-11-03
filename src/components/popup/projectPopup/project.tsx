@@ -58,26 +58,28 @@ export default function Project(props: ProjectProps) {
         <div className={"left"}>
             <div className={"content-popup"}>
                 <div className={"header"}>
-                    <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
-                    {
-                        datas != null && typeof datas.linkGithub != "undefined" ?
-                            <a href={datas.linkGithub} target={"_blank"}>
+                    <div className={"content-header"}>
+                        <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
+                        {
+                            datas != null && datas.linkGithub != "" ?
+                                <a href={datas.linkGithub} target={"_blank"}>
                                 <span className={"title hover"}>
                                     <GithubIcon/>{datas.name}
                                 </span>
-                            </a> :
-                            <span className={"title"}>
+                                </a> :
+                                <span className={"title"}>
                                 {datas == null ? "" : datas.name}
                             </span>
-                    }
-                    <span className={"language"}><LanguageIcon/>{datas == null ? "" : datas.language}</span>
+                        }
+                        <span className={"language span-icon"}><LanguageIcon/>{datas == null ? "" : datas.language}</span>
+                    </div>
                 </div>
                 {
                     datas == null ? null : [
                         <div className={"info"} key={"info-project"}>
-                            <span className={"date"}><DateIcon/>{datas.date}</span>
-                            <span className={"time"}><TimeIcon/>{datas.time}</span>
-                            <span className={"people"}><PeopleIcon/>{datas.nbrPeople + " personnes"}</span>
+                            <span className={"date span-icon"}><DateIcon/>{datas.date}</span>
+                            <span className={"time span-icon"}><TimeIcon/>{datas.time}</span>
+                            <span className={"people span-icon"}><PeopleIcon/>{datas.nbrPeople + " personne" + (datas.nbrPeople>1?'s':'')}</span>
                         </div>,
                         <div className={"body"} key={"body-project"}>
                             {

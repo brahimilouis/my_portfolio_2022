@@ -6,7 +6,7 @@
   "pathImage": "nysos/",
   "nbrImage":7,
   "language":"Flutter",
-  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "linkGithub": "",
   "body": [
     {
       "title" : "Nysos c'est quoi ?",
@@ -14,7 +14,7 @@
     },
     {
       "title" : "Production du projet",
-      "text" : "Dans le cadre de mon projet de fin d'étude j'ai réalisé Nysos avec cinq autres étudiants.<br>L'essentiel du développement a été fait en quatrième année alors que nous étions tous dans diffèrents pays tels que la <i>Corée du sud</i>, les <i>États-Unis</i> ou bien moi en <i>Irlande</i>.<br><br>Une bonne <strong>organisation</strong> et <strong>communication</strong> ont été necessaires pour développer ce projet."
+      "text" : "Dans le cadre de mon projet de fin d'étude j'ai réalisé Nysos avec cinq autres étudiants.<br>L'essentiel du développement a été fait en 4ème année alors que nous étions tous dans diffèrents pays tels que la <i>Corée du sud</i>, les <i>États-Unis</i> ou bien moi en <i>Irlande</i>.<br><br>Une bonne <strong>organisation</strong> et <strong>communication</strong> ont été necessaires pour développer ce projet."
     },
     {
       "title" : "Mon job",

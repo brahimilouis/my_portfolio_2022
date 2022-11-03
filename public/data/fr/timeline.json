@@ -8,9 +8,9 @@
   },
   "events" : [
     {
-      "title": "Part-time Epitech en Free-lance",
+      "title": "Part-time Epitech en Freelance",
       "date": "Septembre 2022 - Mars 2023",
-      "body": "Je continue mon expérience chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a> en <strong>Free-Lance</strong> à raison de 2 jours par semaine.",
+      "body": "Je continue mon expérience chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a> en <strong>Freelance</strong> à raison de 2 jours par semaine.",
       "type": "experience"
     },
     {
@@ -20,9 +20,9 @@
       "type": "formation"
     },
     {
-      "title": "Free-lance à Dublin",
+      "title": "Freelance à Dublin",
       "date": "Aout 2021 - Aout 2022",
-      "body": "Pendant mon année à <strong>Dublin</strong>, j'ai travaillé 2 jours par semaine en <strong>free-lance</strong> chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a><br><br>Ma principale mission a été de développer un <strong>Agenda optimisé</strong> pour leur produit <i>NeoGestion</i>.<br><br>Étant donné que je travaillais avec <i>Neolink</i> depuis plus de 2 ans, j'ai su être <strong>autonome</strong> pour développer un projet à distance.",
+      "body": "Pendant mon année à <strong>Dublin</strong>, j'ai travaillé 2 jours par semaine en <strong>freelance</strong> chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a><br><br>Ma principale mission a été de développer un <strong>Agenda optimisé</strong> pour leur produit <i>NeoGestion</i>.<br><br>Étant donné que je travaillais avec <i>Neolink</i> depuis plus de 2 ans, j'ai su être <strong>autonome</strong> pour développer un projet à distance.",
       "type": "experience"
     },
     {
@@ -39,7 +39,7 @@
     },
     {
       "title": "Stage fin de 3ème année Epitech",
-      "date": "Mars - Juillet 2019",
+      "date": "Mars - Juillet 2020",
       "body": "J'ai poursuivi les missions de mon part-time chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> en faisant cette fois un <strong>stage à temps plein</strong>.<br><br>Mars 2019 c'est aussi le début de <strong>la Covid 19</strong>, j'ai donc réalisé ce stage en <strong>télétravail</strong>.",
       "type": "experience"
     },
@@ -51,37 +51,37 @@
     },
     {
       "title": "Part-time Epitech chez Neolink Start-up",
-      "date": "Septembre 2018 - Avril 2019",
+      "date": "Septembre 2019 - Mars 2020",
       "body": "Réalisation d'un part-time de 2 jours par semaine chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> à Blois, durant lequel j'ai fait de la maintenance évolutive :<br><br><ul><li>Développement de fonctionnalités</li><li>Traitement de tickets et de bug</li><li>Reporting quotidien</li></ul>",
       "type": "experience"
     },
     {
       "title": "3ème année d’Epitech",
-      "date": "Septembre 2018 - Avril 2019",
+      "date": "Septembre 2019 - Mars 2020",
       "body": "L'année commence avec la dernière <strong>piscine</strong> de mon cursus, qui a pour objectif de définir notre <a href='https://www.epitech.eu/fr/innovation/' target=_blanc>Epitech Innovative Project</a>. Ce projet sera travaillé  jusqu'au milieu de la 5ème année. <br><br>Elle se poursuit par des projets assez divers : <strong>Application mobile, Application Web, IA, DevOps</strong>…",
       "type": "formation"
     },
     {
       "title": "Contrat d’été avec Neolink Startup",
-      "date": "Été 2018",
+      "date": "Été 2019",
       "body": "Découverte et prise en main du Framework de <a href='https://www.neolink.link/' target=_blanc>Neolink</a>, intégration de nouvelles fonctionnalités dans une plat-forme collaborative.",
       "type": "experience"
     },
     {
       "title": "Bénévole au Web2day",
-      "date": "Juin 2018",
+      "date": "Juin 2019",
       "body": "Le <a href='https://www.web2day.co/' target=_blanc>Web2day</a> est un festival de <strong>conférences Tech</strong> à Nantes.<br><br>Mon rôle était d'être <strong>chauffeur d'intervenants</strong>, ce qui m'a permis de <strong>rencontrer</strong> des personnalités de la Tech et d'<strong>échanger</strong> avec eux.",
       "type": "other"
     },
     {
       "title": "2ème année d’Epitech",
-      "date": "Janvier - Juillet 2018",
-      "body": "La deuxième année commence par une <strong>piscine</strong> de <strong>C++</strong>.<br><br>Elle permet de réaliser plusieurs <strong>projets</strong> principalement en C++ mais aussi de découvrir d'autres langages comme le Haskell.",
+      "date": "Janvier - Juillet 2019",
+      "body": "La 2ème année commence par une <strong>piscine</strong> de <strong>C++</strong>.<br><br>Elle permet de réaliser plusieurs <strong>projets</strong> principalement en C++ mais aussi de découvrir d'autres langages comme le Haskell.",
       "type": "formation"
     },
     {
       "title": "Stage d'anglais à Londres",
-      "date": "Septembre à Decembre 2018",
+      "date": "Septembre - Decembre 2018",
       "body": "Je suis parti 4 mois à <strong>Londres</strong> afin de progresser en <strong>anglais</strong> en suivant des cours chez <a href='https://www.twinuk.com/' target=_blanc>Twin</a> tous les jours.<br><br>J'ai obtenu le niveau B2 et augmenté mon <strong>TEPITECH</strong> (Toeic) de 250 points.",
       "type": "formation"
     },

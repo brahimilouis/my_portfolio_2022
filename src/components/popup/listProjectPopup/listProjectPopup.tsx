@@ -18,9 +18,11 @@ type ListItemData = {
 export default function ListProjectPopup(props: ListProjectPopupProps) {
     return (<div className="listProjectPopup content-popup">
         <div className={"header"}>
-            <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
-            <span>{"Projets - " + props.listProjectsProps.title}</span>
-            <span/>
+            <div className={"content-header"}>
+                <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
+                <span>{"Projets - " + props.listProjectsProps.title}</span>
+                <span/>
+            </div>
         </div>
         <div className={"list-project"}>
             <GridCardList className={"project"}>{

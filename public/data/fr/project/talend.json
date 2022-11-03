@@ -1,12 +1,12 @@
 {
-  "name": "Intégration de data avec Talend",
+  "name": "Intégration de data",
   "date": "Juin 2021",
   "time": "1 mois",
   "nbrPeople": 1,
   "pathImage": "talend/",
   "nbrImage": 3,
   "language":"Talend studio",
-  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "linkGithub": "",
   "body": [
     {
       "title" : "But du projet",

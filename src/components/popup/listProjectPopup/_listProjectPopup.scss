@@ -9,25 +9,14 @@
   .conteneur-close {
     align-self: start;
   }
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    background-color: #FDFDFD;
-    padding: 1rem;
-    border-radius: 20px;
-    border: $primaryColor solid;
-    .conteneur-close {
-      justify-self: start;
-      float: left;
-    }
-  }
 
   .list-project {
-    margin: auto;
-    max-width: 78rem;
+    margin-top: calc(80px + 4vh);
     overflow-y: auto;
     overflow-x: hidden;
+    .project-grid {
+      margin: auto;
+      max-width: 78rem;
+    }
   }
 }

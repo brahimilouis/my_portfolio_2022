@@ -5,12 +5,12 @@
   "nbrPeople": 1,
   "pathImage": "agenda/",
   "nbrImage":6,
-  "language":"PHP,HTML,JQUERY,SQL,CSS",
-  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "language":"PHP,JQUERY",
+  "linkGithub": "",
   "body": [
     {
       "title" : "Description du projet",
-      "text" : "Pendant ma quatrième année à Dublin, j'ai travaillé en free-lance sur un rythme de deux jours par semaine pour la société <a href='https://www.neolink.link/' target=_blanc>Neolink</a>. <br><br>Ma principale mission a été de réaliser une refonte entière d'une première version d'agenda pour le produit <i>NeoGestion</i> en utilisant <a href='https://fullcalendar.io/' target=_blanc>FullCalendar</a>. Pour développer cet agenda de façon <strong>agile</strong>, j'ai collaboré avec un <strong>designer</strong> ainsi qu'un <strong>chef de projet</strong> qui était en relation directe avec le client.<br><br>Le défi principal de ce projet était d'avoir un agenda le plus <strong>optimisé</strong> possible pour une prise de rendez-vous, gestion évènement facile et rapide. Il fallait aussi développer un <strong>algorithme</strong> facilitant la prise de rendez-vous."
+      "text" : "Pendant ma 4ème année à Dublin, j'ai travaillé en freelance sur un rythme de deux jours par semaine pour la société <a href='https://www.neolink.link/' target=_blanc>Neolink</a>. <br><br>Ma principale mission a été de réaliser une refonte entière d'une première version d'agenda pour le produit <i>NeoGestion</i> en utilisant <a href='https://fullcalendar.io/' target=_blanc>FullCalendar</a>. Pour développer cet agenda de façon <strong>agile</strong>, j'ai collaboré avec un <strong>designer</strong> ainsi qu'un <strong>chef de projet</strong> qui était en relation directe avec le client.<br><br>Le défi principal de ce projet était d'avoir un agenda le plus <strong>optimisé</strong> possible pour une prise de rendez-vous, gestion évènement facile et rapide. Il fallait aussi développer un <strong>algorithme</strong> facilitant la prise de rendez-vous."
     },
     {
       "title" : "Principales fonctionnalités de cet Agenda",

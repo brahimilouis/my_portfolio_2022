@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from 'react-scroll';
 import './_Navigation.scss';
-import logo from '../../assets/logo_lb_numerique.png';
+import logo from '../../../public/logo_lb_numerique.png';
 import MenuIcon from "../../assets/icons/contact/menuIcon";
 import CloseIcon from "../../assets/icons/closeIcon";
 export type NavigationProps = {}

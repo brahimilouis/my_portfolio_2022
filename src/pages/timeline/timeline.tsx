@@ -11,7 +11,7 @@ export type FilterModel = {
     experience: string,
     formation: string,
     other: string,
-    project: string
+    // project: string
 }
 
 type EventModel = {
@@ -54,12 +54,12 @@ export default function Timeline({}: TimelineProps) {
             libelle: datas == null ? "" : datas.filters.other
 
         },
-        {
-            color: '#4C061D',
-            name: 'project',
-            stateChecked: useState(false),
-            libelle: datas == null ? "" : datas.filters.project
-        },
+        // {
+        //     color: '#4C061D',
+        //     name: 'project',
+        //     stateChecked: useState(false),
+        //     libelle: datas == null ? "" : datas.filters.project
+        // },
     ];
     return (<section className="timeline-section"> {
         datas == null ? null :

@@ -8,6 +8,22 @@
   height: 100%;
 
   @media screen and (max-width: 481px) {
+    .info {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .span-icon {
+      font-size: 1rem!important;
+      gap: 3px!important;
+    }
+    .title {
+      font-size: 1.3rem!important;
+    }
+
+  }
+  @media screen and (max-width: 640px) {
     flex-direction: column;
     overflow-y: auto!important;
     .right, .left {
@@ -15,6 +31,10 @@
       height: auto!important;
       overflow-y:visible!important;
     }
+    .header {
+      width: 100%!important;
+    }
+    font-size: 12px;
   }
 
   .right, .left {
@@ -26,35 +46,47 @@
   .left {
     background-color: $complementaryColor;
     width: 70%;
-    .content-popup {
-      svg.github {
-        fill: $secondaryColor;
+    .header {
+      width: 70%;
+      span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
       }
-      .info {
-        padding: 10px;
-        background-color: #FDFDFD;
-        border-radius: 20px;
-        border: $primaryColor solid;
-        justify-content: space-around;
+      span.language {
+        font-weight: normal!important;
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+    }
+    .content-popup {
+      .title.hover {
+        svg.github {
+          fill: $primaryColor;
+        }
+        &:hover {
+          svg.github {
+            fill: $secondaryColor;
+          }
+        }
       }
 
-      .header, .info {
+      .info {
+        margin-top: calc(80px + 4vh);
+        padding: 10px;
+        background-color: #FDFDFD;
+        border-radius: 14px;
+        border: $primaryColor solid;
+        justify-content: space-around;
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
-
         span {
           font-size: 1.2rem;
           color: $primaryColor;
           display: inline-flex;
           align-items: center;
           gap: 8px;
-        }
-        span.language {
-          font-weight: normal!important;
-          font-style: italic;
-          font-size: 1.2rem!important;
         }
       }
 
@@ -73,6 +105,7 @@
             font-size: 1.3rem;
             font-weight: bold;
             color: $primaryColor;
+            margin-left: 1rem;
           }
 
           p {
@@ -108,11 +141,11 @@
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 95%;
-    gap: 1rem;
+    padding: 1rem;
 
     img {
-      max-width: 90%;
+      max-width: 100%;
+      padding-top: 1rem;
       width: auto;
       height: auto;
     }

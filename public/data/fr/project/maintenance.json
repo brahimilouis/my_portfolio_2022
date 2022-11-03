@@ -1,11 +1,11 @@
 {
   "name": "Maintenance évolutive",
-  "date": "CHANGER DATE",
+  "date": "2019-2020",
   "time": "1 an",
   "nbrPeople": 1,
   "pathImage": "maintenance/",
   "nbrImage":4,
-  "language":"PHP,HTML,JQUERY,SQL,CSS",
+  "language":"PHP,JQUERY",
   "linkGithub": "",
   "body": [
     {

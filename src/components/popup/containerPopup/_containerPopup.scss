@@ -21,16 +21,35 @@
     flex-direction: column;
     margin: 0 auto;
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
     gap: 2rem;
     .header {
+      left: 0;
+      top: 0;
+      position: fixed;
       justify-content: space-between;
-      span {
-        font-weight: bold!important;
-        font-size: 1.7rem!important;
-      }
-      svg.github {
-        fill: $secondaryColor;
+      width: 100%;
+      height: calc(70px + 4vh);
+      z-index: 10;
+      background-color: $complementaryColor;
+      .content-header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        background-color: #FDFDFD;
+        border-radius: 16px;
+        border: $primaryColor solid;
+        margin: 4vh 1rem 0 1rem;
+        padding: 10px 1rem 10px 1rem;
+        span {
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+        .conteneur-close {
+          justify-self: start;
+          float: left;
+        }
       }
     }
   }
@@ -39,8 +58,8 @@
     fill: $primaryColor;
 
     .close-popup {
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
     }
 
     :hover {
