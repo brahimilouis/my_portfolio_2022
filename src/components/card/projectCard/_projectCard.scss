@@ -1,6 +1,11 @@
 @import "src/styles/variable";
 
 .project-card {
+  @keyframes show {
+    from {
+      opacity:0;
+    }
+  }
   background-color: #FDFDFD;
   display: flex;
   flex-direction: column;
@@ -16,4 +21,5 @@
     font-weight: bold;
     padding: 16px;
   }
+  animation: show 0.2s ease-in-out;
 }

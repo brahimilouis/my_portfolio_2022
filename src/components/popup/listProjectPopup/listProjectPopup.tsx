@@ -26,8 +26,9 @@ export default function ListProjectPopup(props: ListProjectPopupProps) {
         </div>
         <div className={"list-project"}>
             <GridCardList className={"project"}>{
-                props.listProjectsProps.list.map((projectData) => (
-                    <ProjectCard path={projectData.path} jsonPath={projectData.name} title={projectData.title}/>
+                props.listProjectsProps.list.map((projectData, key) => (
+                    <ProjectCard key={"project-card" + key} path={projectData.path} jsonPath={projectData.name}
+                                 title={projectData.title}/>
                 ))
             }</GridCardList>
         </div>

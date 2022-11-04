@@ -78,15 +78,14 @@ export default function Project(props: ProjectProps) {
                 {
                     datas == null ? null : [
                         <div className={"info"} key={"info-project"}>
-                            <span className={"date span-icon"}><DateIcon/>{datas.date}</span>
-                            <span className={"time span-icon"}><TimeIcon/>{datas.time}</span>
-                            <span
-                                className={"people span-icon"}><PeopleIcon/>{datas.nbrPeople + " personne" + (datas.nbrPeople > 1 ? 's' : '')}</span>
+                            <span className={"date span-icon"} key={"project-date"}><DateIcon/>{datas.date}</span>
+                            <span className={"time span-icon"} key={"project-time"}><TimeIcon/>{datas.time}</span>
+                            <span className={"people span-icon"} key={"project-people"}><PeopleIcon/>{datas.nbrPeople + " personne" + (datas.nbrPeople > 1 ? 's' : '')}</span>
                         </div>,
                         <div className={"body"} key={"body-project"}>
                             {
-                                datas.body.map((body) =>
-                                    <div className={"body-item"}>
+                                datas.body.map((body, index) =>
+                                    <div className={"body-item"} key={"body-item-"+index}>
                                         <h3>{body.title}</h3>
                                         <p dangerouslySetInnerHTML={{__html: body.text}}></p>
                                     </div>

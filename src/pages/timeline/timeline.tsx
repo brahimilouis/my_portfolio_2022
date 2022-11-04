@@ -11,14 +11,21 @@ export type FilterModel = {
     experience: string,
     formation: string,
     other: string,
-    // project: string
+    project: string
 }
 
-type EventModel = {
+type EventProjects = {
+    title: string,
+    json: string,
+    path: string
+}
+
+export type EventModel = {
     title: string
     date: string
     body: string,
     type: string
+    projects: Array<EventProjects>
 }
 
 type TimelineModel = {
@@ -54,16 +61,16 @@ export default function Timeline({}: TimelineProps) {
             libelle: datas == null ? "" : datas.filters.other
 
         },
-        // {
-        //     color: '#4C061D',
-        //     name: 'project',
-        //     stateChecked: useState(false),
-        //     libelle: datas == null ? "" : datas.filters.project
-        // },
+        {
+            color: '#4C061D',
+            name: 'project',
+            stateChecked: useState(false),
+            libelle: datas == null ? "" : datas.filters.project
+        },
     ];
     return (<section className="timeline-section"> {
         datas == null ? null :
-            <div>
+            <div className={"container-timeline-section"}>
                 <div className={"titre-section"}>
                     <TimelineIcon/>
                     <span/>
@@ -82,10 +89,9 @@ export default function Timeline({}: TimelineProps) {
                                         : <TimelineCard
                                             key={"event-card-" + index}
                                             color={itemFilter.color}
-                                            body={event.body}
-                                            title={event.title}
-                                            date={event.date}
+                                            event={event}
                                             hidden={!itemFilter.stateChecked[0]}
+                                            displayProjects={listFilter[3].stateChecked[0]}
                                         />
                                 })
                         }

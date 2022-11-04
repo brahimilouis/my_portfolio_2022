@@ -5,6 +5,9 @@
   }
 }
 
+.content-timeline {
+  max-width: 100rem!important;
+}
 .containerPopup {
   position: fixed;
   background-color: white;
@@ -24,6 +27,9 @@
     padding: 1rem;
     gap: 2rem;
     .header {
+      .title {
+        color: #141C38;
+      }
       left: 0;
       top: 0;
       position: fixed;

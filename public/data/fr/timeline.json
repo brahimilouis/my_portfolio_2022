@@ -4,110 +4,232 @@
     "experience": "Expériences",
     "formation": "Formation",
     "other": "Perso",
-    "project": "Projects"
+    "project": "Projets"
   },
   "events" : [
     {
       "title": "Part-time Epitech en Freelance",
       "date": "Septembre 2022 - Mars 2023",
       "body": "Je continue mon expérience chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a> en <strong>Freelance</strong> à raison de 2 jours par semaine.",
-      "type": "experience"
+      "type": "experience",
+      "projects" : []
     },
     {
       "title": "5ème année Epitech",
       "date": "Septembre 2022 - Mars 2022",
       "body": "Les 6 premiers mois de la dernière année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> sont consacrés à mon projet d'étude l'<a href='https://www.epitech.eu/fr/innovation/' target=_blanc>Epitech Innovative Project</a> et permettent de participer à des <strong>séminaires</strong> ou <strong>modules</strong> variés.",
-      "type": "formation"
+      "type": "formation",
+      "projects" : [
+        {
+          "title": "Nysos",
+          "json": "nysos.json",
+          "path": "nysos/nysos.png"
+        }
+      ]
     },
     {
       "title": "Freelance à Dublin",
       "date": "Aout 2021 - Aout 2022",
       "body": "Pendant mon année à <strong>Dublin</strong>, j'ai travaillé 2 jours par semaine en <strong>freelance</strong> chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a><br><br>Ma principale mission a été de développer un <strong>Agenda optimisé</strong> pour leur produit <i>NeoGestion</i>.<br><br>Étant donné que je travaillais avec <i>Neolink</i> depuis plus de 2 ans, j'ai su être <strong>autonome</strong> pour développer un projet à distance.",
-      "type": "experience"
+      "type": "experience",
+      "projects" : [
+        {
+          "title": "Agenda",
+          "json": "agenda.json",
+          "path": "agenda/agenda.png"
+        }
+      ]
     },
     {
       "title": "4ème année à TU Dublin - Cursus Epitech",
       "date": "Septembre 2021 - Juin 2022",
       "body": "J'ai obtenu un double diplôme en IT Management à <a href='https://www.tudublin.ie/' target=_blanc>Technological University Dublin</a>.<br><br>Pendant cette année, j'ai pu suivre des cours de <strong>management</strong>, <strong>stratégie d'entreprise</strong>, <strong>qualité de projet</strong>, <strong>organisation</strong> toujours en rapport avec <strong>l'IT</strong><br><br>J'ai aussi continuer de développer <i>Nysos</i>, notre <a href='https://www.epitech.eu/fr/innovation/' target=_blanc>Epitech Innovative Project</a>, à raison d'une journée par semaine. Un état d'avancement a été réalisé mensuellement avec notre référent.",
-      "type": "formation"
+      "type": "formation",
+      "projects" : [
+        {
+          "title": "Nysos",
+          "json": "nysos.json",
+          "path": "nysos/nysos.png"
+        }
+      ]
     },
     {
       "title": "CDD chez Neolink",
       "date": "Juillet 2020 - Juillet 2021",
       "body": "<strong>La Covid 19</strong> a annulé ma 4ème année qui devait se passer dans une université Australienne. J'ai alors fait le choix de réaliser une <strong>année sabbatique</strong> afin de reporter mon départ.<br><br>Pendant cette année j'ai travaillé chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> du groupe <a href='https://www.berger-levrault.com/fr/' target=_blanc>Berger-Levrault</a> et participé au développement de leur outil <i>Neogestion</i>. Cette période m'a permis de renforcer mon expérience <strong>professionnelle</strong>.",
-      "type": "experience"
+      "type": "experience",
+      "projects" : [
+        {
+          "title": "NeoGestion",
+          "json": "neogestion.json",
+          "path": "neogestion/neogestion.png"
+        }
+      ]
     },
     {
       "title": "Stage fin de 3ème année Epitech",
       "date": "Mars - Juillet 2020",
       "body": "J'ai poursuivi les missions de mon part-time chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> en faisant cette fois un <strong>stage à temps plein</strong>.<br><br>Mars 2019 c'est aussi le début de <strong>la Covid 19</strong>, j'ai donc réalisé ce stage en <strong>télétravail</strong>.",
-      "type": "experience"
+      "type": "experience",
+      "projects" : [
+        {
+          "title": "Maintenance évolutive",
+          "json": "maintenance.json",
+          "path": "maintenance/maintenance.png"
+        },
+        {
+          "title": "Talend studio",
+          "json": "talend.json",
+          "path": "talend/talend.png"
+        },
+        {
+          "title": "Nysos",
+          "json": "nysos.json",
+          "path": "nysos/nysos.png"
+        }
+      ]
     },
     {
       "title": "Bénévole au DevFest",
       "date": "Octobre 2019",
       "body": "Le <a href='https://devfest.gdgnantes.com/en/' target=_blanc>DevFest</a> est un festival de <strong>conférences</strong> techniques destiné aux <strong>développeurs</strong>.",
-      "type": "other"
+      "type": "other",
+      "projects" : []
     },
     {
       "title": "Part-time Epitech chez Neolink Start-up",
       "date": "Septembre 2019 - Mars 2020",
       "body": "Réalisation d'un part-time de 2 jours par semaine chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a> à Blois, durant lequel j'ai fait de la maintenance évolutive :<br><br><ul><li>Développement de fonctionnalités</li><li>Traitement de tickets et de bug</li><li>Reporting quotidien</li></ul>",
-      "type": "experience"
+      "type": "experience",
+      "projects" : [
+        {
+          "title": "Maintenance évolutive",
+          "json": "maintenance.json",
+          "path": "maintenance/maintenance.png"
+        }
+      ]
     },
     {
       "title": "3ème année d’Epitech",
       "date": "Septembre 2019 - Mars 2020",
       "body": "L'année commence avec la dernière <strong>piscine</strong> de mon cursus, qui a pour objectif de définir notre <a href='https://www.epitech.eu/fr/innovation/' target=_blanc>Epitech Innovative Project</a>. Ce projet sera travaillé  jusqu'au milieu de la 5ème année. <br><br>Elle se poursuit par des projets assez divers : <strong>Application mobile, Application Web, IA, DevOps</strong>…",
-      "type": "formation"
+      "type": "formation",
+      "projects" : [
+        {
+          "title": "Dashboard",
+          "json": "dashboard.json",
+          "path": "dashboard/dashboard.jpg"
+        },
+        {
+          "title": "Epicture",
+          "json": "epicture.json",
+          "path": "epicture/epicture.png"
+        }
+      ]
     },
     {
       "title": "Contrat d’été avec Neolink Startup",
       "date": "Été 2019",
       "body": "Découverte et prise en main du Framework de <a href='https://www.neolink.link/' target=_blanc>Neolink</a>, intégration de nouvelles fonctionnalités dans une plat-forme collaborative.",
-      "type": "experience"
+      "type": "experience",
+      "projects" : [
+        {
+          "title": "Maintenance évolutive",
+          "json": "maintenance.json",
+          "path": "maintenance/maintenance.png"
+        }
+      ]
     },
     {
       "title": "Bénévole au Web2day",
       "date": "Juin 2019",
       "body": "Le <a href='https://www.web2day.co/' target=_blanc>Web2day</a> est un festival de <strong>conférences Tech</strong> à Nantes.<br><br>Mon rôle était d'être <strong>chauffeur d'intervenants</strong>, ce qui m'a permis de <strong>rencontrer</strong> des personnalités de la Tech et d'<strong>échanger</strong> avec eux.",
-      "type": "other"
+      "type": "other",
+      "projects" : []
     },
     {
       "title": "2ème année d’Epitech",
       "date": "Janvier - Juillet 2019",
       "body": "La 2ème année commence par une <strong>piscine</strong> de <strong>C++</strong>.<br><br>Elle permet de réaliser plusieurs <strong>projets</strong> principalement en C++ mais aussi de découvrir d'autres langages comme le Haskell.",
-      "type": "formation"
+      "type": "formation",
+      "projects" : [
+        {
+          "title": "Image compressor",
+          "json": "imageCompressor.json",
+          "path": "imageCompressor/imageCompressor.png"
+        },
+        {
+          "title": "Eval expr",
+          "json": "evalExpr.json",
+          "path": "evalExpr/evalExpr.jpg"
+        }
+      ]
     },
     {
       "title": "Stage d'anglais à Londres",
       "date": "Septembre - Decembre 2018",
       "body": "Je suis parti 4 mois à <strong>Londres</strong> afin de progresser en <strong>anglais</strong> en suivant des cours chez <a href='https://www.twinuk.com/' target=_blanc>Twin</a> tous les jours.<br><br>J'ai obtenu le niveau B2 et augmenté mon <strong>TEPITECH</strong> (Toeic) de 250 points.",
-      "type": "formation"
+      "type": "formation",
+      "projects" : []
     },
     {
       "title": "Participation à la communication d’Epitech",
       "date": "Octobre 2017 - Juillet 2018",
       "body": "Durant ma première année, j'ai participé aux <strong>journées portes ouvertes</strong> ainsi qu'aux <strong>salons étudiants</strong> afin de présenter <a href='https://www.epitech.eu/' target=_blanc>Epitech</a>.<br><br>J'ai aussi accompagné plusieurs étudiants souhaitant rejoindre <a href='https://www.epitech.eu/' target=_blanc>Epitech</a> à l'occasion de <strong>journées découverte</strong>.",
-      "type": "other"
+      "type": "other",
+      "projects" : []
     },
     {
       "title": "1ère année d’Epitech",
       "date": "Octobre 2017 - Juillet 2018",
       "body": "<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> commence par 5 semaines intensives d'immersion avec la fameuse <strong>piscine</strong> où nous devons réaliser des listes d'exercices en <strong>C</strong> tous les jours. <br><br>Après ces 5 semaines, débutent les <strong>projets</strong> de 1ère année principalement en <strong>C</strong> et d'autres évaluations comme par exemple le <strong>TEPITECH</strong> (TOEIC) ou les <strong>IT MCA</strong>, (QCM de culture informatique).",
-      "type": "formation"
+      "type": "formation",
+      "projects" : [
+        {
+          "title": "RPG",
+          "json": "rpg.json",
+          "path": "rpg/rpg.png"
+        },
+        {
+          "title": "Cook",
+          "json": "cook.json",
+          "path": "cook/cook.png"
+        },
+        {
+          "title": "Need4Stek",
+          "json": "need4Stek.json",
+          "path": "need4Stek/need4Stek.jpg"
+        },
+        {
+          "title": "Navy",
+          "json": "navy.json",
+          "path": "navy/navy.png"
+        },
+        {
+          "title": "Sokoban",
+          "json": "sokoban.json",
+          "path": "sokoban/sokoban.png"
+        },
+        {
+          "title": "BSQ",
+          "json": "bsq.json",
+          "path": "bsq/bsq.png"
+        }
+      ]
     },
     {
       "title": "Missions d'intérim",
       "date": "Été 2017",
       "body": "J'ai réalisé les missions suivantes en intérim :<br><br><ul><li><i>But</i> - Manutentionnaire</li><li><i>Intermarché</i> - Inventoriste</li><li><i>Défi entreprises communication Chambord</i> - Manutentionnaire</li></u>",
-      "type": "experience"
+      "type": "experience",
+      "projects" : []
     },
     {
       "title": "Baccalauréat S Mention bien",
       "date": "Juin 2017",
       "body": "J'ai obtenu mon <strong>BAC S SVT</strong> avec la spécialisation <Strong>ISN</strong> “Informatique et Science du Numérique”. <br><br>C'est grâce à cette spécialisation que j'ai décidé de faire de l'informatique et d'intégrer <a href='https://www.epitech.eu/' target=_blanc>Epitech</a>.",
-      "type": "formation"
+      "type": "formation",
+      "projects" : []
     }
   ]
 }

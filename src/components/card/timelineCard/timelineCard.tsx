@@ -2,13 +2,13 @@ import React from 'react';
 import './_timelineCard.scss'
 import ProjectCard from "../projectCard/projectCard";
 import GridCardList from "../../list/gridCardList/gridCardList";
+import {EventModel} from "../../../pages/timeline/timeline";
 
 export type TimelineCardProps = {
-    color: string,
-    title: string,
-    body: string,
-    date: string
+    color: string
     hidden: boolean
+    event: EventModel
+    displayProjects: boolean
 }
 
 export default function TimelineCard(props: TimelineCardProps) {
@@ -19,43 +19,23 @@ export default function TimelineCard(props: TimelineCardProps) {
             <span className="arrow-left"/>
             <span className="arrow-left-in"/>
             <div className="event-info">
-                <h1>{props.title}</h1>
-                <span className={"date"}>{props.date}</span>
+                <h1>{props.event.title}</h1>
+                <span className={"date"}>{props.event.title}</span>
             </div>
-            <div className="body">
-                <p dangerouslySetInnerHTML={{__html: props.body}}></p>
-                {/*<GridCardList className={"card-timeline"}>*/}
-                {/*    <ProjectCard*/}
-                {/*                 path={"portfolio/portfolio.jpeg"}*/}
-                {/*                 title={"Mon portfolio"}*/}
-                {/*                 jsonPath={"portfolio.json"}*/}
-                {/*    />*/}
-                {/*    <ProjectCard*/}
-                {/*                 path={"nysos/nysos.png"}*/}
-                {/*                 title={"Nysos - (projet fin d'étude)"}*/}
-                {/*                 jsonPath={"nysos.json"}*/}
-                {/*    />*/}
-                {/*    <ProjectCard*/}
-                {/*                 path={"agenda/agenda.png"}*/}
-                {/*                 title={"Agenda Neolink"}*/}
-                {/*                 jsonPath={"agenda.json"}*/}
-                {/*    />*/}
-                {/*    <ProjectCard*/}
-                {/*                 path={"rpg/rpg.png"}*/}
-                {/*                 title={"My RPG"}*/}
-                {/*                 jsonPath={"rpg.json"}*/}
-                {/*    />*/}
-                {/*    <ProjectCard*/}
-                {/*        path={"rpg/rpg.png"}*/}
-                {/*        title={"My RPG"}*/}
-                {/*        jsonPath={"rpg.json"}*/}
-                {/*    />*/}
-                {/*    <ProjectCard*/}
-                {/*        path={"rpg/rpg.png"}*/}
-                {/*        title={"My RPG"}*/}
-                {/*        jsonPath={"rpg.json"}*/}
-                {/*    />*/}
-                {/*</GridCardList>*/}
+            <div className="body-timeline">
+                <p dangerouslySetInnerHTML={{__html: props.event.body}}></p>
+                {
+                    !props.displayProjects || props.event.projects === null ? null :
+                        <GridCardList className={"project"}>
+                            {props.event.projects.map((project, index) => (
+                                <ProjectCard key={"timeline-project-" + project.title}
+                                             title={project.title}
+                                             path={project.path}
+                                             jsonPath={project.json}
+                                />
+                            ))}
+                        </GridCardList>
+                }
             </div>
         </div>
     </div>);

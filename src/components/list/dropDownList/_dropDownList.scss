@@ -17,9 +17,8 @@
     padding-left: 3rem;
     &[open] {
       .content {
-        animation: details-show 250ms ease-in-out;
         opacity: 100;
-        transition: opacity 250ms ease-in-out;
+        transition: opacity 400ms ease-in-out;
       }
 
       ::marker, ::-webkit-details-marker {
@@ -30,7 +29,6 @@
       .content {
         opacity: 0;
       }
-
     }
     summary {
       cursor: pointer;
