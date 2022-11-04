@@ -10,9 +10,6 @@
       .left, .right {
         width: 100%!important;
       }
-      //.skill {
-      //  width: 33%;
-      //}
     }
   }
 
@@ -21,8 +18,6 @@
       grid-template-columns: repeat(2, 1fr)!important;
     }
   }
-
-
 
   h3.title-profil {
     font-weight: normal;
@@ -76,7 +71,7 @@
           padding-bottom: 2.5rem;
           display: flex;
           flex-direction: column;
-          align-items: start;
+          align-items: flex-start;
           gap: 2rem;
           h3.title-profil {
             padding-top: 2.5rem;

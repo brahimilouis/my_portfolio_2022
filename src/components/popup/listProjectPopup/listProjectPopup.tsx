@@ -7,7 +7,7 @@ import {CategoryData} from "../../../class/categoryData";
 
 export type ListProjectPopupProps = {
     close: () => void,
-    listProjectsProps : ListItemData
+    listProjectsProps: ListItemData
 }
 
 type ListItemData = {

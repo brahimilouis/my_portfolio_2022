@@ -19,10 +19,10 @@ type FormTextModel = {
     email: string,
     message: string
     button: string
-    errorRequired:string,
-    errorInvalidEmail:string
-    succesMessage:string,
-    errorMessage:string
+    errorRequired: string,
+    errorInvalidEmail: string
+    succesMessage: string,
+    errorMessage: string
 
 }
 type ContactModel = {
@@ -39,7 +39,12 @@ interface FormInputs {
 }
 
 export default function Contact({}: ContactProps) {
-    const {register, handleSubmit, formState : {errors, isValid, submitCount, isSubmitting, isSubmitSuccessful}, reset} = useForm<FormInputs>();
+    const {
+        register,
+        handleSubmit,
+        formState: {errors, isValid, submitCount, isSubmitting, isSubmitSuccessful},
+        reset
+    } = useForm<FormInputs>();
     const [datas, setDatas] = useState<null | ContactModel>(null);
     if (datas == null) {
         new FetchData("contact.json").fetchData().then((json) => {
@@ -48,7 +53,7 @@ export default function Contact({}: ContactProps) {
     }
 
     useEffect(() => {
-        reset({message:"", email:"", name:""}, {keepSubmitCount:false, keepIsValid: false})
+        reset({message: "", email: "", name: ""}, {keepSubmitCount: false, keepIsValid: false})
     }, [isSubmitSuccessful]);
 
     const onSubmit = async (data: any) => {
@@ -65,12 +70,13 @@ export default function Contact({}: ContactProps) {
         await emailjs
             .send(serviceId, templateId, variables, 'hHTy6ekTh7GRQSmRb')
             .then((res) => {
-                reset({message:"", email:"", name:""}, {keepSubmitCount:false, keepIsValid: false});
+                reset({message: "", email: "", name: ""}, {keepSubmitCount: false, keepIsValid: false});
                 toast.success(datas == null ? "Error" : datas.form.succesMessage);
                 // reset form
             })
             .catch((err) => toast.error(datas == null ? "Error" : datas.form.errorMessage));
     }
+
     return (<section className="contact"> {datas == null ? null : [
         <div className={"titre-section"} key={"title-section"}>
             <ContactIcon/>
@@ -113,13 +119,13 @@ export default function Contact({}: ContactProps) {
                         <input
                             className="input-contact"
                             type="text"
-                            {...register("name", {required:datas.form.errorRequired})}
+                            {...register("name", {required: datas.form.errorRequired})}
                             placeholder={datas.form.name}
                         />
                         <ErrorMessage
                             errors={errors}
                             name={"name"}
-                            render={(message)=>(
+                            render={(message) => (
                                 <p className={"message-error"}>{message.message}</p>
                             )}
                         />
@@ -140,7 +146,7 @@ export default function Contact({}: ContactProps) {
                         <ErrorMessage
                             errors={errors}
                             name={"email"}
-                            render={(message)=>(
+                            render={(message) => (
                                 <p className={"message-error"}>{message.message}</p>
                             )}
                         />
@@ -153,17 +159,19 @@ export default function Contact({}: ContactProps) {
                         cols={20}
                         rows={10}
                         {...register("message", {
-                            required:datas.form.errorRequired,})}
+                            required: datas.form.errorRequired,
+                        })}
                     />
                     <ErrorMessage
                         errors={errors}
                         name={"message"}
-                        render={(message)=>(
+                        render={(message) => (
                             <p className={"message-error"}>{message.message}</p>
                         )}
                     />
                 </div>
-                <button disabled={isSubmitting || (!isValid && submitCount > 0)} className="button-contact" type="submit">
+                <button disabled={isSubmitting || (!isValid && submitCount > 0)} className="button-contact"
+                        type="submit">
                     {datas.form.button}
                 </button>
                 <ToastContainer position={"bottom-right"} autoClose={3000}/>

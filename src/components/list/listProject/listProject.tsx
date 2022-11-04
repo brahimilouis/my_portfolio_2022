@@ -15,10 +15,6 @@ export default function Listproject(props: ListProjectProps) {
             props.list.map(
                 (projet, index) => (
                     <div className="li" key={projet.name + index.toString()}>
-                        {/*<ImageAction*/}
-                        {/*    path={projet.path}*/}
-                        {/*    typeAction={TypePopupAction.projet}*/}
-                        {/*/>*/}
                         <h3>{projet.libelle}</h3>
                     </div>
                 )

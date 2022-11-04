@@ -1,10 +1,10 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import './_dropDownList.scss'
 
-export type DropdownlistProps= {
+export type DropdownlistProps = {
     title: String
     children: React.ReactNode
-    isOpenDefault : boolean
+    isOpenDefault: boolean
 }
 
 

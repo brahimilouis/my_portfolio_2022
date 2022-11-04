@@ -3,10 +3,9 @@
   padding-bottom: 3rem;
   @keyframes details-show {
     from {
-      opacity:0;
+      opacity: 0;
     }
   }
-
 
   details {
     position: relative;
@@ -17,10 +16,21 @@
     padding-right: 3rem;
     padding-left: 3rem;
     &[open] {
-      animation: details-show 250ms ease-in-out;
-      ::marker {
+      .content {
+        animation: details-show 250ms ease-in-out;
+        opacity: 100;
+        transition: opacity 250ms ease-in-out;
+      }
+
+      ::marker, ::-webkit-details-marker {
         color: $secondaryColor;
       }
+    }
+    &:not([open]) {
+      .content {
+        opacity: 0;
+      }
+
     }
     summary {
       cursor: pointer;
@@ -32,6 +42,7 @@
       height: fit-content;
       transition: all 1s ease-in;
       padding-top: 3rem;
+      opacity: 0;
     }
   }
 }

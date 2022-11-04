@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import { Link } from 'react-scroll';
+import {Link} from 'react-scroll';
 import './_Navigation.scss';
-import logo from '../../../public/logo_lb_numerique.png';
 import MenuIcon from "../../assets/icons/contact/menuIcon";
 import CloseIcon from "../../assets/icons/closeIcon";
+
 export type NavigationProps = {}
 
 function Navigation() {
@@ -42,7 +42,7 @@ function Navigation() {
     window.addEventListener('scroll', changeColor)
     return (
         <nav>
-            <div className={"content-nav"+ (color ? " light" : "") + (menuOpen ? " open" : "")}>
+            <div className={"content-nav" + (color ? " light" : "") + (menuOpen ? " open" : "")}>
                 <div className={"row"}>
                     <div key={"nav-home"} className={"item-nav"}>
                         <Link
@@ -53,7 +53,6 @@ function Navigation() {
                             offset={-48}
                             className='transition-all duration-300'>{
                             "Louis BRAHIMI"
-                            // <img src={logo} alt="image"/>
                         }
                         </Link>
                     </div>

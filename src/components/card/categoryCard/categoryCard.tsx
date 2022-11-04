@@ -6,16 +6,16 @@ import {CategoryData} from "../../../class/categoryData";
 export type CategoryCardProps = {
     path: string
     title: string
-    projectList:Array<CategoryData>
+    projectList: Array<CategoryData>
 }
 
-export default  function CategoryCard(props: CategoryCardProps) {
+export default function CategoryCard(props: CategoryCardProps) {
     return (
         <OpenPopupOnClick
-            type= {TypePopup.listProjet}
-            childrenProps= {{title:props.title, list:props.projectList}}
+            type={TypePopup.listProjet}
+            childrenProps={{title: props.title, list: props.projectList}}
         >
-            <ImageClickable path={"categories/"+props.path}/>
+            <ImageClickable path={"categories/" + props.path}/>
         </OpenPopupOnClick>
     );
 }

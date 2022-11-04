@@ -2,18 +2,18 @@ import React from "react";
 import FetchData from "./fetchData";
 
 export type ProjectCategory = {
-    language:string,
-    type:string,
-    origine:string
+    language: string,
+    type: string,
+    origine: string
 }
 
 export class CategoryData {
-    title:string
-    name:string
-    path:string
-    projectCategory : ProjectCategory | null
+    title: string
+    name: string
+    path: string
+    projectCategory: ProjectCategory | null
 
-    constructor(title:string, type:string, name:string, path:string, projectCategory:ProjectCategory|null) {
+    constructor(title: string, type: string, name: string, path: string, projectCategory: ProjectCategory | null) {
         this.title = title;
         this.path = path;
         this.name = name;
@@ -22,11 +22,12 @@ export class CategoryData {
 }
 
 export class ListCategoryData {
-    title:string
+    title: string
     data: Array<CategoryData> = []
-    isOpenDefault:boolean
-    type:string
-    constructor(title:string, data:Array<CategoryData>, isOpenDefault:boolean=true, type:string) {
+    isOpenDefault: boolean
+    type: string
+
+    constructor(title: string, data: Array<CategoryData>, isOpenDefault: boolean = true, type: string) {
         this.title = title;
         this.isOpenDefault = isOpenDefault;
         this.data = data;
@@ -35,15 +36,17 @@ export class ListCategoryData {
 }
 
 type PortfolioModelType = {
-    datas:Array<ListCategoryData>,
-    title:string
+    datas: Array<ListCategoryData>,
+    title: string
 }
 export default class PortfolioModel extends FetchData {
-    datas : Array<ListCategoryData> = []
-    title : string = ""
-    constructor () {
+    datas: Array<ListCategoryData> = []
+    title: string = ""
+
+    constructor() {
         super("categories.json");
     }
+
     public async get() {
         await this.fetchData().then((json) => {
             try {
@@ -55,8 +58,8 @@ export default class PortfolioModel extends FetchData {
         })
     }
 
-    public getListProjectFiltered(listCategoryType:string, categoryName:string) : Array<CategoryData> {
-        let list : Array<CategoryData> = [];
+    public getListProjectFiltered(listCategoryType: string, categoryName: string): Array<CategoryData> {
+        let list: Array<CategoryData> = [];
         let projectsCategory = this.datas.find(data => {
             return data.type === "project"
         })
@@ -64,15 +67,15 @@ export default class PortfolioModel extends FetchData {
             projectsCategory.data.map(project => {
                 switch (listCategoryType) {
                     case "type":
-                        if (project.projectCategory?.type == categoryName)
+                        if (project.projectCategory?.type === categoryName)
                             list.push(project)
                         break;
                     case "origine":
-                        if (project.projectCategory?.origine == categoryName)
+                        if (project.projectCategory?.origine === categoryName)
                             list.push(project)
                         break;
                     case "language":
-                        if (project.projectCategory?.language == categoryName)
+                        if (project.projectCategory?.language === categoryName)
                             list.push(project)
                         break;
                 }

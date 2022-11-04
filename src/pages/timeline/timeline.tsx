@@ -16,7 +16,7 @@ export type FilterModel = {
 
 type EventModel = {
     title: string
-    date:string
+    date: string
     body: string,
     type: string
 }

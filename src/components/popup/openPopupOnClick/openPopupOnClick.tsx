@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Containerpopup from "../containerPopup/containerPopup";
 import Project from "../projectPopup/project";
-import ListProjectPopup, {ListProjectPopupProps} from "../listProjectPopup/listProjectPopup";
+import ListProjectPopup from "../listProjectPopup/listProjectPopup";
 
 export enum TypePopup {
     projet,
@@ -10,7 +10,7 @@ export enum TypePopup {
 
 export type OpenPopupOnClickProps = {
     type: TypePopup
-    children:React.ReactNode
+    children: React.ReactNode
     childrenProps: any
 }
 

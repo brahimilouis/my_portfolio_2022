@@ -1,5 +1,8 @@
 import React from 'react';
 import './_timelineCard.scss'
+import ProjectCard from "../projectCard/projectCard";
+import GridCardList from "../../list/gridCardList/gridCardList";
+
 export type TimelineCardProps = {
     color: string,
     title: string,
@@ -9,7 +12,8 @@ export type TimelineCardProps = {
 }
 
 export default function TimelineCard(props: TimelineCardProps) {
-    return (<div key={"timeline-card"} className={"timeline-card" + (props.hidden ? " unseen": "")} style={{ "--color-": props.color} as React.CSSProperties}>
+    return (<div key={"timeline-card"} className={"timeline-card" + (props.hidden ? " unseen" : "")}
+                 style={{"--color-": props.color} as React.CSSProperties}>
         <span className="round-time"/>
         <div className="content-body">
             <span className="arrow-left"/>
@@ -20,6 +24,38 @@ export default function TimelineCard(props: TimelineCardProps) {
             </div>
             <div className="body">
                 <p dangerouslySetInnerHTML={{__html: props.body}}></p>
+                {/*<GridCardList className={"card-timeline"}>*/}
+                {/*    <ProjectCard*/}
+                {/*                 path={"portfolio/portfolio.jpeg"}*/}
+                {/*                 title={"Mon portfolio"}*/}
+                {/*                 jsonPath={"portfolio.json"}*/}
+                {/*    />*/}
+                {/*    <ProjectCard*/}
+                {/*                 path={"nysos/nysos.png"}*/}
+                {/*                 title={"Nysos - (projet fin d'étude)"}*/}
+                {/*                 jsonPath={"nysos.json"}*/}
+                {/*    />*/}
+                {/*    <ProjectCard*/}
+                {/*                 path={"agenda/agenda.png"}*/}
+                {/*                 title={"Agenda Neolink"}*/}
+                {/*                 jsonPath={"agenda.json"}*/}
+                {/*    />*/}
+                {/*    <ProjectCard*/}
+                {/*                 path={"rpg/rpg.png"}*/}
+                {/*                 title={"My RPG"}*/}
+                {/*                 jsonPath={"rpg.json"}*/}
+                {/*    />*/}
+                {/*    <ProjectCard*/}
+                {/*        path={"rpg/rpg.png"}*/}
+                {/*        title={"My RPG"}*/}
+                {/*        jsonPath={"rpg.json"}*/}
+                {/*    />*/}
+                {/*    <ProjectCard*/}
+                {/*        path={"rpg/rpg.png"}*/}
+                {/*        title={"My RPG"}*/}
+                {/*        jsonPath={"rpg.json"}*/}
+                {/*    />*/}
+                {/*</GridCardList>*/}
             </div>
         </div>
     </div>);

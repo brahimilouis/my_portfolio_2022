@@ -6,6 +6,7 @@ import CategoryCard from "../../components/card/categoryCard/categoryCard";
 import ProjectCard from "../../components/card/projectCard/projectCard";
 import PortfolioIcon from "../../assets/icons/portfolioIcon";
 import PortfolioModel from "../../class/categoryData";
+
 export type PortfolioProps = {}
 
 export default function Portfolio({}: PortfolioProps) {

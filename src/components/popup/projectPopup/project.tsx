@@ -71,7 +71,8 @@ export default function Project(props: ProjectProps) {
                                 {datas == null ? "" : datas.name}
                             </span>
                         }
-                        <span className={"language span-icon"}><LanguageIcon/>{datas == null ? "" : datas.language}</span>
+                        <span
+                            className={"language span-icon"}><LanguageIcon/>{datas == null ? "" : datas.language}</span>
                     </div>
                 </div>
                 {
@@ -79,7 +80,8 @@ export default function Project(props: ProjectProps) {
                         <div className={"info"} key={"info-project"}>
                             <span className={"date span-icon"}><DateIcon/>{datas.date}</span>
                             <span className={"time span-icon"}><TimeIcon/>{datas.time}</span>
-                            <span className={"people span-icon"}><PeopleIcon/>{datas.nbrPeople + " personne" + (datas.nbrPeople>1?'s':'')}</span>
+                            <span
+                                className={"people span-icon"}><PeopleIcon/>{datas.nbrPeople + " personne" + (datas.nbrPeople > 1 ? 's' : '')}</span>
                         </div>,
                         <div className={"body"} key={"body-project"}>
                             {

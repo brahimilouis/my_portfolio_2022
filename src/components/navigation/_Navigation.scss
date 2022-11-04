@@ -1,6 +1,11 @@
 @import "src/styles/variable";
 
 nav {
+  @keyframes show {
+    from {
+      opacity:0;
+    }
+  }
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -75,6 +80,7 @@ nav {
 
   @media screen and (max-width: 768px) {
     .content-nav.open {
+      animation: show 0.2s ease-in-out;
       flex-direction: column;
       height: 100vh;
       justify-content: stretch;
@@ -91,7 +97,6 @@ nav {
     .menu-small {
       display:block;
     }
-
   }
 }
 
