@@ -1,6 +1,6 @@
 {
   "name": "Intégration de data",
-  "date": "Juin 2021",
+  "date": "Juin 2020",
   "time": "1 mois",
   "nbrPeople": 1,
   "pathImage": "talend/",
@@ -10,7 +10,7 @@
   "body": [
     {
       "title" : "But du projet",
-      "text" : "Pendant ma 3eme année à <a href='https://www.epitech.eu/' target=_blanc>Epitech</a> j'ai réalisé un part-time à 2 jours par semaine chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a>.<br>Une de mes missions a été d'automatiser l'import de données de certains flux avec <a href='https://www.talend.com/fr/products/talend-open-studio/' target=_blanc>Talend Open Studio</a>. Cette mission m'a permis d'apprendre à utiliser le logiciel et la logique d'intégration de données ainsi que de progresser en <i>SQL</i>."
+      "text" : "Pendant mon stage de 3eme année d'<a href='https://www.epitech.eu/' target=_blanc>Epitech</a> que j'ai réalisé chez <a href='https://www.neolink.link/' target=_blanc>Neolink</a>.<br>Une de mes missions était d'automatiser l'import de données de certains flux avec <a href='https://www.talend.com/fr/products/talend-open-studio/' target=_blanc>Talend Open Studio</a>. Cette mission m'a permis d'apprendre à utiliser le logiciel et la logique d'intégration de données ainsi que de progresser en <i>SQL</i>."
     },
     {
       "title" : "Talend Open Studio c'est quoi ?",

@@ -81,11 +81,6 @@
           "title": "Talend studio",
           "json": "talend.json",
           "path": "talend/talend.png"
-        },
-        {
-          "title": "Nysos",
-          "json": "nysos.json",
-          "path": "nysos/nysos.png"
         }
       ]
     },
@@ -124,6 +119,11 @@
           "title": "Epicture",
           "json": "epicture.json",
           "path": "epicture/epicture.png"
+        },
+        {
+          "title": "Eval expr",
+          "json": "evalExpr.json",
+          "path": "evalExpr/evalExpr.jpg"
         }
       ]
     },
@@ -157,11 +157,6 @@
           "title": "Image compressor",
           "json": "imageCompressor.json",
           "path": "imageCompressor/imageCompressor.png"
-        },
-        {
-          "title": "Eval expr",
-          "json": "evalExpr.json",
-          "path": "evalExpr/evalExpr.jpg"
         }
       ]
     },

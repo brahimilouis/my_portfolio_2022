@@ -20,7 +20,7 @@ export default function TimelineCard(props: TimelineCardProps) {
             <span className="arrow-left-in"/>
             <div className="event-info">
                 <h1>{props.event.title}</h1>
-                <span className={"date"}>{props.event.title}</span>
+                <span className={"date"}>{props.event.date}</span>
             </div>
             <div className="body-timeline">
                 <p dangerouslySetInnerHTML={{__html: props.event.body}}></p>
