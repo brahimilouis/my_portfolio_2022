@@ -82,7 +82,11 @@ export default function Project(props: ProjectProps) {
                         <div className={"info"} key={"info-project"}>
                             <span className={"date span-icon"} key={"project-date"}><DateIcon/>{datas.date}</span>
                             <span className={"time span-icon"} key={"project-time"}><TimeIcon/>{datas.time}</span>
-                            <span className={"people span-icon"} key={"project-people"}><PeopleIcon/>{datas.nbrPeople + " personne" + (datas.nbrPeople > 1 ? 's' : '')}</span>
+                            <span className={"people span-icon"} key={"project-people"}><PeopleIcon/>{
+                                datas.nbrPeople + (props.language === Language.french ?
+                                    (" personne" +(datas.nbrPeople > 1 ? 's' : '')) :
+                                    (datas.nbrPeople > 1 ? " people" : " person"))
+                            }</span>
                         </div>,
                         <div className={"body"} key={"body-project"}>
                             {

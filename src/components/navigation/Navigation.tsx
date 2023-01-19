@@ -16,7 +16,7 @@ function Navigation({language, setLanguage} : NavigationProps) {
     const items = [
         {
             href: "profil",
-            name: "PROFIL"
+            name: language === Language.french ? "PROFILE" : "PROFIL"
         },
         {
             href: "portfolio",
@@ -24,11 +24,11 @@ function Navigation({language, setLanguage} : NavigationProps) {
         },
         {
             href: "timeline-section",
-            name: "PARCOURS"
+            name: language === Language.french ? "PARCOURS" : "TIMELINE"
         },
         {
             href: "resume",
-            name: "CV"
+            name: language === Language.french ? "CV" : "RESUME"
         },
         {
             href: "contact",

@@ -2,7 +2,7 @@
   "title": "My career path",
   "filters" : {
     "experience": "Experiences",
-    "formation": "Education",
+    "formation": "School",
     "other": "Personal",
     "project": "Projects"
   },
@@ -18,7 +18,7 @@
       "title": "5th year Epitech",
       "date": "September 2022 - March 2022",
       "body": "The first 6 months of the final year of <a href='https://www.epitech.eu/' target=_blanc>Epitech</a> are dedicated to my study project the <a href='https://www.epitech.eu/fr/innovation/' target=_blanc>Epitech Innovative Project</a> and allow me to participate in various <strong>seminars</strong> or <strong>modules</strong>.",
-      "type": "education",
+      "type": "formation",
       "projects" : [
         {
           "title": "Nysos",
@@ -44,7 +44,7 @@
       "title": "4th year at TU Dublin - Epitech Curriculum",
       "date": "September 2021 - June 2022",
       "body": "I obtained a double degree in IT Management at <a href='https://www.tudublin.ie/' target=_blank>Technological University Dublin</a>.<br><br>During this year, I took courses in <strong>management</strong>, <strong>business strategy</strong>, <strong>project quality</strong>, <strong>organization</strong> always related to <strong>IT</strong><br><br>I also continued to develop <i>Nysos</i>, our <a href='https://www.epitech.eu/fr/innovation/' target=_blank>Epitech Innovative Project</a>, at a rate of one day per week. A progress report was made monthly with our referent.",
-      "type": "education",
+      "type": "formation",
       "projects" : [
         {
           "title": "Nysos",
@@ -108,7 +108,7 @@
       "title": "3rd year at Epitech",
       "date": "September 2019 - March 2020",
       "body": "The year begins with the last <strong>pool</strong> of my curriculum, which aims to define our <a href='https://www.epitech.eu/fr/innovation/' target=_blanc>Epitech Innovative Project</a>. This project will be worked on until the middle of the 5th year. <br><br>It continues with various projects: <strong>Mobile Application, Web Application, AI, DevOps</strong>…",
-      "type": "training",
+      "type": "formation",
       "projects" : [
         {
           "title": "Dashboard",
@@ -151,7 +151,7 @@
       "title": "2nd year at Epitech",
       "date": "January - July 2019",
       "body": "The 2nd year begins with a <strong>pool</strong> of <strong>C++</strong>.<br><br>It allows to carry out several <strong>projects</strong> mainly in C++ but also to discover other languages like Haskell.",
-      "type": "training",
+      "type": "formation",
       "projects" : [
         {
           "title": "Image compressor",

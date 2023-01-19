@@ -1,6 +1,7 @@
 import React from 'react';
 import './_resume.scss'
-import resume from "../../assets/resume.pdf";
+import resumeFr from "../../assets/resume-fr.pdf";
+import resumeEn from "../../assets/resume-en.pdf";
 import ResumeIcon from "../../assets/icons/resumeIcon";
 import {Language} from "../../index";
 
@@ -11,10 +12,10 @@ export type ResumeProps = {
 export default function Resume({language}: ResumeProps) {
     return (<section className="resume">
         <div className={"titre-section"}>
-            <ResumeIcon/>
+            <ResumeIcon language={language}/>
             <span/>
-            <h1>Mon CV</h1>
+            <h1>{language === Language.french ? "Mon CV" : "My resume"}</h1>
         </div>
-        <embed key={"o"} title={"cv"} src={resume} type='application/pdf'/>
+        <embed key={"o"} title={"cv"} src={language === Language.french ? resumeFr : resumeEn} type='application/pdf'/>
     </section>);
 }

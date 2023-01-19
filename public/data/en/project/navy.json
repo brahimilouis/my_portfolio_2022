@@ -10,7 +10,7 @@
   "body": [
     {
       "title": "Purpose of the project",
-      "text": "<i>My Navy</i> was created in the first year of <a href='https://www.epitech.eu/' target=_blank>Epitech</a>. The objective was to develop the game <i>battleship</i> in <strong>terminal</strong> version. <br><br>Also called <i>hit-and-sink</i>, My Navy is a game in which two players must place "ships" on a secret grid and try to "hit" the opponent's ships.<br><br><strong>The winner</strong> is the one who manages to sink all the opponent's ships before all of their own ships are sunk."
+      "text": "<i>My Navy</i> was created in the first year of <a href='https://www.epitech.eu/' target=_blank>Epitech</a>. The objective was to develop the game <i>battleship</i> in <strong>terminal</strong> version. <br><br>Also called <i>hit-and-sink</i>, My Navy is a game in which two players must place 'ships' on a secret grid and try to 'hit' the opponent's ships.<br><br><strong>The winner</strong> is the one who manages to sink all the opponent's ships before all of their own ships are sunk."
     },
     {
       "title": "How it works",

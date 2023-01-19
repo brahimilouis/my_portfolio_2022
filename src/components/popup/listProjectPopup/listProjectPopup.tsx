@@ -22,7 +22,8 @@ export default function ListProjectPopup(props: ListProjectPopupProps) {
         <div className={"header"}>
             <div className={"content-header"}>
                 <div className={"conteneur-close"} onClick={props.close}><CloseIcon/></div>
-                <span>{"Projets - " + props.listProjectsProps.title}</span>
+                <span>{(props.language === Language.french ? "Projets" : "Projects")
+                    + " - " + props.listProjectsProps.title}</span>
                 <span/>
             </div>
         </div>
