@@ -1,0 +1,24 @@
+{
+  "name": "My RPG",
+  "date": "May 2018",
+  "time": "3 weeks",
+  "nbrPeople": 2,
+  "pathImage": "rpg/",
+  "nbrImage":7,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_rpg_2017",
+  "body": [
+    {
+      "title" : "Project Goal",
+      "text" : "<i>My RPG</i> is a graphical project developed using the <a href='https://www.sfml-dev.org/index-en.php' target=_blank>CSFML</a> library in the first year at <a href='https://www.epitech.eu/' target=_blank>Epitech</a>.<br>The goal of this project was to create a <strong>RPG</strong>, meaning a role-playing video game where the player takes on the role of a character that interacts with the game's universe and its own characteristics.<br><br>The school gave us full <strong>creative freedom</strong> on the game's mechanics and goal, so we had to <strong>imagine</strong> and <strong>develop</strong> the game from scratch."
+    },
+    {
+      "title" : "Our RPG",
+      "text" : "You will play as an adventurer who, during a boat trip, gets caught in a storm. <br> Unfortunately, after struggling, the boat shipwrecks on an island where the character will live the adventure of our <strong>RPG</strong>. To escape, he must follow a quest to retrieve the necessary items. To do this, the character will move around the map and fight the monsters on the island one by one. <br><br> We chose to make a <strong>fun game</strong> to learn and improve typing on a computer keyboard. Throughout the adventure, the player will have to win battles by quickly typing a series of random letters and earn bonuses for making no mistakes."
+    },
+    {
+      "title": "Some features of our RPG",
+      "text": "<ul><li>A <strong>game menu</strong> with player creation - save game recovery - tutorial - settings</li><li>Ability to <strong>customize</strong> the character's name, color, and gender at creation and save the game progress</li><li><strong>Dynamic game</strong> with a start and end cinematic, movement effects, particle effects, music, and sound effects</li><li>A <strong>collision system</strong> and a map that evolves as the quest progresses.</li><li>Interactions with a <strong>NPC</strong>, ability to view the overall map of the island and an inventory that evolves as the quest progresses.</li></ul>"
+    }
+  ]
+}

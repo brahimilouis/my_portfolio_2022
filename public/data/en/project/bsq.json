@@ -1,0 +1,20 @@
+{
+  "name": "My BSQ",
+  "date": "December 2017",
+  "time": "1 week",
+  "nbrPeople": 1,
+  "pathImage": "bsq/",
+  "nbrImage":3,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_bsq_2017",
+  "body": [
+    {
+      "title" : "Project objective",
+      "text" : "This project was completed in my first year at <a href='https://www.epitech.eu/' target=_blank>Epitech</a>.<br><br>Given a map and its legend, the goal is to find the largest <strong>square</strong> without encountering any obstacles. In case of several squares of the same size, the algorithm selects the one that is the highest and then the one that is the furthest to the left."
+    },
+    {
+      "title" : "Project constraint",
+      "text" : "A <strong>performant algorithm</strong> was necessary, as the program had a <strong>limited time</strong> to find the largest square. <strong>Optimizations</strong> were implemented to effectively locate the square on large maps with many obstacles."
+    }
+  ]
+}

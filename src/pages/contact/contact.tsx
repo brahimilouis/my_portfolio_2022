@@ -11,8 +11,11 @@ import PhoneIcon from "../../assets/icons/contact/phoneIcon";
 import FetchData from "../../class/fetchData";
 import {toast, ToastContainer} from "react-toastify";
 import GithubContactIcon from "../../assets/icons/contact/githutContactIcon";
+import {Language} from "../../index";
 
-export type ContactProps = {}
+export type ContactProps = {
+    language:Language
+}
 
 type FormTextModel = {
     name: string,
@@ -38,7 +41,13 @@ interface FormInputs {
     message: string
 }
 
-export default function Contact({}: ContactProps) {
+export default function Contact({language}: ContactProps) {
+    useEffect(() => {
+        return () => {
+            setDatas(null);
+        };
+    }, [language]);
+
     const {
         register,
         handleSubmit,
@@ -47,7 +56,7 @@ export default function Contact({}: ContactProps) {
     } = useForm<FormInputs>();
     const [datas, setDatas] = useState<null | ContactModel>(null);
     if (datas == null) {
-        new FetchData("contact.json").fetchData().then((json) => {
+        new FetchData("contact.json", language).fetchData().then((json) => {
             setDatas(json)
         })
     }

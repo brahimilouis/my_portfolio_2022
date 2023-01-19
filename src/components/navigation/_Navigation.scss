@@ -23,6 +23,9 @@ nav {
       justify-content: space-between;
       width: 100%;
     }
+    .language-container {
+      color: $complementaryColor;
+    }
     .item-nav {
       padding-top: 16px;
       padding-bottom: 16px;
@@ -43,6 +46,9 @@ nav {
     &.light:not(.open) {
       transition: all 0.5s ease-in;
       background-color: transparent;
+      .language-container {
+        color: $primaryColor;
+      }
       .item-nav {
         color: $primaryColor;
         &:hover,.active {
@@ -78,7 +84,15 @@ nav {
     }
   }
 
-  @media screen and (max-width: 768px) {
+  .flag {
+    padding: 0!important;
+    svg {
+      width: 35px!important;
+      height: 35px!important;
+    }
+  }
+
+  @media screen and (max-width: 868px) {
     .content-nav.open {
       animation: show 0.2s ease-in-out;
       flex-direction: column;
@@ -95,7 +109,13 @@ nav {
       display:none!important;
     }
     .menu-small {
-      display:block;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      gap: 2rem;
+    }
+    li.flag {
+      display: none;
     }
   }
 }

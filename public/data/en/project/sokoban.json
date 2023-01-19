@@ -1,0 +1,20 @@
+{
+  "name": "My Sokoban",
+  "date": "May 2018",
+  "time": "1 week",
+  "nbrPeople": 1,
+  "pathImage": "sokoban/",
+  "nbrImage":1,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_sokoban_2017",
+  "body": [
+    {
+      "title" : "Purpose of the project",
+      "text" : "This project was completed in the first year of <a href='https://www.epitech.eu/' target=_blank>Epitech</a>.<br><br>Sokoban is a type of transport puzzle, in which a player pushes <strong>boxes</strong> in a <strong>warehouse</strong> in an attempt to move them to <strong>storage locations</strong>.<br><br>The game is played on a grid of squares, where each square is either a <strong>floor</strong> or a <strong>wall</strong>. Some floor squares contain boxes and others are marked as storage locations.<br><br>The player is confined to the grid and can move <strong>horizontally</strong> or <strong>vertically</strong> on empty squares (never through walls or boxes).<br><br>The player can also enter a box, which pushes it into the next square.<br><br>Boxes cannot be pushed into other boxes or walls, and they cannot be pulled.<br><br>The puzzle is <strong>solved</strong> when all boxes are at storage locations."
+    },
+    {
+      "title" : "Functioning",
+      "text" : "We had to create the <i>sokoban</i> version <strong>terminal</strong> with the player moving using the <strong>arrow keys</strong>. The program starts with a <strong>map</strong> (puzzle) containing:<br><br><ul><li><strong>#</strong> The walls of the map</li><li><strong>P</strong> The character</li><li><strong>O</strong> The storage locations</li><li><strong>X</strong> The boxes to be moved</li></ul>"
+    }
+  ]
+}

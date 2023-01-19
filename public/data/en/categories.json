@@ -1,13 +1,13 @@
 {
-  "title": "Mes projets",
+  "title": "My project",
   "datas": [
     {
-      "title": "Voir tous les projets",
+      "title": "See all the projects",
       "isOpenDefault": false,
       "type": "project",
       "data": [
         {
-          "title": "Mon portfolio",
+          "title": "My portfolio",
           "name": "portfolio.json",
           "path": "portfolio/portfolio.jpeg",
           "projectCategory": {
@@ -17,7 +17,7 @@
           }
         },
         {
-          "title": "Nysos - (projet fin d'étude)",
+          "title": "Nysos - (final project)",
           "name": "nysos.json",
           "path": "nysos/nysos.png",
           "projectCategory": {
@@ -27,7 +27,7 @@
           }
         },
         {
-          "title": "Agenda Neolink",
+          "title": "Neolink Agenda",
           "name": "agenda.json",
           "path": "agenda/agenda.png",
           "projectCategory": {
@@ -67,7 +67,7 @@
           }
         },
         {
-          "title": "Maintenance évolutive",
+          "title": "Evolutionary Maintenance",
           "name": "maintenance.json",
           "path": "maintenance/maintenance.png",
           "projectCategory": {
@@ -87,7 +87,7 @@
           }
         },
         {
-          "title": "Talend studio",
+          "title": "Talend Studio",
           "name": "talend.json",
           "path": "talend/talend.png",
           "projectCategory": {
@@ -97,7 +97,7 @@
           }
         },
         {
-          "title": "My cook",
+          "title": "My Cook",
           "name": "cook.json",
           "path": "cook/cook.png",
           "projectCategory": {
@@ -107,7 +107,7 @@
           }
         },
         {
-          "title": "My navy",
+          "title": "My Navy",
           "name": "navy.json",
           "path": "navy/navy.png",
           "projectCategory": {
@@ -147,7 +147,7 @@
           }
         },
         {
-          "title": "My sokoban",
+          "title": "My Sokoban",
           "name": "sokoban.json",
           "path": "sokoban/sokoban.png",
           "projectCategory": {
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "title": "Découvrir selon les langages utilisés",
+      "title": "Discover by language",
       "isOpenDefault": true,
       "type": "language",
       "data": [
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "title": "Voir par type de projet",
+      "title": "View by project type",
       "isOpenDefault": true,
       "type": "type",
       "data": [
@@ -221,36 +221,36 @@
           "path": "web.jpg"
         },
         {
-          "title": "Jeux",
+          "title": "Games",
           "name": "jeux",
-          "path": "jeux.jpg"
+          "path": "game.jpg"
         },
         {
-          "title": "Algorithmie",
+          "title": "algo",
           "name": "algo",
-          "path": "algo.jpg"
+          "path": "algorithm.jpg"
         }
       ]
     },
     {
-      "title": "Selectionner l'origine du projet",
+      "title": "Select project origin",
       "isOpenDefault": true,
       "type": "origin",
       "data": [
         {
-          "title": "École",
+          "title": "School",
           "name": "ecole",
-          "path": "ecole.jpg"
+          "path": "school.jpg"
         },
         {
-          "title": "Entreprise",
+          "title": "Work",
           "name": "entreprise",
-          "path": "entreprise.jpg"
+          "path": "work.jpg"
         },
         {
-          "title": "Perso",
+          "title": "Personal",
           "name": "perso",
-          "path": "perso.jpg"
+          "path": "personal.jpg"
         }
       ]
     }

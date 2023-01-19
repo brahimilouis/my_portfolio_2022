@@ -18,7 +18,7 @@
     },
     {
       "title" : "Fonctionnalités du portfolio :",
-      "text" : "<ul><li>Pouvoir choisir les projets en fonction de catégorie pour cibler ce que l'on cherche</li><li>Pouvoir voir mon parcours en filtrant les événements par thème</li><li>Pouvoir visualiser et télécharger mon CV</li><li>Pouvoir m'envoyer un message depuis la section “contact”</li><li>Pouvoir choisir la langue : français ou anglais (en cours de production)</li><li>Pouvoir facilement naviguer d'une section à une autre via la navbar</li>"
+      "text" : "<ul><li>Pouvoir choisir les projets en fonction de catégorie pour cibler ce que l'on cherche</li><li>Pouvoir voir mon parcours en filtrant les événements par thème</li><li>Pouvoir visualiser et télécharger mon CV</li><li>Pouvoir m'envoyer un message depuis la section “contact”</li><li>Pouvoir choisir la langue : français ou anglais</li><li>Pouvoir facilement naviguer d'une section à une autre via la navbar</li>"
     }
   ]
 }

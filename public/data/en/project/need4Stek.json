@@ -1,0 +1,16 @@
+{
+  "name": "My Need4Stek",
+  "date": "May 2018",
+  "time": "1 week",
+  "nbrPeople": 3,
+  "pathImage": "need4Stek/",
+  "nbrImage":1,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_need4stek_2017",
+  "body": [
+    {
+      "title": "Project Description",
+      "text": "<i>My Need4Stek</i> was created in the first year of <a href='https://www.epitech.eu/' target=_blank>Epitech</a>. The goal of this project is to create an <strong>autonomous car</strong> capable of <strong>driving on a track</strong> without hitting walls or driving in the wrong direction.<br><br> To do this, we had at our disposal <a href='https://www.coppeliarobotics.com/' target=_blank>CoppeliaSim</a>, a simulator created by <i>Coppelia Robotics</i>. It allows us to create and <strong>control robots</strong>. We used <strong>virtual tracks</strong> and a <strong>virtual car</strong> controlled by our <strong>AI</strong>.<br><br>We used an <strong>API</strong> as a communication interface that offers a set of actions. It can be used alone to test the <strong>communication protocol</strong> in command line.<br><br>A shell script <strong>connects</strong> the program to the API and runs <strong>simulations</strong>. It is the binary to be executed once the program is compiled."
+    }
+  ]
+}

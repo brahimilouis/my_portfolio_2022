@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './_profil.scss'
 import ProfileIcon from "../../assets/icons/profileIcon";
 import WebSkillIcon from "../../assets/icons/skill/webSkillIcon";
@@ -15,8 +15,11 @@ import FigmaToolIcon from "../../assets/icons/tools/figmaToolIcon";
 import OfficeToolIcon from "../../assets/icons/tools/officeToolIcon";
 import StackToolIcon from "../../assets/icons/tools/stackToolIcon";
 import FetchData from "../../class/fetchData";
+import {Language} from "../../index";
 
-export type ProfilProps = {}
+export type ProfilProps = {
+    language : Language
+}
 
 type SkillModel = {
     type: string,
@@ -32,10 +35,15 @@ type ProfilModel = {
     skills: Array<SkillModel>
 }
 
-export default function Profil({}: ProfilProps) {
+export default function Profil({language}: ProfilProps) {
     const [datas, setDatas] = useState<null | ProfilModel>(null);
+    useEffect(() => {
+        return () => {
+            setDatas(null);
+        };
+    }, [language]);
     if (datas == null) {
-        new FetchData("profil.json").fetchData().then((json) => {
+        new FetchData("profil.json", language).fetchData().then((json) => {
             setDatas(json)
         })
     }

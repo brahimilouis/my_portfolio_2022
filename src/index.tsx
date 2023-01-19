@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import "./styles/Porfolio.scss"
 import "./styles/reset.scss"
@@ -10,25 +10,37 @@ import Timeline from "./pages/timeline/timeline";
 import Resume from "./pages/resume/resume";
 import Contact from "./pages/contact/contact";
 
+export enum Language {
+    french,
+    english
+}
+
+function App () {
+    const [language, setLanguage] = useState(Language.french);
+    return (
+        <div className="App">
+            <div className="main">
+                <header>
+                    <Navigation language={language} setLanguage={setLanguage}/>
+                </header>
+                <div className="content">
+                    <Home key="section-home"/>
+                    <Profil key="section-profil" language={language}/>
+                    <Portfolio key="section-portfolio" language={language}/>
+                    <Timeline key="section-timeline" language={language}/>
+                    <Resume key="section-resume" language={language}/>
+                    <Contact key="section-contact" language={language}/>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <div className="App">
-            <div className="main">
-                <header>
-                    <Navigation/>
-                </header>
-                <div className="content">
-                    <Home key="section-home"/>
-                    <Profil key="section-profil"/>
-                    <Portfolio key="section-portfolio"/>
-                    <Timeline key="section-timeline"/>
-                    <Resume key="section-resume"/>
-                    <Contact key="section-contact"/>
-                </div>
-            </div>
-        </div>
+        <App/>
     </React.StrictMode>
 );

@@ -7,10 +7,12 @@ import TimeIcon from "../../../assets/icons/timeIcon";
 import PeopleIcon from "../../../assets/icons/peopleIcon";
 import GithubIcon from "../../../assets/icons/githubIcon";
 import FetchData from "../../../class/fetchData";
+import {Language} from "../../../index";
 
 export type ProjectProps = {
     close: () => void,
-    jsonPath: string
+    jsonPath: string,
+    language:Language
 }
 
 type ProjectBodyItemModel = {
@@ -32,7 +34,7 @@ type ProjectModel = {
 export default function Project(props: ProjectProps) {
     const [datas, setDatas] = useState<null | ProjectModel>(null);
     if (datas == null) {
-        new FetchData(props.jsonPath).fetchData().then((json) => {
+        new FetchData(props.jsonPath, props.language).fetchData().then((json) => {
             setDatas(json)
         })
     }

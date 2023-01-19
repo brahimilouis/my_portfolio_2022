@@ -1,10 +1,11 @@
 import React from "react";
 import FetchData from "./fetchData";
+import {Language} from "../index";
 
 export type ProjectCategory = {
     language: string,
     type: string,
-    origine: string
+    origin: string
 }
 
 export class CategoryData {
@@ -43,8 +44,8 @@ export default class PortfolioModel extends FetchData {
     datas: Array<ListCategoryData> = []
     title: string = ""
 
-    constructor() {
-        super("categories.json");
+    constructor(language : Language) {
+        super("categories.json", language);
     }
 
     public async get() {
@@ -70,8 +71,8 @@ export default class PortfolioModel extends FetchData {
                         if (project.projectCategory?.type === categoryName)
                             list.push(project)
                         break;
-                    case "origine":
-                        if (project.projectCategory?.origine === categoryName)
+                    case "origin":
+                        if (project.projectCategory?.origin === categoryName)
                             list.push(project)
                         break;
                     case "language":

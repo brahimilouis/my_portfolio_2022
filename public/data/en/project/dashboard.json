@@ -1,0 +1,20 @@
+{
+  "name": "My Dashboard",
+  "date": "November 2019",
+  "time": "1 week",
+  "nbrPeople": 2,
+  "pathImage": "dashboard/",
+  "nbrImage":3,
+  "language":"VueJs Npm express",
+  "linkGithub": "https://github.com/brahimilouis/my_dashboard_2019",
+  "body": [
+    {
+      "title" : "Project goal",
+      "text" : "The goal of this project was to create a <strong>web application</strong> dashboard.<br><br>We completed this project during my 3rd year at <a href='https://www.epitech.eu/' target=_blank>Epitech</a>. It allowed us to <strong>get started</strong> creating a web application from A to Z and to use <i>vuejs nodejs</i> for the <strong>front-end</strong> and <i>npm</i> with <i>express</i> for the <strong>back-end</strong>.<br><br>Our dashboard is designed to give you simple access to <strong>certain APIs</strong> such as: Youtube, Cinema, Weather, Finance"
+    },
+    {
+      "title" : "Services and widgets implemented",
+      "text" : "Each user of our dashboard will be able to <strong>connect</strong>, <strong>add</strong> widgets, <strong>delete</strong> them and <strong>save</strong> the layout of their dashboard for their next login. They will also be able to <strong>name</strong> each widget added to their dashboard.<br><br>Here is the list of available services and widgets:<br><br><ul><li><strong>Youtube</strong>: Get information from a Youtube search to have a video</li><li><strong>Weather</strong>: Know the current weather in a city</li><li><strong>Cinema</strong>: Get information on a movie or series</li><li><strong>Finance</strong>: Follow the stock of a company / compare different currencies with each other</li></ul>"
+    }
+  ]
+}

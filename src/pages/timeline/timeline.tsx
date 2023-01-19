@@ -1,11 +1,14 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './_timeline.scss'
 import ListFilterSwitch from "../../components/list/filterSwitchList/filterSwitch";
 import TimelineCard from "../../components/card/timelineCard/timelineCard";
 import TimelineIcon from "../../assets/icons/timelineIcon";
 import FetchData from "../../class/fetchData";
+import {Language} from "../../index";
 
-export type TimelineProps = {}
+export type TimelineProps = {
+    language:Language
+}
 
 export type FilterModel = {
     experience: string,
@@ -33,10 +36,15 @@ type TimelineModel = {
     filters: FilterModel
     events: Array<EventModel>
 }
-export default function Timeline({}: TimelineProps) {
+export default function Timeline({language}: TimelineProps) {
     const [datas, setDatas] = useState<null | TimelineModel>(null);
+    useEffect(() => {
+        return () => {
+            setDatas(null);
+        };
+    }, [language]);
     if (datas == null) {
-        new FetchData("timeline.json").fetchData().then((json) => {
+        new FetchData("timeline.json", language).fetchData().then((json) => {
             setDatas(json)
         })
     }
@@ -87,6 +95,7 @@ export default function Timeline({}: TimelineProps) {
                                     return (typeof itemFilter === "undefined")
                                         ? null
                                         : <TimelineCard
+                                            language={language}
                                             key={"event-card-" + index}
                                             color={itemFilter.color}
                                             event={event}

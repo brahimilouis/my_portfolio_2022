@@ -1,0 +1,20 @@
+{
+  "name": "My Cook",
+  "date": "February 2018",
+  "time": "3 weeks",
+  "nbrPeople": 2,
+  "pathImage": "cook/",
+  "nbrImage":3,
+  "language":"C",
+  "linkGithub": "https://github.com/brahimilouis/my_cook_2017",
+  "body": [
+    {
+      "title" : "Project Description",
+      "text" : "For this project, we had to create a game inspired by <a href='https://fr.wikipedia.org/wiki/Cook,_Serve,_Delicious!' target=_blank>Cook Serve Delicious</a>. This project was completed in my first year at <a href='https://www.epitech.eu/' target=_blank>Epitech</a> using the <a href='https://www.sfml-dev.org/index-fr.php' target=_blank>CSFML</a> library.<br><br>Our <strong>main challenge</strong> for this game was to create a user-friendly interface and smooth menus. The game had to adhere to the following rules:<br><br><ul><li>The player is a chef in a restaurant</li><li>Orders will appear randomly to the player</li><li>Orders will have a time limit for completion</li><li>Orders will be of different types</li><li>The player must select the correct ingredients in the correct order</li><li>Having a user-friendly interface is one of the details that make a game of good quality</li></ul>"
+    },
+    {
+      "title" : "Our My Cook",
+      "text" : "Our game called <i>The Cosmic Burger</i> is a burger restaurant in space. The player will <strong>create a burger</strong> by <strong>adding ingredients</strong> in the correct order using the keyboard. The goal is to achieve the highest <strong>score</strong> possible (satisfaction rate * money).<br> Each well-made burger increases satisfaction and revenue, but each ingredient addition decreases the money of the game.<br><br>Our interface allows to:<br><br><ul><li>See the menu with 4 possible burgers: Supreme, Classic, Vegetarian and Cosmic Burger</li><li>Serve the burger or put it in the trash</li><li>Visualize the score and money of the game as well as the different possible ingredients</li><li>See the customers orders with a timer to serve them</li></ul><br><br>The game has a dynamic menu with a tutorial and settings."
+    }
+  ]
+}

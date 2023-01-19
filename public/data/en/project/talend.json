@@ -1,0 +1,24 @@
+{
+  "name": "Data Integration",
+  "date": "June 2020",
+  "time": "1 month",
+  "nbrPeople": 1,
+  "pathImage": "talend/",
+  "nbrImage": 3,
+  "language":"Talend Studio",
+  "linkGithub": "",
+  "body": [
+    {
+      "title" : "Purpose of the project",
+      "text" : "During my 3rd year internship at <a href='https://www.neolink.link/' target=_blanc>Neolink</a> I was tasked with automating the import of data from certain streams using <a href='https://www.talend.com/fr/products/talend-open-studio/' target=_blanc>Talend Open Studio</a>. This mission allowed me to learn how to use the software and the logic of data integration as well as progress in <i>SQL</i>."
+    },
+    {
+      "title" : "What is Talend Open Studio?",
+      "text" : "<i>Talend Open Studio</i> is a <strong>data integration</strong> software from multiple sources using "jobs". A <i>job</i> can have multiple input points with different data sources. The data is <strong>compared</strong>, <strong>modified</strong>, <strong>sorted</strong>, and <strong>sent</strong> to the selected data tables."
+    },
+    {
+      "title" : "Integration of several streams",
+      "text" : "<i>Talend Open Studio</i> allowed me to create a <i>job</i> to retrieve data from several streams.<br>I particularly worked on the <a href='http://lheo.gouv.fr/' target=_blanc>LHEO</a> stream grouping thousands of training offers with their content, their objectives, and other data."
+    }
+  ]
+}

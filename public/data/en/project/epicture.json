@@ -1,0 +1,20 @@
+{
+  "name": "My Epicture",
+  "date": "October 2019",
+  "time": "1 week",
+  "nbrPeople": 2,
+  "pathImage": "epicture/",
+  "nbrImage":2,
+  "language":"Kotlin",
+  "linkGithub": "https://github.com/brahimilouis/my_epicture_2019",
+  "body": [
+    {
+      "title" : "Project goal",
+      "text" : "The goal of this project is to use and implement online photo sharing <strong>API</strong> platforms. We created a search and navigation application for photos on the following platform: <a href='https://imgur.com/' target=_blank>Imgur</a>.<br><br>This project was completed in the 3rd year of <a href='https://www.epitech.eu/' target=_blank>Eptech</a> and initiated us to mobile development with Kotlin."
+    },
+    {
+      "title" : "Features of our application",
+      "text" : "<ul><li><strong>Login page</strong> - To connect to an <i>Imgur</i> account</li><li><strong>Feed page</strong> - To scroll through random images and descriptions from <i>Imgur</i></li><li><strong>Favorites page</strong> - To scroll through images and descriptions that are saved as favorites</li><li><strong>Account page</strong> - To see information from your <i>Imgur</i> account and log out</li><li><strong>Import button</strong> - To import images from the phone</li></ul>"
+    }
+  ]
+}

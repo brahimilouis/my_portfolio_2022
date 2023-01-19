@@ -1,0 +1,16 @@
+{
+  "name": "My EvalExpr",
+  "date": "November 2019",
+  "time": "1 week",
+  "nbrPeople": 1,
+  "pathImage": "evalExpr/",
+  "nbrImage":2,
+  "language":"Haskell",
+  "linkGithub": "https://github.com/brahimilouis/my_evalExpr_2019",
+  "body": [
+    {
+      "title" : "Project Description",
+      "text" : "This is a 3rd year project at <a href='https://www.epitech.eu/' target=_blank>Epitech</a> which consists of <strong>calculating</strong> the result of a <strong>mathematical expression</strong> in <i>Haskell</i>.<br><br>The expression must be calculated with the <strong>priority rules</strong> of parentheses and operators.<br><br>The program takes into account in the expression the <strong>operators</strong>:<br><br><ul><li><strong>+</strong> Plus sign</li><li><strong>-</strong> Minus sign</li><li><strong>*</strong> Multiplier</li><li><strong>/</strong> Division</li><li><strong>^</strong> Exponent sign</li></ul>"
+    }
+  ]
+}

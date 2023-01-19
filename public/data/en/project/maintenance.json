@@ -1,0 +1,20 @@
+{
+  "name": "Evolutive Maintenance",
+  "date": "2019-2020",
+  "time": "1 year",
+  "nbrPeople": 1,
+  "pathImage": "maintenance/",
+  "nbrImage":4,
+  "language":"PHP,JQUERY",
+  "linkGithub": "",
+  "body": [
+    {
+      "title" : "Project Description",
+      "text" : "During my experience at <a href='https://www.neolink.link/' target=_blanc>Neolink</a> I did evolutive maintenance on their platform creation tool: Adding and evolving features, researching and solving bugs.<br><br>Indeed, <i>Neolink</i> works with local authorities and proposes fully customizable web social platforms tailored to their needs and image.<br><br>I used the agile planning tool <a href='https://azure.microsoft.com/fr-fr/products/devops/' target=_blanc>Azure Devops</a> by Microsoft as well as the client support tool <a href='https://freshdesk.com/' target=_blanc>Freshdesk</a>."
+    },
+    {
+      "title" : "Some missions I accomplished",
+      "text" : "<ul><li>The ability to save <strong>video resumes</strong> as well as make <strong>video calls</strong>.</li><li>A service of <strong>PDF letters generator</strong> with their own creations, based on templates and data</li><li>Creation of a <strong>mini search engine</strong> for legal entities</li><li>Participation in the creation of <strong>dashboard</strong> for grant recipient and structure with the creation of several 'tiles' of actions and information. </li><li>Improvement of <strong>performance</strong> of several features and pages</li></ul>"
+    }
+  ]
+}

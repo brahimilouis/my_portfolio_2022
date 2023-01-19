@@ -1,0 +1,20 @@
+{
+  "name": "NeoGestion",
+  "date": "2020-2021",
+  "time": "≈1 year",
+  "nbrPeople": 3,
+  "pathImage": "neogestion/",
+  "nbrImage":2,
+  "language":"PHP,JQUERY",
+  "linkGithub": "",
+  "body": [
+    {
+      "title" : "Project Description",
+      "text" : "Throughout my experience at <a href='https://www.neolink.link/' target=_blanc>Neolink</a>, I participated in the development of their tool <i>NeoGestion</i> towards departmental councils.<br><br>This solution, launched in 2020 in collaboration with the Bas-Rhin Departmental Council, proposes a comprehensive and seamless approach that takes into account all the potential and dimensions of RSA beneficiaries and Department partners.<br><br><i>NeoGestion</i> allows all stakeholders to share their information about the beneficiary, for a more coherent and needs-based support for each person in a vulnerable social situation."
+    },
+    {
+      "title" : "Main Features of NeoGestion",
+      "text" : "<ul><li>Data retrieval</li><li>Simplified and coordinated exchanges</li><li>Online, comprehensive, and seamless monitoring</li><li>Conducting a complete socio-professional diagnosis</li><li>Simplified access to job return schemes</li><li>Optimization of appointment scheduling</li><li>Digitalization of CER</li><li>Production of necessary indicators</li></ul>"
+    }
+  ]
+}

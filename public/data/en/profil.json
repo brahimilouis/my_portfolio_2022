@@ -1,0 +1,58 @@
+{
+  "title": "About me",
+  "titleText": "Welcome to my portfolio!",
+  "texts": [
+    "I am a 5th year Full Stack Web Developer at <strong>EPITECH</strong>",
+    "My training has allowed me to acquire solid knowledge in <strong>computer science and project management.</strong>",
+    "During my course, I chose to take a gap year to join a start-up publisher of collaborative platforms and thus develop a first <strong>experience in social web.</strong>",
+    "I then spent my 4th year of study at the <strong>Technological University Dublin</strong> where I validated a double degree in IT Management while continuing to work <strong>freelance</strong> remotely.",
+    "Of a <strong>persistent</strong> and <strong>rigorous</strong> nature, I am organized and attentive to needs. I know how to quickly adapt to a technical environment, <strong>be autonomous</strong> but also <strong>exchange</strong> to progress together.",
+    "My portfolio will allow you to discover my work carried out during my student and professional course.",
+    "I will be happy to exchange with you around a new project and take on new challenges!"
+  ],
+  "titleTools": "The tools I use the most...",
+  "titleSkills": "What I know how to do...",
+  "skills": [
+    {
+      "type":"web",
+      "texts": [
+        "Web application"
+      ]
+    },
+    {
+      "type":"mobile",
+      "texts": [
+        "Mobile application"
+      ]
+    },
+    {
+      "type":"design",
+      "texts": [
+        "Responsive design"
+      ]
+    },
+    {
+      "type":"bdd",
+      "texts": [
+        "Database",
+        "API usage"
+      ]
+    },
+    {
+      "type":"code",
+      "texts": [
+        "Clean code",
+        "Documentation",
+        "Optimization"
+      ]
+    },
+    {
+      "type":"team",
+      "texts": [
+        "Teamwork",
+        "Organization",
+        "Communication"
+      ]
+    }
+  ]
+}

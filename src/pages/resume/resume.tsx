@@ -2,10 +2,13 @@ import React from 'react';
 import './_resume.scss'
 import resume from "../../assets/resume.pdf";
 import ResumeIcon from "../../assets/icons/resumeIcon";
+import {Language} from "../../index";
 
-export type ResumeProps = {}
+export type ResumeProps = {
+    language:Language
+}
 
-export default function Resume({}: ResumeProps) {
+export default function Resume({language}: ResumeProps) {
     return (<section className="resume">
         <div className={"titre-section"}>
             <ResumeIcon/>

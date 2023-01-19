@@ -1,0 +1,24 @@
+{
+  "name": "Nysos",
+  "date": "2021-2023",
+  "time": "2 years",
+  "nbrPeople": 6,
+  "pathImage": "nysos/",
+  "nbrImage":7,
+  "language":"Flutter",
+  "linkGithub": "",
+  "body": [
+    {
+      "title" : "What is Nysos?",
+      "text" : "Nysos is a <strong>mobile application</strong> and <strong>website</strong> that operates on a <strong>ticketing</strong> system. Our project allows for the creation and promotion of events. On our website and mobile application, a user can <strong>find an event</strong> of their liking and then <strong>purchase a ticket</strong> represented by a unique QR code. The event creator can then check that attendees have valid tickets by scanning the various <strong>QR codes</strong>. Nysos targets <strong>small event structures</strong> such as student organizations. With a <strong>chat</strong> system, each event is associated with a conversation, allowing for <strong>communication</strong> of information in real-time for proper event preparation. <strong>Nysos</strong> brings together and facilitates research, creation, and communication work."
+    },
+    {
+      "title" : "Project Production",
+      "text" : "As part of my final year project, I developed Nysos with five other students. <br>The majority of development was done in our fourth year while we were all in different countries such as <i>South Korea</i>, <i>United States</i>, or me in <i>Ireland</i>.<br><br> Good <strong>organization</strong> and <strong>communication</strong> were necessary to develop this project."
+    },
+    {
+      "title" : "My Role",
+      "text" : "At Nysos, I was a mobile developer. Here is a list of the <strong>main features</strong> that I implemented:<br><br><ul><li>A real-time, customizable chat</li><li>The ticketing system with payment using the <i>Stripe</i> service</li><li>The user profile and settings section</li><li>The community section with the ability to search using an autocomplete system, view profiles, and follow users</li><li>Adapting the application for IOS</li><ul>"
+    }
+  ]
+}

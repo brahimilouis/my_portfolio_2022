@@ -1,12 +1,18 @@
-import React, {useState} from "react";
+import React, {Dispatch, SetStateAction, useState} from "react";
 import {Link} from 'react-scroll';
 import './_Navigation.scss';
 import MenuIcon from "../../assets/icons/contact/menuIcon";
 import CloseIcon from "../../assets/icons/closeIcon";
+import {Language} from "../../index";
+import FrenchFlagIcon from "../../assets/icons/flag/frenchFlag";
+import EnglishFlagIcon from "../../assets/icons/flag/englishFlag";
 
-export type NavigationProps = {}
+export type NavigationProps = {
+    language : Language,
+    setLanguage : Dispatch<SetStateAction<Language>>
+}
 
-function Navigation() {
+function Navigation({language, setLanguage} : NavigationProps) {
     const items = [
         {
             href: "profil",
@@ -32,12 +38,22 @@ function Navigation() {
     const [color, setColor] = useState(true);
     const [menuOpen, setMenuOpen] = useState(false);
 
+    function switchlanguage (languageSelected : Language) {
+        setLanguage(languageSelected);
+    }
+
     const changeColor = () => {
         if (window.scrollY <= 1) {
             setColor(true);
         } else {
             setColor(false);
         }
+    }
+
+    const divLanguage = () => {
+      return language === Language.english ?
+          <span onClick={() => switchlanguage(Language.french)}><FrenchFlagIcon/></span>:
+          <span onClick={() => switchlanguage(Language.english)}><EnglishFlagIcon/></span>
     }
     window.addEventListener('scroll', changeColor)
     return (
@@ -56,10 +72,17 @@ function Navigation() {
                         }
                         </Link>
                     </div>
-                    <div className={"menu-small"} onClick={() => setMenuOpen(!menuOpen)}>
-                        {
-                            menuOpen ? <CloseIcon/> : <MenuIcon/>
-                        }
+                    <div className={"menu-small"}>
+                        <div className={"flag"}>
+                                {divLanguage()}
+                            </div>
+                        <div onClick={() => setMenuOpen(!menuOpen)}>
+                        {menuOpen ? <CloseIcon/> :
+                                <div className={"container-menu-small"}>
+
+                                <MenuIcon/>
+                            </div>}</div>
+
                     </div>
                 </div>
                 <ul className={"menu-big"}>
@@ -75,6 +98,9 @@ function Navigation() {
                             </Link>
                         </li>
                     ))}
+                    <li className={"item-nav flag"} key={"nav-flag"}>
+                        {divLanguage()}
+                    </li>
                 </ul>
             </div>
         </nav>

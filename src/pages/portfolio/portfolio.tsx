@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './_portfolio.scss'
 import Dropdownlist from "../../components/list/dropDownList/dropDownList";
 import GridCardList from "../../components/list/gridCardList/gridCardList";
@@ -6,14 +6,22 @@ import CategoryCard from "../../components/card/categoryCard/categoryCard";
 import ProjectCard from "../../components/card/projectCard/projectCard";
 import PortfolioIcon from "../../assets/icons/portfolioIcon";
 import PortfolioModel from "../../class/categoryData";
+import {Language} from "../../index";
 
-export type PortfolioProps = {}
+export type PortfolioProps = {
+    language:Language
+}
 
-export default function Portfolio({}: PortfolioProps) {
-    const [portfolioModel, setPortfolioModel] = useState(new PortfolioModel());
+export default function Portfolio({language}: PortfolioProps) {
+    const [portfolioModel, setPortfolioModel] = useState(new PortfolioModel(language));
     const [loaded, setLoaded] = useState(false);
 
+    useEffect(() => {
+        return () => {setLoaded(false);};
+    }, [language]);
+
     async function loadData() {
+        portfolioModel.lang = language;
         await portfolioModel.get();
         setLoaded(true)
     }
@@ -41,11 +49,13 @@ export default function Portfolio({}: PortfolioProps) {
                                                      path={category.path}
                                                      title={category.title}
                                                      jsonPath={category.name}
+                                                     language={language}
                                         /> :
                                         <CategoryCard key={category.name + index}
                                                       path={listCategory.type + "/" + category.path}
                                                       projectList={portfolioModel.getListProjectFiltered(listCategory.type, category.name)}
                                                       title={category.title}
+                                                      language={language}
                                         />
                                 }
                             )

@@ -1,0 +1,20 @@
+{
+  "name": "Agenda",
+  "date": "2021-2022",
+  "time": "≈1 year",
+  "nbrPeople": 1,
+  "pathImage": "agenda/",
+  "nbrImage":6,
+  "language":"PHP,JQUERY",
+  "linkGithub": "",
+  "body": [
+    {
+      "title" : "Project description",
+      "text" : "During my 4th year in Dublin, I worked as a freelance on a two-day-a-week schedule for the company <a href='https://www.neolink.link/' target=_blank>Neolink</a>. <br><br>My main mission was to carry out a complete overhaul of a first version of an agenda for the <i>NeoGestion</i> product using <a href='https://fullcalendar.io/' target=_blank>FullCalendar</a>. To develop this agenda in an <strong>agile</strong> way, I collaborated with a <strong>designer</strong> and a <strong>project manager</strong> who was in direct contact with the client.<br><br>The main challenge of this project was to have the most <strong>optimized</strong> agenda possible for scheduling appointments, easy and quick event management. It was also necessary to develop an <strong>algorithm</strong> to facilitate the scheduling of appointments."
+    },
+    {
+      "title" : "Main features of this Agenda",
+      "text" : "<ul><li>Have an excellent <strong>UI,UX</strong> to manipulate the agenda: Drag and drop / Multiple calendar views / Distinctive colors with filter system</li><li>Be able to take several <strong>appointments</strong> at the same time with the possibility to <strong>add</strong> a frequency and <strong>modify</strong> each appointment independently.</li><li>Have a <strong>configurable notification</strong> system for appointments</li><li>Be able to <strong>configure</strong> a 'Typical Week' (working hours) and availability periods as well as personal punctual or recurring events.</li><li>Be able to <strong>overlap</strong> several user schedules to have an <strong>intuitive</strong> visual of available / possible / occupied periods to choose the best appointment time</li><li>Develop an <strong>algorithm</strong> to propose appointment scheduling based on availability and participants</li><li>Have <strong>information</strong> on mouse-over an event on the agenda</li><li>Be able to <strong>consult</strong> and <strong>modify</strong> an event in a pop-up on click on the agenda</li></ul>"
+    }
+  ]
+}

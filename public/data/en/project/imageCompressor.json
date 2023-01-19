@@ -1,0 +1,20 @@
+{
+  "name": "My Image Compressor",
+  "date": "May 2019",
+  "time": "1 week",
+  "nbrPeople": 2,
+  "pathImage": "imageCompressor/",
+  "nbrImage":4,
+  "language":"Haskell",
+  "linkGithub": "https://github.com/brahimilouis/my_imageCompressor_2018",
+  "body": [
+    {
+      "title" : "Project Description",
+      "text" : "<i>My Image Compressor</i> was developed during the 2nd year of <a href='https://www.epitech.eu/' target=_blanc>Epitech</a>. The goal was to create an image compressor using the <a href='https://en.wikipedia.org/wiki/K-means_clustering' target=_blanc>k-means clustering</a> algorithm.<br><br> In our case, the program receives a list of <strong>pixels</strong> and a number <strong>K</strong> that corresponds to the final number of colors. <br> The lower the <strong>K</strong>, the more the image is compressed.<br><br> By grouping each pixel in the most appropriate <i>cluster</i> based on <strong>color</strong> and <strong>position</strong>, the image is modified while maintaining the best possible quality."
+    },
+    {
+      "title": "Program Result",
+      "text": "The expected <strong>format</strong> of our project's result was:<br><br>--<br><strong>Color</strong> (R,G,B) of a <i>cluster</i><br>-<br><strong>List of positions</strong> (x,y) and <strong>colors</strong> (R,G,B) of a <strong>pixel</strong> of the <i>cluster</i><br>--<br>Repetition of format according to the number of color <strong>K</strong> requested"
+    }
+  ]
+}

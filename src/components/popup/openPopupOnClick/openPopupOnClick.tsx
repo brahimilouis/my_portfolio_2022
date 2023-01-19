@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Containerpopup from "../containerPopup/containerPopup";
 import Project from "../projectPopup/project";
 import ListProjectPopup from "../listProjectPopup/listProjectPopup";
+import {Language} from "../../../index";
 
 export enum TypePopup {
     projet,
@@ -12,6 +13,7 @@ export type OpenPopupOnClickProps = {
     type: TypePopup
     children: React.ReactNode
     childrenProps: any
+    language: Language
 }
 
 export default function OpenPopupOnClick(props: OpenPopupOnClickProps) {
@@ -26,10 +28,12 @@ export default function OpenPopupOnClick(props: OpenPopupOnClickProps) {
             isOpen ?
                 <Containerpopup child={
                     props.type == TypePopup.projet ?
-                        <Project close={changeStateOpen} jsonPath={props.childrenProps}/> :
+                        <Project close={changeStateOpen} language={props.language} jsonPath={props.childrenProps}/> :
                         <ListProjectPopup
                             close={changeStateOpen}
-                            listProjectsProps={props.childrenProps}/>
+                            listProjectsProps={props.childrenProps}
+                            language={props.language}
+                        />
                 }/> : null
         }
         <div onClick={changeStateOpen}>

@@ -1,0 +1,16 @@
+{
+  "title": "Contact me",
+  "titleForm": "Contact form",
+  "titleCoordinate": "My coordinates",
+  "buttonSend": "Send",
+  "form" : {
+    "name": "Your name and surname",
+    "email": "Your email",
+    "message": "Your message",
+    "button": "Send",
+    "errorRequired": "* This is required",
+    "errorInvalidEmail": "* Invalid email address",
+    "succesMessage" : "The message has been sent!",
+    "succesError" : "An error occurred"
+  }
+}
