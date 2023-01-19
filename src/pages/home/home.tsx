@@ -15,7 +15,7 @@ export default function Home({}: HomeProps) {
                 <h3>Epitech promo 2023</h3>
             </div>
             <img className="moi" src={moi} alt="image"/>
-            <img className="background" src={background} alt="image"/>
+            <img className="background" src={background} alt="image" property={"og:image"}/>
         </div>
     </section>);
 }
